@@ -16,7 +16,7 @@ export interface Video {
   title: string;
   description?: string;
   uploadDate?: string;
-  poster?: string; // local image, needed for Bilibili (YouTube has its own)
+  poster?: string; // local cover image; always set it, since YouTube's own covers don't load in mainland China
   products?: string[];
 }
 export const videos: Video[] = [];
