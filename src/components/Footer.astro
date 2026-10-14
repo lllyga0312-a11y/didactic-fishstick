@@ -13,12 +13,12 @@ const zh = lang === 'zh';
   <div class="wrap">
     <div class="cols">
       <div>
-        <h4>{zh ? company.nameZh : company.brand}</h4>
+        <h2 class="foot-h">{zh ? company.nameZh : company.brand}</h2>
         <p>{s.footerLine}</p>
         <p>{zh ? company.addressZh : company.addressEn}</p>
       </div>
       <div>
-        <h4>{s.nav.systems}</h4>
+        <h2 class="foot-h">{s.nav.systems}</h2>
         <ul>
           {groups.map((c) => (
             <li><a href={href(lang, `/systems/#${c.id}`)}>{c.name[lang]}</a></li>
@@ -26,7 +26,7 @@ const zh = lang === 'zh';
         </ul>
       </div>
       <div>
-        <h4>{s.nav.contact}</h4>
+        <h2 class="foot-h">{s.nav.contact}</h2>
         <ul>
           {zh && <li>{s.hotline} <a href={`tel:${company.phone400}`}>{company.phone400}</a></li>}
           <li>{zh ? '电话' : s.hotline} <a href={`tel:+86${company.phoneLocal.replace(/^0|-/g, '')}`}>{zh ? company.phoneLocal : '+86 ' + company.phoneLocal.replace(/^0/, '')}</a></li>

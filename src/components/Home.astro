@@ -4,6 +4,8 @@ import ContactForm from './ContactForm.astro';
 import { company, type Lang } from '../data/site';
 import { groups, seriesById, seriesPhotos, projectSites } from '../data/catalog';
 import { scenes, buildups } from '../data/scenes';
+import { factoryPhotos, certificates, downloads } from '../data/media';
+import { series, products } from '../data/catalog';
 import { href, asset } from '../lib/paths';
 
 interface Props { lang: Lang }
@@ -24,7 +26,7 @@ const c = zh
       layersTitle: ['一套地坪系统 = 每一层都配好', '环氧自流平系统'],
       layers: [['自流平面涂', '耐磨 · 易清洁 · 无缝'], ['砂浆中涂', '找平 · 抗压 · 增厚'], ['渗透底涂', '封闭 · 增强附着力'], ['混凝土基面', '打磨 · 除尘 · 修补']],
       layersNote: '典型结构示意，具体层数与厚度按使用工况设计。',
-      stats: [[company.years, '年地坪材料研发生产'], ['[ ]', '吨年产能（待填）'], ['[ ]', '万平方米累计供货面积（待填）'], ['[ ]', '项检测报告 / 认证（待填）']],
+      stats: [[company.years, '年地坪材料研发生产'], [String(products.length), '款地坪涂料产品'], [String(series.length), '个配套涂装系列'], ['GB/T', '技术参数注明国标检验方法']],
       whoTitle: '您是哪一类客户？',
       who: [
         ['施工公司 / 工程商', '稳定的材料质量，配套的施工工艺'],
@@ -47,12 +49,12 @@ const c = zh
         ['按工况配系统', '根据荷载、化学品、温湿度配一整套系统，不过度设计，也不偷工减料。'],
         ['自有工厂直供', '无锡自有工厂研发生产，没有中间环节，批次质量可追溯。'],
         ['施工技术支持', '可提供设计阶段协助、施工建议，必要时到施工现场解决问题，降低返工风险。'],
-        ['参数公开透明', `每个产品公开技术参数和说明书，${P('[检测报告 / 认证名称]')}。`],
+        ['参数公开透明', '每个产品公开技术参数、检验标准和涂布率，选材前就能对比。'],
       ],
       factoryTitle: '走进我们的工厂',
       factoryLead: '研发、生产、检测都在无锡自己的厂里完成。',
       factory: [['[厂房外景实拍]', '厂区'], ['[生产线实拍]', '生产线'], ['[质检实验室实拍]', '质检实验室 [待确认]']],
-      casesTitle: '按行业看，我们做过的项目',
+      casesTitle: '施工现场实拍',
       cases: [
         ['江苏联浩科技 车间环氧地坪改造', '工业厂房'],
         ['[项目名称]', '[ ]'],
@@ -94,7 +96,7 @@ const c = zh
       layersTitle: ['One system, every layer matched', 'Epoxy self-leveling'],
       layers: [['Topcoat', 'Wear · cleanability · seamless'], ['Mortar body coat', 'Leveling · compressive strength'], ['Penetrating primer', 'Sealing · adhesion'], ['Concrete substrate', 'Ground · cleaned · repaired']],
       layersNote: 'Typical build-up. Layers and thickness are designed for each site.',
-      stats: [[company.years, 'years in floor coatings'], ['[ ]', 'tons annual capacity (to fill)'], ['[ ]', 'countries exported to (to fill)'], ['[ ]', 'certifications & test reports (to fill)']],
+      stats: [[company.years, 'years in floor coatings'], [String(products.length), 'floor coating products'], [String(series.length), 'matched coating series'], ['GB/T · ASTM', 'test methods stated on data sheets']],
       whoTitle: 'Start your project',
       who: [
         ['Contractors', 'Consistent batches and clear application guides'],
@@ -116,13 +118,13 @@ const c = zh
       why: [
         ['Direct factory pricing', 'We formulate and produce in our own plant in Wuxi. No trading margins.'],
         ['Matched systems', 'Primer, body coat and topcoat designed to work together, specified to your loads and chemicals.'],
-        ['Published data', `Technical data sheets for every product. ${P('[Certifications: to fill]')}`],
+        ['Published data', 'Technical data, test methods and coverage published for every product, so you can compare before you buy.'],
         ['Application support', 'Design-stage advice, application guidance and on-site troubleshooting when needed, so your installers get it right first time.'],
       ],
       factoryTitle: 'Inside our factory',
       factoryLead: 'R&D, production and quality control, all in our own plant in Wuxi.',
       factory: [['[Plant exterior photo]', 'Plant'], ['[Production line photo]', 'Production line'], ['[QC lab photo]', 'QC lab [to confirm]']],
-      casesTitle: 'Real floors, real numbers',
+      casesTitle: 'Real floors from real job sites',
       cases: [['[Project name]', '[ ]'], ['[Project name]', '[ ]'], ['[Project name]', '[ ]']],
       caseLabels: ['Sector', 'System', 'Area', '[Project photo: real photos only]'],
       faqTitle: 'FAQ',
@@ -158,6 +160,9 @@ const dist = [
 const ph = (s: string) => (s.includes('[') ? `<span class="ph">${s}</span>` : s);
 const cover = (g: (typeof groups)[number]) => g.series.map((id) => seriesPhotos(id)[0]).find(Boolean);
 
+const heroImg = projectSites[0]?.photos[0];
+const heroBg = heroImg ? `--hero-img:url(${asset(heroImg.src)})` : undefined;
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -167,7 +172,7 @@ const faqSchema = {
 };
 ---
 <Base lang={lang} title={c.title} description={c.desc} path="/" schema={[faqSchema]}>
-  <section class="hero dark">
+  <section class="hero dark" style={heroBg}>
     <div class="wrap">
       <div>
         <span class="eyebrow">{c.kicker}</span>
@@ -204,7 +209,7 @@ const faqSchema = {
       <div class="section-head"><h2>{c.whoTitle}</h2></div>
       <div class="grid g4">
         {c.who.map(([n, d], i) => (
-          <a class="card" href={href(lang, i === 1 && !zh ? '/#distributors' : i === 3 ? '/#downloads' : '/quote/')}>
+          <a class="card" href={href(lang, i === 1 && !zh ? '/#distributors' : i === 3 ? '/systems/' : '/quote/')}>
             <h3>{n}</h3><p>{d}</p>
           </a>
         ))}
@@ -265,7 +270,7 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <section class="section" style="padding-top:0" id="about">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">{c.whyEyebrow}</span>
@@ -298,65 +303,62 @@ const faqSchema = {
     </section>
   )}
 
-  <section class="section" id={zh ? 'about' : 'factory'}>
-    <div class="wrap">
-      <div class="section-head"><h2>{c.factoryTitle}</h2><p>{c.factoryLead}</p></div>
-      <div class="grid g3">
-        {c.factory.map(([p, l]) => (
-          <figure style="margin:0"><div class="photo">{p}</div><figcaption class="muted" style="font-size:14px;margin-top:8px" set:html={ph(l)} /></figure>
-        ))}
+  {factoryPhotos.length > 0 && (
+    <section class="section" id="factory">
+      <div class="wrap">
+        <div class="section-head"><h2>{c.factoryTitle}</h2><p>{c.factoryLead}</p></div>
+        <div class="grid g3">
+          {factoryPhotos.map((f) => (
+            <figure class="shot"><img src={asset(f.src)} alt={f.alt[lang]} loading="lazy" decoding="async" /><figcaption>{f.alt[lang]}</figcaption></figure>
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  )}
 
   <section class="section" style="padding-top:0" id="cases">
     <div class="wrap">
       <div class="section-head"><span class="eyebrow">{zh ? '工程案例' : 'Projects'}</span><h2>{c.casesTitle}</h2></div>
-      <div class="grid g4">
-        {projectSites.map((site) => (
-          <div class="card">
-            <img class="card-img" src={asset(site.photos[0].sm)} alt={site.photos[0].alt[lang]} width="600" height="600" loading="lazy" decoding="async" />
-            <h3><span class="ph">{zh ? '[项目名称]' : '[Project name]'}</span></h3>
-            <p>{site.desc[lang]}</p>
-            <p style="margin-top:8px">
-              {c.caseLabels[1]}{zh ? '：' : ': '}<span class="ph">[ ]</span><br />
-              {c.caseLabels[2]}{zh ? '：' : ': '}<span class="ph">[ ]</span> m²
-            </p>
-          </div>
+      <div class="gallery">
+        {projectSites.flatMap((site) => site.photos).map((ph) => (
+          <a href={asset(ph.src)} target="_blank" rel="noopener"><img src={asset(ph.sm)} alt={ph.alt[lang]} width="600" height="600" loading="lazy" decoding="async" /></a>
         ))}
       </div>
-      <p class="muted" style="font-size:13px;margin-top:12px">{zh ? '以上为公司提供的施工现场实拍。项目名称、面积和所用产品待补充。' : 'On-site photos supplied by our team. Project names, areas and products to be added.'}</p>
+      <p class="muted" style="font-size:13px;margin-top:12px">{zh ? '巴特夫材料施工现场实拍。' : 'On-site photos of floors coated with BATOV materials.'}</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:0">
-    <div class="wrap grid g2" style="gap:40px;align-items:start">
-      <div class="faq">
+    <div class:list={['wrap', { 'grid g2': certificates.length > 0 }]} style="gap:40px;align-items:start">
+      <div class="faq" style="max-width:860px">
         <h2>{c.faqTitle}</h2>
         {c.faq.map(([q, a]) => (
           <details><summary>{q}</summary><p set:html={a} /></details>
         ))}
       </div>
-      <div>
-        <h2>{c.certTitle}</h2>
-        <div class="grid g3">
-          {c.certs.map((x) => <div class="photo" style="aspect-ratio:3/4">{x}</div>)}
+      {certificates.length > 0 && (
+        <div>
+          <h2>{c.certTitle}</h2>
+          <div class="grid g3">
+            {certificates.map((x) => <figure class="shot"><img src={asset(x.src)} alt={x.name[lang]} loading="lazy" decoding="async" /><figcaption>{x.name[lang]}</figcaption></figure>)}
+          </div>
         </div>
-        <p class="muted" style="font-size:13px;margin-top:10px">{c.certNote}</p>
-      </div>
+      )}
     </div>
   </section>
 
-  <section class="section" style="padding-top:0" id="downloads">
-    <div class="wrap">
-      <div class="section-head"><span class="eyebrow">{c.dlEyebrow}</span><h2>{c.dlTitle}</h2></div>
-      <div class="grid g4">
-        {c.dls.map((d) => (
-          <div class="card"><div class="icon">PDF</div><h3>{d}</h3><p><span class="ph">{c.dlNote}</span></p></div>
-        ))}
+  {downloads.length > 0 && (
+    <section class="section" style="padding-top:0" id="downloads">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">{c.dlEyebrow}</span><h2>{c.dlTitle}</h2></div>
+        <div class="grid g4">
+          {downloads.map((d) => (
+            <a class="card" href={asset(d.href)}><div class="icon">PDF</div><h3>{d.name[lang]}</h3></a>
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  )}
 
   <section class="section dark contact" id="contact">
     <div class="wrap">

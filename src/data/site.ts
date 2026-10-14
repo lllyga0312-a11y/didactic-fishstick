@@ -26,22 +26,22 @@ export const formEndpoint = '';
 
 export const t = {
   zh: {
-    nav: { home: '首页', systems: '产品中心', cases: '工程案例', docs: '技术资料', about: '关于我们', contact: '联系我们' },
+    nav: { home: '首页', systems: '产品中心', cases: '工程案例', docs: '技术参数', about: '关于我们', contact: '联系我们' },
     inquiry: '询价单',
     quote: '获取报价',
     switchLabel: 'EN',
-    switchAria: 'Switch to English',
+    switchAria: 'EN · Switch to English',
     tagline: '地坪材料源头工厂 · 江苏无锡',
     footerLine: '环氧地坪 · 聚氨酯地坪 · 防腐地坪材料',
     rights: '版权所有',
     hotline: '全国热线',
   },
   en: {
-    nav: { home: 'Home', systems: 'Products', cases: 'Projects', docs: 'Downloads', about: 'Distributors & OEM', contact: 'Contact' },
+    nav: { home: 'Home', systems: 'Products', cases: 'Projects', docs: 'Technical data', about: 'Distributors & OEM', contact: 'Contact' },
     inquiry: 'Inquiry list',
     quote: 'Get a Quote',
     switchLabel: '中文',
-    switchAria: '切换到中文',
+    switchAria: '中文 · 切换到中文',
     tagline: 'Floor coatings manufacturer · Wuxi, China',
     footerLine: 'Epoxy · Polyurethane · Chemical-resistant floor coatings',
     rights: 'All rights reserved.',
