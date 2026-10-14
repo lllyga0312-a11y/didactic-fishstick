@@ -16,18 +16,18 @@ const needs = zh
 <Base
   lang={lang}
   path="/quote/"
-  title={zh ? '在线选型和询价' : 'System Selector & Quote Request'}
+  title={zh ? '在线估算用量和询价' : 'Coating Quantity Estimator & Quote Request'}
   description={zh
-    ? '选择使用场合和要求，查看推荐的地坪系统，加入询价单，由工程师按您的面积和工况报价。'
-    : 'Choose your application and requirements, see a suggested floor system and send your inquiry list for a factory quote.'}
+    ? '选择用途、填写面积，查看推荐的底漆、中涂、面漆和每层用量，加入询价单，厂家直接报价。'
+    : 'Choose your application and floor area, see suggested coatings with quantities per layer, and send your inquiry list for a factory quote.'}
 >
   <section class="page-hero dark">
     <div class="wrap">
       <div class="crumbs"><a href={href(lang, '/')}>{zh ? '首页' : 'Home'}</a> / {zh ? '获取报价' : 'Get a quote'}</div>
-      <h1>{zh ? '先选系统，再由工程师报价' : 'Find your system, then get a quote'}</h1>
+      <h1>{zh ? '算一算要买哪些涂料、各多少' : 'Work out which coatings you need, and how much'}</h1>
       <p>{zh
-        ? '地坪造价取决于面积、厚度、基面和使用要求，所以网站不直接显示价格。选好场合加入询价单，工程师按您的情况算清楚。'
-        : 'Cost depends on area, thickness, substrate and service conditions, so we do not list prices online. Build your inquiry list and our engineers will quote it.'}</p>
+        ? '用量和价格取决于面积、厚度、基面和使用要求，所以网站不直接显示价格。选好涂料加入询价单，我们按您的情况报价。'
+        : 'Quantity and price depend on area, thickness, substrate and service conditions, so we do not list prices online. Build your inquiry list and we will quote it.'}</p>
     </div>
   </section>
 
@@ -62,9 +62,9 @@ const needs = zh
           <span class="eyebrow">{zh ? '典型配套和材料用量' : 'Typical build-up and quantities'}</span>
           <ol class="est-layers" data-est-layers data-no-coverage={zh ? '用量待技术部提供' : 'Coverage to be confirmed'}></ol>
           <p class="muted" style="font-size:13px">{zh
-            ? '用量按说明书的涂布率 × 面积计算，不含损耗。配套方案为示意，最终方案和报价由工程师确认。'
+            ? '用量按说明书的涂布率 × 面积计算，不含损耗。配套为示意，最终配套和报价由技术人员确认。'
             : 'Quantities are data-sheet coverage × area, before wastage. Build-up is indicative; our engineers confirm it and send the quote.'}</p>
-          <button class="btn btn-primary" type="button" data-est-add>{zh ? '全部加入询价单，工程师报价' : 'Add all to inquiry list'}</button>
+          <button class="btn btn-primary" type="button" data-est-add>{zh ? '全部加入询价单' : 'Add all to inquiry list'}</button>
         </div>
         <div class="card" style="margin-top:18px">
           <h3>{zh ? '不确定选哪套？' : 'Not sure?'}</h3>
@@ -80,7 +80,7 @@ const needs = zh
         <h2>{zh ? '2. 您的询价单' : '2. Your inquiry list'}</h2>
         <ul class="inq-items" data-inq-list data-remove-label={zh ? '移除' : 'Remove'}></ul>
         <p class="muted" data-inq-empty>{zh
-          ? '询价单还是空的。可以用上面的选型工具，或在任一系统页点“加入询价单”。'
+          ? '询价单还是空的。可以用上面的估算工具，或在任一产品页点“加入询价单”。'
           : 'Your list is empty. Use the selector above, or click "Add to inquiry list" on any system page.'}</p>
         <a class="btn btn-ghost btn-sm" href={href(lang, '/systems/')}>{zh ? '浏览全部产品' : 'Browse all products'}</a>
       </div>

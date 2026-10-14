@@ -17,37 +17,36 @@ const P = (s: string) => `<span class="ph">${s}</span>`;
 const c = zh
   ? {
       title: '巴特夫 BATOV · 环氧地坪漆、聚氨酯地坪、防腐地坪材料厂家 | 无锡巴特夫化工',
-      desc: '无锡巴特夫化工科技有限公司，环氧、聚氨酯、防腐地坪材料研发、生产、销售一体。按使用工况配整套地坪系统，提供技术说明书下载和工程师报价。',
-      kicker: `江苏无锡 · 地坪材料源头工厂 · 深耕 ${company.years.replace('+', '')} 余年`,
-      h1: ['控制整体施工成本，', '也守住每一层质量'],
-      lead: '环氧、聚氨酯、防腐地坪材料，研发、生产、销售一体。我们不拼最低价，按您的使用工况配一整套地坪系统，把材料和施工的总账算清楚。',
-      cta1: '在线选系统、估用量',
-      cta2: '查看地坪系统',
-      points: ['自有工厂 · 厂家直供', '按工况配整套系统', '技术说明书免费下载'],
-      layersTitle: ['一套地坪系统 = 每一层都配好', '环氧自流平系统'],
-      layers: [['自流平面涂', '耐磨 · 易清洁 · 无缝'], ['砂浆中涂', '找平 · 抗压 · 增厚'], ['渗透底涂', '封闭 · 增强附着力'], ['混凝土基面', '打磨 · 除尘 · 修补']],
-      layersNote: '典型结构示意，具体层数与厚度按使用工况设计。',
-      stats: [[company.years, '年地坪材料研发生产'], [String(products.length), '款地坪涂料产品'], [String(series.length), '个配套涂装系列'], ['GB/T', '技术参数注明国标检验方法']],
+      desc: '无锡巴特夫化工科技有限公司，环氧地坪漆、聚氨酯地坪漆、乙烯基重防腐地坪漆、水性地坪漆生产厂家。底漆、中涂、面漆整套供应，每款产品附技术说明书，厂家直接报价。',
+      kicker: `江苏无锡 · 地坪涂料生产厂家 · 深耕 ${company.years.replace('+', '')} 余年`,
+      h1: ['环氧、聚氨酯、防腐地坪漆', '工厂直供，底漆到面漆配齐'],
+      lead: `无锡自有工厂研发生产 ${products.length} 款地坪涂料：环氧、聚氨酯、乙烯基重防腐、水性和丙烯酸，还有混凝土密封固化剂。施工队、经销商和工厂都可以直接向厂家买漆，每款产品都有技术说明书和用量参考。`,
+      cta1: '在线估算用量',
+      cta2: '查看全部产品',
+      points: ['自有工厂 · 厂家直供', '底漆、中涂、面漆一家配齐', '每款都有技术说明书'],
+      rangeTitle: ['我们生产的地坪涂料', `共 ${products.length} 款`],
+      rangeNote: '点击查看每一款的技术参数和用量。',
+      stats: [[company.years, '年地坪涂料研发生产'], [String(products.length), '款地坪涂料产品'], [String(series.length), '个配套涂装系列'], ['GB/T', '技术参数注明国标检验方法']],
       whoTitle: '您是哪一类客户？',
       who: [
-        ['施工公司 / 工程商', '稳定的材料质量，配套的施工工艺'],
-        ['工厂 / 业主', '按工况选系统，把整体成本和工期算清楚'],
+        ['施工公司 / 施工队', '批次稳定的涂料，配套的施工说明'],
+        ['工厂 / 业主', '按用途选对涂料，算清用量'],
         ['经销商 / 代理', '厂家货源、全套技术资料支持'],
         ['设计院 / 设计师', '系统结构、技术参数、规格说明下载'],
       ],
-      sysEyebrow: '产品系统',
-      sysTitle: '找到适合您场地的地坪系统',
-      sysLead: '每套系统从底涂到面涂整体配套，按材料找或按场合找都可以。',
-      byMat: '按材料找', byScene: '按场合找', view: '查看系统 →', rec: '推荐：',
+      sysEyebrow: '产品中心',
+      sysTitle: '按材料或用途，找到合适的地坪漆',
+      sysLead: '每个系列都有底漆、中涂、面漆配套供应，按材料找或按用途找都可以。',
+      byMat: '按材料找', byScene: '按用途找', view: '查看产品 →', rec: '推荐配套：',
       sceneNote: '推荐对应关系为示意，待技术同事确认。',
-      bandTitle: '先估一下：您的场地需要哪套系统、多少材料？',
-      bandText: '选场合、填面积，马上看到推荐系统，一键加入询价单，由工程师给您报价。',
-      bandBtn: '开始在线选型',
+      bandTitle: '先估一下：需要哪几款涂料、各要多少？',
+      bandText: '选用途、填面积，马上看到推荐的底漆、中涂、面漆和每层用量，一键加入询价单，由我们给您报价。',
+      bandBtn: '开始估算用量',
       whyEyebrow: '为什么选择我们',
-      whyTitle: '我们算的是总账，不是单价',
-      whyLead: '地坪的成本不只是一桶漆。选错材料带来的返工、停产和后期维护，往往花得更多。',
+      whyTitle: '买对涂料，比买便宜涂料更省钱',
+      whyLead: '选错涂料带来的返工、停产和后期维修，往往比涂料本身花得更多。',
       why: [
-        ['按工况配系统', '根据荷载、化学品、温湿度配一整套系统，不过度设计，也不偷工减料。'],
+        ['整套配齐', '底漆、中涂、面漆都是自家生产，按荷载、化学品、温湿度推荐配套，层与层之间更可靠。'],
         ['自有工厂直供', '无锡自有工厂研发生产，没有中间环节，批次质量可追溯。'],
         ['施工技术支持', '可提供设计阶段协助、施工建议，必要时到施工现场解决问题，降低返工风险。'],
         ['参数公开透明', '每个产品公开技术参数、检验标准和涂布率，选材前就能对比。'],
@@ -88,15 +87,14 @@ const c = zh
   : {
       title: 'BATOV · Epoxy & PU Floor Coatings Manufacturer in China',
       desc: 'BATOV formulates and manufactures epoxy, polyurethane and chemical-resistant floor coating systems in Wuxi, China. Complete systems from primer to topcoat, data sheets and factory-direct quotes.',
-      kicker: `Factory-direct · ${company.years} years of resin flooring`,
-      h1: ['Epoxy & PU floor coatings', 'that lower your total installed cost'],
-      lead: 'We formulate and manufacture complete floor systems in Wuxi, China, from primer to topcoat. You get matched layers, published specs and direct factory pricing, without middlemen.',
+      kicker: `Factory-direct · ${company.years} years making floor coatings`,
+      h1: ['Epoxy, PU & chemical-resistant floor coatings', 'direct from the factory'],
+      lead: `We formulate and manufacture ${products.length} floor coating products in our own plant in Wuxi, China: epoxy, polyurethane, vinyl ester, waterborne and acrylic coatings, plus concrete sealer. Primers, body coats and topcoats from one supplier, each with a technical data sheet.`,
       cta1: 'Request a quote',
       cta2: 'Request a sample',
       points: ['Own factory', 'Data sheet for every product', '[OEM available · to confirm]'],
-      layersTitle: ['One system, every layer matched', 'Epoxy self-leveling'],
-      layers: [['Topcoat', 'Wear · cleanability · seamless'], ['Mortar body coat', 'Leveling · compressive strength'], ['Penetrating primer', 'Sealing · adhesion'], ['Concrete substrate', 'Ground · cleaned · repaired']],
-      layersNote: 'Typical build-up. Layers and thickness are designed for each site.',
+      rangeTitle: ['Our floor coating range', `${products.length} products`],
+      rangeNote: 'Open any line for data sheets and coverage.',
       stats: [[company.years, 'years in floor coatings'], [String(products.length), 'floor coating products'], [String(series.length), 'matched coating series'], ['GB/T · ASTM', 'test methods stated on data sheets']],
       whoTitle: 'Start your project',
       who: [
@@ -105,20 +103,20 @@ const c = zh
         ['Facility owners', 'The right system for your loads, budget and downtime'],
         ['Specifiers', 'Build-ups, data sheets and specification text'],
       ],
-      sysEyebrow: 'Floor systems',
-      sysTitle: 'Find the right system for your floor',
-      sysLead: 'Browse by chemistry or by application. Every system comes with its full build-up and data sheets.',
-      byMat: 'By chemistry', byScene: 'By application', view: 'View products →', rec: 'Typical build-up: ',
+      sysEyebrow: 'Products',
+      sysTitle: 'Find the right floor coating',
+      sysLead: 'Browse by chemistry or by application. Every line has matching primers, body coats and topcoats, each with a data sheet.',
+      byMat: 'By chemistry', byScene: 'By application', view: 'View products →', rec: 'Typical products: ',
       sceneNote: 'Suggestions are indicative; our engineers confirm the final build-up.',
-      bandTitle: 'Not sure which system you need?',
-      bandText: 'Pick your application and floor area, get a suggested system and add it to your inquiry list. Our engineers send the quote.',
-      bandBtn: 'Open the system selector',
+      bandTitle: 'Which coatings, and how much?',
+      bandText: 'Pick your application and floor area to see suggested primer, body coat and topcoat with quantities per layer. Add them to your inquiry list and we send the quote.',
+      bandBtn: 'Estimate quantities',
       whyEyebrow: 'Why buy from the factory',
-      whyTitle: 'Lower total cost, not just a lower price per kg',
-      whyLead: 'Rework, downtime and early repairs cost more than the coating itself. We help you specify the right system the first time.',
+      whyTitle: 'The right coating costs less than the cheapest one',
+      whyLead: 'Rework, downtime and early repairs cost more than the coating itself. We help you choose the right products the first time.',
       why: [
         ['Direct factory pricing', 'We formulate and produce in our own plant in Wuxi. No trading margins.'],
-        ['Matched systems', 'Primer, body coat and topcoat designed to work together, specified to your loads and chemicals.'],
+        ['Matched products', 'Primer, body coat and topcoat all made in our plant to work together, recommended for your loads and chemicals.'],
         ['Published data', 'Technical data, test methods and coverage published for every product, so you can compare before you buy.'],
         ['Application support', 'Design-stage advice, application guidance and on-site troubleshooting when needed, so your installers get it right first time.'],
       ],
@@ -159,8 +157,13 @@ const dist = [
 ];
 
 const ph = (s: string) => (s.includes('[') ? `<span class="ph">${s}</span>` : s);
-const cover = (g: (typeof groups)[number]) => g.series.map((id) => seriesPhotos(id)[0]).find(Boolean);
+// Show a finished floor first, not substrate prep.
+const coverFirst: Record<string, string> = { epoxy: 'epoxy-self-leveling' };
+const cover = (g: (typeof groups)[number]) =>
+  [coverFirst[g.id], ...g.series].filter(Boolean).map((id) => seriesPhotos(id!)[0]).find(Boolean);
 
+// Chinese headlines wrap only after punctuation, so phrases stay whole on phones.
+const keep = (s: string) => (zh ? s.split(/(?<=[，、])/).map((seg) => `<span class="nw">${seg}</span>`).join('') : s.replace(/&/g, '&amp;'));
 const langVideos = videos.filter((v) => v.lang === lang);
 const heroImg = projectSites[0]?.photos[0];
 const heroBg = heroImg ? `--hero-img:url(${asset(heroImg.src)})` : undefined;
@@ -178,7 +181,7 @@ const faqSchema = {
     <div class="wrap">
       <div>
         <span class="eyebrow">{c.kicker}</span>
-        <h1>{c.h1[0]}<br /><em>{c.h1[1]}</em></h1>
+        <h1><Fragment set:html={keep(c.h1[0])} /><br /><em set:html={keep(c.h1[1])} /></h1>
         <p class="lead">{c.lead}</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href={href(lang, '/quote/')}>{c.cta1}</a>
@@ -188,13 +191,16 @@ const faqSchema = {
           {c.points.map((p) => <li set:html={ph(p)} />)}
         </ul>
       </div>
-      <div class="layers" aria-label={c.layersTitle[0]}>
-        <div class="layers-title"><span>{c.layersTitle[0]}</span><span>{c.layersTitle[1]}</span></div>
-        {c.layers.map(([n, d], i) => (
-          <div class={`layer l${i + 1}`}><span>{n}</span><span>{d}</span></div>
+      <nav class="layers range" aria-label={c.rangeTitle[0]}>
+        <div class="layers-title"><span>{c.rangeTitle[0]}</span><span>{c.rangeTitle[1]}</span></div>
+        {groups.map((g, i) => (
+          <a class={`layer l${(i % 3) + 1}`} href={href(lang, `/systems/#${g.id}`)}>
+            <span><b>{g.name[lang]}</b><small>{g.desc[lang]}</small></span>
+            <span>{g.series.reduce((n, id) => n + (seriesById(id)?.products.length ?? 0), 0)}{zh ? ' 款' : ''}</span>
+          </a>
         ))}
-        <p class="muted" style="font-size:12px;margin:12px 0 0">{c.layersNote}</p>
-      </div>
+        <p class="muted" style="font-size:12px;margin:12px 0 0">{c.rangeNote}</p>
+      </nav>
     </div>
   </section>
 

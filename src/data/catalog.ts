@@ -56,26 +56,26 @@ export const productBySlug = (slug: string) => products.find((p) => p.slug === s
 export const groups: { id: string; name: L; desc: L; series: string[] }[] = [
   {
     id: 'epoxy',
-    name: { zh: '环氧地坪', en: 'Epoxy flooring' },
+    name: { zh: '环氧地坪漆', en: 'Epoxy floor coatings' },
     desc: { zh: '底漆、中涂、平涂面漆、自流平、防静电，按层配套。', en: 'Primers, body coats, roller-coat topcoats, self-leveling and ESD, matched layer by layer.' },
     series: ['epoxy-primer', 'epoxy-midcoat', 'epoxy-topcoat', 'epoxy-self-leveling', 'epoxy-esd'],
   },
   {
     id: 'pu',
-    name: { zh: '聚氨酯地坪', en: 'Polyurethane flooring' },
+    name: { zh: '聚氨酯地坪漆', en: 'Polyurethane floor coatings' },
     desc: { zh: '聚氨酯底中面漆、自流平、罩面清漆和超耐磨面漆。', en: 'PU primers, body coats, topcoats, self-leveling, clear coats and high-wear finishes.' },
     series: ['polyurethane'],
   },
   {
     id: 'anticorrosion',
-    name: { zh: '重防腐地坪', en: 'Heavy-duty chemical resistance' },
+    name: { zh: '重防腐地坪漆', en: 'Chemical-resistant coatings' },
     desc: { zh: '乙烯基重防腐底漆、平涂面漆和自流平，用于酸碱、溶剂环境。', en: 'Vinyl ester primer, topcoat and self-leveling for acids, alkalis and solvents.' },
     series: ['vinyl-ester'],
   },
   {
     id: 'other',
     name: { zh: '水性、丙烯酸与固化剂', en: 'Waterborne, acrylic & sealers' },
-    desc: { zh: '水性环保地坪、彩色路面、丙烯酸球场、混凝土密封固化剂、划线漆。', en: 'Waterborne floors, colored paving, acrylic sports surfaces, concrete sealer-hardener, line marking.' },
+    desc: { zh: '水性地坪漆、彩色路面漆、丙烯酸球场漆、混凝土密封固化剂、划线漆。', en: 'Waterborne floors, colored paving, acrylic sports surfaces, concrete sealer-hardener, line marking.' },
     series: ['waterborne', 'acrylic', 'concrete-sealer', 'specialty'],
   },
 ];
