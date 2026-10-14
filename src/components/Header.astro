@@ -30,7 +30,7 @@ const links = [
       <a class="inq-link" href={href(lang, '/quote/#inquiry')}>
         {s.inquiry} <span class="badge" data-inq-count>0</span>
       </a>
-      <a class="lang-switch" href={href(other, path)} hreflang={other === 'zh' ? 'zh-CN' : 'en'} aria-label={s.switchAria}>{s.switchLabel}</a>
+      <a class="lang-switch" href={href(other, path === '/404/' ? '/' : path)} hreflang={other === 'zh' ? 'zh-CN' : 'en'} aria-label={s.switchAria}>{s.switchLabel}</a>
       <a class="btn btn-primary btn-sm" href={href(lang, '/quote/')}>{s.quote}</a>
       <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" data-menu>
         {lang === 'zh' ? '菜单' : 'Menu'}
