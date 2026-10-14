@@ -1,0 +1,10 @@
+---
+import SeriesPage from '../../components/SeriesPage.astro';
+import { series } from '../../data/catalog';
+
+export function getStaticPaths() {
+  return series.map((s) => ({ params: { id: s.id }, props: { series: s } }));
+}
+const { series: s } = Astro.props;
+---
+<SeriesPage lang="zh" series={s} />

@@ -4,7 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { company, type Lang } from '../data/site';
 import { href, asset, noindex } from '../lib/paths';
-import { systems } from '../data/systems';
+import { products } from '../data/catalog';
+import { buildups } from '../data/scenes';
 
 interface Props {
   lang: Lang;
@@ -22,7 +23,10 @@ const { lang, title, description, path, schema = [], alternate = true } = Astro.
 const site = Astro.site!;
 const abs = (l: Lang) => new URL(href(l, path), site).href;
 // Names and links the inquiry list script shows in the visitor's language.
-const catalog = Object.fromEntries(systems.map((s) => [s.slug, { name: s.name[lang], href: href(lang, `/systems/${s.slug}/`) }]));
+const catalog = {
+  products: Object.fromEntries(products.map((p) => [p.slug, { name: p.name[lang], code: p.code, coverage: p.coverage, href: href(lang, `/products/${p.slug}/`) }])),
+  buildups: Object.fromEntries(Object.entries(buildups).map(([id, ls]) => [id, ls.map((l) => ({ layer: l.layer[lang], slug: l.product.slug }))])),
+};
 const fullTitle = path === '/' ? title : `${title} | ${lang === 'zh' ? company.brandZh + ' ' + company.brand : company.brand}`;
 
 const org = {

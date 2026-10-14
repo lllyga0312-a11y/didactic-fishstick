@@ -245,3 +245,33 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
   .logo small { display: none; }
   .header-actions { gap: 8px; }
 }
+
+/* Catalog */
+.card-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; margin-bottom: 16px; background: #E7EBEE; }
+.shot { margin: 0; }
+.shot img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); background: #E7EBEE; }
+.shot figcaption { font-size: 13px; color: var(--l-muted); margin-top: 6px; }
+.code { font-family: var(--mono); font-size: 12px; color: var(--l-muted); letter-spacing: .02em; }
+.checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.checks li { padding-left: 24px; position: relative; }
+.checks li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; margin: 0; font-size: 14px; }
+.facts dt { color: var(--l-muted); }
+.facts dd { margin: 0; font-weight: 600; }
+.mini-stack { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 6px; font-size: 14px; }
+.mini-stack li { background: #F0F5F6; border-radius: 6px; padding: 8px 10px; }
+.mini-stack li span { display: block; font-size: 12px; color: var(--l-muted); }
+.mini-stack a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.list-table th { width: auto; }
+.list-table td a { text-decoration: none; color: var(--l-text); }
+.list-table td a:hover { color: var(--accent); }
+.spec-table th { width: auto; }
+.spec-table td:first-child { color: var(--l-muted); }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
+@media (max-width: 760px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+.est-layers { list-style: none; padding: 0; margin: 8px 0 14px; display: grid; gap: 8px; }
+.est-layers li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 12px; border-radius: 8px; background: #F0F5F6; }
+.est-layers span { grid-column: 1 / -1; font-size: 12px; color: var(--l-muted); }
+.est-layers a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.est-layers b { font-weight: 600; font-size: 14px; white-space: nowrap; }

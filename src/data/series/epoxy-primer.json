@@ -1,0 +1,1432 @@
+{
+ "id": "epoxy-primer",
+ "name": {
+  "zh": "环氧底漆涂装系统",
+  "en": "Epoxy primers"
+ },
+ "intro": {
+  "zh": "环氧底漆用于地坪漆的底层涂装，渗入并封闭混凝土素地，提高地坪涂料与基体的粘结性能；本系列包括净味、封闭、防油、无溶剂及改性通用底漆，其中无溶剂型与改性通用底漆加石英砂后也可作中涂。",
+  "en": "Epoxy primers form the bottom coat of flooring systems, penetrating and sealing the concrete substrate to improve bond with the floor coating. The range covers low-odor, sealer, oil-resistant, solvent-free and modified universal primers; the solvent-free and modified universal types can also serve as midcoats when filled with quartz sand."
+ },
+ "notes": [
+  {
+   "title": {
+    "zh": "素地基面类型及适用底涂材料",
+    "en": "Substrate types and suitable primers"
+   },
+   "body": {
+    "zh": "- 新混凝土素地：素地条件为25℃养护期＞15天、混凝土强度≥C25、地面落差＜2mm/2M、含水率＜6%、坚固不起砂。适用底涂：BATOV-1001 环氧净味底漆；BATOV-1002 环氧封闭底漆；BATOV-1004 无溶剂型环氧底漆。注意表面浮起的水泥砂浆与墙面滴落的涂料等。\n- 金刚砂耐磨素地：新耐磨地坪25℃养护期＞15天、地面落差＜2mm/2M、含水率＜6%、坚固不起砂。适用底涂：BATOV-1001；BATOV-1002；BATOV-1004。\n- 水磨石素地：地面含水率＜6%。适用底涂：BATOV-1002 环氧封闭底漆；BATOV-1004 无溶剂型环氧底漆。水磨石打磨必须充分全面，注意清除松动的水磨石表层。\n- 旧混凝土素地：旧混凝土强度≥C20、地面落差＜5mm/2M、含水率＜6%、坚固不起砂。适用底涂：BATOV-1001；BATOV-1002；BATOV-1004。注意旧混凝土表面的浮浆与坑洼处的垃圾颗粒等。\n- 旧涂料素地：老环氧地坪附着力要好；调和漆等其他涂料必须全部清除至露出原素地基面；地面落差＜2mm/2M、含水率＜6%、原素地基面坚固不起砂。适用底涂：BATOV-1002 环氧封闭底漆；BATOV-1004 无溶剂型环氧底漆。施工前先区分旧涂料类型，附着力好的旧涂料可在其基础上施工，否则必须全部清除。\n- 油污素地：原素地基面强度≥C20、地面落差＜5mm/2M、含水率＜6%、坚固不起砂、表面无积油。适用底涂：BATOV-1003 环氧防油底漆；BATOV-1004 无溶剂型环氧底漆。油污地面需重点处理，可采用铺贴玻璃纤维布的方式。\n- 其他素地：请咨询巴特夫公司技术部。\n\n各类素地的施工环境相同：周围温度 3℃–35℃；空气湿度≤80% R.H；明亮通风；无交叉施工。\n\n素地基面处理方式：\n- 新混凝土：无尘打磨机清除表面浮灰和污渍；特别光滑的地面研磨至细小毛孔；切割伸缩缝并清除里面垃圾与颗粒；清除表面破损松动混凝土。\n- 金刚砂耐磨素地：无尘打磨机清除表面浮灰和污渍；特别光滑的地面研磨至细小毛孔；切割伸缩缝并清除里面垃圾与颗粒。\n- 水磨石：无尘打磨机清除表面浮灰和污渍；特别光滑的地面研磨至细小毛孔；用电镐清除松动的水磨石层。\n- 旧混凝土：无尘打磨机清除表面浮灰和污渍；切割伸缩缝并清除里面垃圾与颗粒；清除表面破损松动混凝土。\n- 旧涂料：无尘打磨机清除老环氧地坪表面浮灰和污渍，附着力差的老环氧地坪要全部清除；调和漆等类型涂料必须全部清除；切割伸缩缝并清除里面垃圾与颗粒；铲除表面破损松动的旧涂料。\n- 油污素地：无尘打磨机清除表面浮灰和污渍，油污严重处反复多打磨至表面呈灰白状；条件允许可用火焚烧或用稀释剂反复清洗；切割伸缩缝并清除里面垃圾与颗粒；可用粉料等吸收油污。",
+    "en": "- New concrete: 25 °C curing > 15 days, concrete strength ≥ C25, flatness < 2 mm per 2 m, moisture content < 6%, sound and non-dusting. Suitable primers: BATOV-1001 low-odor epoxy primer; BATOV-1002 epoxy sealer primer; BATOV-1004 solvent-free epoxy primer. Watch for raised cement slurry and dripped paint on the surface.\n- Emery (aggregate) wear-resistant floor: new wear-resistant floor, 25 °C curing > 15 days, flatness < 2 mm per 2 m, moisture < 6%, sound and non-dusting. Suitable primers: BATOV-1001; BATOV-1002; BATOV-1004.\n- Terrazzo: moisture content < 6%. Suitable primers: BATOV-1002 epoxy sealer primer; BATOV-1004 solvent-free epoxy primer. Terrazzo must be ground thoroughly and loose terrazzo surface removed.\n- Old concrete: strength ≥ C20, flatness < 5 mm per 2 m, moisture < 6%, sound and non-dusting. Suitable primers: BATOV-1001; BATOV-1002; BATOV-1004. Watch for laitance and debris in pits.\n- Old coating: old epoxy floor must have good adhesion; enamel-type and other coatings must be removed completely down to the original substrate; flatness < 2 mm per 2 m, moisture < 6%, original substrate sound and non-dusting. Suitable primers: BATOV-1002 epoxy sealer primer; BATOV-1004 solvent-free epoxy primer. Identify the old coating type first; a well-bonded coating may be built on, otherwise remove it all.\n- Oil-contaminated substrate: strength ≥ C20, flatness < 5 mm per 2 m, moisture < 6%, sound and non-dusting, no pooled oil. Suitable primers: BATOV-1003 oil-resistant epoxy primer; BATOV-1004 solvent-free epoxy primer. Treat oil contamination with particular care; fiberglass cloth may be laid.\n- Other substrates: consult BATOV's technical department.\n\nSite conditions are the same for all types: ambient 3–35 °C; relative humidity ≤ 80%; bright and ventilated; no overlapping trades.\n\nSubstrate preparation:\n- New concrete: remove dust and stains with a dust-free grinder; grind very smooth floors to open fine pores; cut expansion joints and clear debris; remove broken or loose concrete.\n- Emery wear-resistant floor: dust-free grinding; grind very smooth floors to open fine pores; cut and clean expansion joints.\n- Terrazzo: dust-free grinding; grind very smooth floors to open fine pores; remove loose terrazzo layer with an electric pick.\n- Old concrete: dust-free grinding; cut and clean expansion joints; remove broken or loose concrete.\n- Old coating: dust-free grinding of old epoxy; remove old epoxy entirely if adhesion is poor; remove enamel-type coatings entirely; cut and clean expansion joints; scrape off broken or loose old coating.\n- Oil-contaminated: dust-free grinding, repeatedly on heavily contaminated spots until grey-white; where permitted, burn off or wash repeatedly with thinner; cut and clean expansion joints; oil may be absorbed with powder."
+   }
+  },
+  {
+   "title": {
+    "zh": "材料配比搅拌与注意事项",
+    "en": "Mixing, safety and waste notes"
+   },
+   "body": {
+    "zh": "材料配比搅拌：配比要严格按照巴特夫公司基漆与固化剂实际重量比；搅拌时使用迫动试搅拌器，或配备专用搅拌叶片的重型低速搅拌器。先充分搅动基料使沉淀物分散均匀，然后将全部固化剂加入基料容器，充分搅拌，搅拌时间大约3-5min，混合完毕应立即施工。\n施工方法：详细资料请参阅相关材料安全说明书或参考巴特夫公司涂装工艺。\n健康与安全：使用环氧底漆时避免接触眼睛和皮肤或误食；应穿戴合适的防护服、手套、护目镜和呼吸装置。如沾染皮肤，用大量清水冲洗，再用肥皂和水清洗；如接触眼睛，立即用大量清水清洗并寻求医生帮助；如误咽，立即就医，不得强行呕吐。正常施工条件下，干燥的涂层无毒。详细毒害、安全与急救事项见产品《物料安全技术说明书(MSDS)》。\n消防安全：环氧底漆不是易燃材料，但切勿放近火源，禁止吸烟。如遇火灾，使用二氧化碳或泡沫型灭火器，不得用水喷射。闪点：25℃。\n废物处理：用沙、土或其他惰性材料吸收飞溅出的各组分材料，放置在合适的容器中；按当地废物处理法规处置飞溅材料或空包装物。",
+    "en": "Mixing: mix strictly by the actual weight ratio of base to hardener specified by BATOV. Use a forced-action mixer or a heavy-duty low-speed mixer with dedicated blades. Stir the base first to disperse any sediment, then add all the hardener to the base container and mix thoroughly for about 3–5 min. Apply immediately after mixing.\nApplication: see the relevant material safety data sheet or BATOV's coating procedure for details.\nHealth and safety: avoid contact with eyes and skin and do not ingest; wear suitable protective clothing, gloves, goggles and respiratory protection. On skin contact, rinse with plenty of water, then wash with soap and water. If in eyes, rinse immediately with plenty of water and seek medical help. If swallowed, seek medical attention at once and do not induce vomiting. Once dry, the coating is non-toxic under normal application conditions. See the product MSDS for full toxicity, safety and first-aid information.\nFire safety: epoxy primers are not flammable materials but keep away from fire sources; no smoking. In case of fire use CO2 or foam extinguishers; do not use a water jet. Flash point: 25 °C.\nWaste: absorb spilled components with sand, earth or other inert material, place in suitable containers, and dispose of spills and empty packaging per local waste regulations."
+   }
+  }
+ ],
+ "products": [
+  {
+   "code": "BATOV-1001",
+   "slug": "batov-1001",
+   "name": {
+    "zh": "环氧净味底漆",
+    "en": "Low-odor epoxy primer"
+   },
+   "summary": {
+    "zh": "环氧净味底漆（A组份 BATOV-1001）与配套环氧底漆固化剂（B组份 BATOV-G101），主要用于地坪漆的底层涂装，能充分渗入混凝土结构的毛细孔，具有优异的附着力，能有效防止地面水汽及酸碱的渗透，提高地坪涂料与混凝土基体的粘结性能。是一种低粘度、双组份溶剂型环氧净味底漆，具有优良的渗透、耐水、耐油、耐酸碱腐蚀性能，与地坪漆中涂产品配套性好。",
+    "en": "Low-odor epoxy primer (Part A BATOV-1001) with epoxy primer hardener (Part B BATOV-G101), mainly used as the bottom coat of flooring systems. It penetrates the capillary pores of concrete, gives excellent adhesion, blocks moisture, acids and alkalis, and improves bond between the floor coating and the concrete. A low-viscosity, two-component, solvent-based primer with good penetration and water, oil, acid and alkali resistance; compatible with midcoats."
+   },
+   "uses": {
+    "zh": "",
+    "en": ""
+   },
+   "features": {
+    "zh": [
+     "优异的渗透性和封闭性能",
+     "对素地的附着力高",
+     "抗碱性",
+     "配套性，易于施工"
+    ],
+    "en": [
+     "Excellent penetration and sealing",
+     "High adhesion to the substrate",
+     "Alkali resistant",
+     "Compatible with the system; easy to apply"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20 kg/桶，B组份 10 kg/桶（铁桶）",
+    "en": "Part A 20 kg pail, Part B 10 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 2:1",
+   "coverage": "0.1–0.3",
+   "filmThickness": "100–300 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "容器中状态",
+      "en": "State in container"
+     },
+     "v": {
+      "zh": "搅拌混合后均匀，无硬块",
+      "en": "Uniform after mixing, no hard lumps"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）表干，h",
+      "en": "Drying time (25 °C), surface-dry, h"
+     },
+     "v": {
+      "zh": "≤4",
+      "en": "≤4"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）实干，h",
+      "en": "Drying time (25 °C), hard-dry, h"
+     },
+     "v": {
+      "zh": "≤24",
+      "en": "≤24"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "固含量（混合后），%",
+      "en": "Solids content (mixed), %"
+     },
+     "v": {
+      "zh": "≥60",
+      "en": "≥60"
+     },
+     "std": "GB/T 1725"
+    },
+    {
+     "k": {
+      "zh": "粘度，涂-4杯，s",
+      "en": "Viscosity, Ford/Tu-4 cup, s"
+     },
+     "v": {
+      "zh": "30–50",
+      "en": "30–50"
+     },
+     "std": "GB/T 1723-1993"
+    },
+    {
+     "k": {
+      "zh": "附着力，级",
+      "en": "Adhesion, grade"
+     },
+     "v": {
+      "zh": "≤1",
+      "en": "≤1"
+     },
+     "std": "GB/T 9286-1988"
+    },
+    {
+     "k": {
+      "zh": "粘结强度，MPa",
+      "en": "Bond strength, MPa"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     },
+     "std": "GB/T 16777-1997"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20%NaOH）48h",
+      "en": "Alkali resistance (20% NaOH), 48 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "柔韧性，mm",
+      "en": "Flexibility, mm"
+     },
+     "v": {
+      "zh": "≤2",
+      "en": "≤2"
+     },
+     "std": "GB/T 1731-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "100–300",
+      "en": "100–300"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.1–0.3",
+      "en": "0.1–0.3"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "40 分钟",
+      "en": "40 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "混合后可使用时间（25℃）40 分钟，温度越高可使用时间越短",
+      "en": "Pot life 40 min at 25 °C; shorter at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "24h",
+      "en": "24 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 24h，最长 36h",
+      "en": "Min 24 h, max 36 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "不需要添加稀释剂",
+      "en": "No thinner needed"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或滚筒滚涂。素地平整、光滑、强度好时采用刮刀披刮；素地起砂、毛糙、强度差时采用滚筒滚涂",
+      "en": "Squeegee/trowel or roller. Use a squeegee/trowel on flat, smooth, strong substrates; use a roller on dusting, rough or weak substrates"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-1001 : B组份 BATOV-G101 = 2:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-1001 : Part B BATOV-G101 = 2:1; mix thoroughly"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time discrepancy"
+     },
+     "v": {
+      "zh": "技术参数表为表干 ≤4 h，施工参数表为表干 6 h",
+      "en": "Spec table gives surface-dry ≤4 h, application table gives 6 h"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "12 个月",
+    "en": "12 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-1002",
+   "slug": "batov-1002",
+   "name": {
+    "zh": "环氧封闭底漆",
+    "en": "Epoxy sealer primer"
+   },
+   "summary": {
+    "zh": "环氧封闭底漆（A组份 BATOV-1002）与配套环氧底漆固化剂（B组份 BATOV-G102），主要用于地坪漆的底层涂装。能有效封闭素地基面结构下的粗糙毛孔，涂布后略显光泽，具有较好的附着力与优异的封闭效果，防止地面水汽及酸碱的渗透，提高地坪涂料与混凝土基体的粘结性能。是一种低粘度、双组份溶剂型环氧封闭底漆，具有优良的封闭、耐水、耐油、耐酸碱腐蚀性能，与地坪漆中涂产品配套性好。",
+    "en": "Epoxy sealer primer (Part A BATOV-1002) with epoxy primer hardener (Part B BATOV-G102), mainly used as the bottom coat of flooring systems. It seals the rough pores of the substrate, leaves a slight sheen, and gives good adhesion and excellent sealing against moisture, acids and alkalis, improving bond between the floor coating and the concrete. A low-viscosity, two-component, solvent-based primer with good sealing and water, oil, acid and alkali resistance; compatible with midcoats."
+   },
+   "uses": {
+    "zh": "",
+    "en": ""
+   },
+   "features": {
+    "zh": [
+     "优良的渗透性和优异封闭性能",
+     "对较强的附着力",
+     "抗碱性",
+     "配套性，易于施工"
+    ],
+    "en": [
+     "Good penetration and excellent sealing",
+     "Strong adhesion",
+     "Alkali resistant",
+     "Compatible with the system; easy to apply"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 18 kg/桶，B组份 18 kg/桶（铁桶）",
+    "en": "Part A 18 kg pail, Part B 18 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 1:1",
+   "coverage": "0.1–0.3",
+   "filmThickness": "80–250 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "容器中状态",
+      "en": "State in container"
+     },
+     "v": {
+      "zh": "搅拌混合后均匀，无硬块",
+      "en": "Uniform after mixing, no hard lumps"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）表干，h",
+      "en": "Drying time (25 °C), surface-dry, h"
+     },
+     "v": {
+      "zh": "≤6",
+      "en": "≤6"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）实干，h",
+      "en": "Drying time (25 °C), hard-dry, h"
+     },
+     "v": {
+      "zh": "≤24",
+      "en": "≤24"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "固含量（混合后），%",
+      "en": "Solids content (mixed), %"
+     },
+     "v": {
+      "zh": "≥70",
+      "en": "≥70"
+     },
+     "std": "GB/T 1725"
+    },
+    {
+     "k": {
+      "zh": "粘度，涂-4杯，s",
+      "en": "Viscosity, Ford/Tu-4 cup, s"
+     },
+     "v": {
+      "zh": "30–50",
+      "en": "30–50"
+     },
+     "std": "GB/T 1723-1993"
+    },
+    {
+     "k": {
+      "zh": "附着力，级",
+      "en": "Adhesion, grade"
+     },
+     "v": {
+      "zh": "≤1",
+      "en": "≤1"
+     },
+     "std": "GB/T 9286-1988"
+    },
+    {
+     "k": {
+      "zh": "粘结强度，MPa",
+      "en": "Bond strength, MPa"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     },
+     "std": "GB/T 16777-1997"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20%NaOH）48h",
+      "en": "Alkali resistance (20% NaOH), 48 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "柔韧性，mm",
+      "en": "Flexibility, mm"
+     },
+     "v": {
+      "zh": "≤2",
+      "en": "≤2"
+     },
+     "std": "GB/T 1731-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "80–250",
+      "en": "80–250"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.1–0.3",
+      "en": "0.1–0.3"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "40 分钟（表内）；说明栏写 45 分钟",
+      "en": "40 min per table; the note says 45 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "混合后可使用时间（25℃）45 分钟，温度越高可使用时间越短",
+      "en": "Pot life 45 min at 25 °C per note; shorter at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "24h",
+      "en": "24 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 24h，最长 36h",
+      "en": "Min 24 h, max 36 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "不需要添加稀释剂",
+      "en": "No thinner needed"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或滚筒滚涂。素地平整、光滑、强度好时采用刮刀披刮；素地起砂、毛糙、强度差时采用滚筒滚涂",
+      "en": "Squeegee/trowel or roller. Use a squeegee/trowel on flat, smooth, strong substrates; use a roller on dusting, rough or weak substrates"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-1002 : B组份 BATOV-G102 = 1:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-1002 : Part B BATOV-G102 = 1:1; mix thoroughly"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "12 个月",
+    "en": "12 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-1003",
+   "slug": "batov-1003",
+   "name": {
+    "zh": "环氧防油底漆",
+    "en": "Oil-resistant epoxy primer"
+   },
+   "summary": {
+    "zh": "环氧防油底漆（A组份 BATOV-1003）与配套环氧底漆固化剂（B组份 BATOV-G103），主要用于素地基面油污严重的地坪漆底层涂装。能有效封闭并控制素地基面结构下的油污，有较强的油污压制力；涂刷前先尽量打磨素地，呈干燥灰白状方可与玻璃纤维布配合使用。涂布后略显光泽，具有较好的附着力与优异的控油效果，防止油污渗出及地面水汽、酸碱的渗透，提高地坪涂料与混凝土基体的粘结性能。是一种低粘度、双组份溶剂型环氧防油底漆。",
+    "en": "Oil-resistant epoxy primer (Part A BATOV-1003) with epoxy primer hardener (Part B BATOV-G103), mainly for the bottom coat on heavily oil-contaminated substrates. It seals and suppresses oil in the substrate; grind the substrate as far as possible until dry and grey-white before use, then it can be combined with fiberglass cloth. Leaves a slight sheen, with good adhesion and oil control, preventing oil bleed-through and moisture, acid and alkali penetration. A low-viscosity, two-component, solvent-based primer."
+   },
+   "uses": {
+    "zh": "用于素地基面油污严重的地坪漆底层涂装",
+    "en": "Bottom coat for flooring systems on heavily oil-contaminated substrates"
+   },
+   "features": {
+    "zh": [
+     "优良的防油性和优异封闭性能",
+     "对油污地面能有效控制，增强附着力",
+     "抗碱性",
+     "配套性，易于施工"
+    ],
+    "en": [
+     "Good oil resistance and excellent sealing",
+     "Effectively controls oil-contaminated floors and improves adhesion",
+     "Alkali resistant",
+     "Compatible with the system; easy to apply"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 18 kg/桶，B组份 18 kg/桶（铁桶）",
+    "en": "Part A 18 kg pail, Part B 18 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 1:1",
+   "coverage": "0.1–0.3",
+   "filmThickness": "80–250 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "容器中状态",
+      "en": "State in container"
+     },
+     "v": {
+      "zh": "搅拌混合后均匀，无硬块",
+      "en": "Uniform after mixing, no hard lumps"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）表干，h",
+      "en": "Drying time (25 °C), surface-dry, h"
+     },
+     "v": {
+      "zh": "≤8",
+      "en": "≤8"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）实干，h",
+      "en": "Drying time (25 °C), hard-dry, h"
+     },
+     "v": {
+      "zh": "≤24",
+      "en": "≤24"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "固含量（混合后），%",
+      "en": "Solids content (mixed), %"
+     },
+     "v": {
+      "zh": "≥70",
+      "en": "≥70"
+     },
+     "std": "GB/T 1725"
+    },
+    {
+     "k": {
+      "zh": "粘度，涂-4杯，s",
+      "en": "Viscosity, Ford/Tu-4 cup, s"
+     },
+     "v": {
+      "zh": "30–50",
+      "en": "30–50"
+     },
+     "std": "GB/T 1723-1993"
+    },
+    {
+     "k": {
+      "zh": "附着力，级",
+      "en": "Adhesion, grade"
+     },
+     "v": {
+      "zh": "≤1",
+      "en": "≤1"
+     },
+     "std": "GB/T 9286-1988"
+    },
+    {
+     "k": {
+      "zh": "粘结强度，MPa",
+      "en": "Bond strength, MPa"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     },
+     "std": "GB/T 16777-1997"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20%NaOH）48h",
+      "en": "Alkali resistance (20% NaOH), 48 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "柔韧性，mm",
+      "en": "Flexibility, mm"
+     },
+     "v": {
+      "zh": "≤2",
+      "en": "≤2"
+     },
+     "std": "GB/T 1731-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "80–250",
+      "en": "80–250"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.1–0.3",
+      "en": "0.1–0.3"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "40 分钟（表内）；说明栏写 45 分钟",
+      "en": "40 min per table; the note says 45 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "混合后可使用时间（25℃）45 分钟，温度越高可使用时间越短",
+      "en": "Pot life 45 min at 25 °C per note; shorter at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "24h",
+      "en": "24 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 24h，最长 36h",
+      "en": "Min 24 h, max 36 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "不需要添加稀释剂",
+      "en": "No thinner needed"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或滚筒滚涂。素地平整、光滑、强度好时采用刮刀披刮；素地起砂、毛糙、强度差时采用滚筒滚涂",
+      "en": "Squeegee/trowel or roller. Use a squeegee/trowel on flat, smooth, strong substrates; use a roller on dusting, rough or weak substrates"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-1003 : B组份 BATOV-G103 = 1:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-1003 : Part B BATOV-G103 = 1:1; mix thoroughly"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time discrepancy"
+     },
+     "v": {
+      "zh": "技术参数表为表干 ≤8 h，施工参数表为表干 6 h",
+      "en": "Spec table gives surface-dry ≤8 h, application table gives 6 h"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "4 个月",
+    "en": "4 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-1004",
+   "slug": "batov-1004",
+   "name": {
+    "zh": "无溶剂型环氧底漆",
+    "en": "Solvent-free epoxy primer"
+   },
+   "summary": {
+    "zh": "无溶剂型环氧底漆（A组份 BATOV-1004）是以环氧树脂为主、含少量助剂的双组分无溶剂型环氧树脂底漆材料，与配套环氧底漆固化剂（B组份 BATOV-G104）使用。作为地坪漆底涂材料具有极强的附着力与封闭性能；同时作为环氧树脂地坪中涂材料，加入适量石英砂具有优异的找平及载重抗压、抗拉裂、抗冲击性能；另外与玻璃纤维布配套使用可作为防腐蚀环氧玻璃钢材料。",
+    "en": "Solvent-free epoxy primer (Part A BATOV-1004) is a two-component, solvent-free epoxy resin primer used with epoxy primer hardener (Part B BATOV-G104). As a primer it gives very strong adhesion and sealing; with suitable quartz sand it serves as an epoxy floor midcoat with excellent leveling, load and compressive strength, crack and impact resistance; combined with fiberglass cloth it can be used as an anti-corrosion epoxy FRP material."
+   },
+   "uses": {
+    "zh": "适用于地坪涂装系统中的底涂与中涂材料",
+    "en": "Primer and midcoat material in flooring coating systems"
+   },
+   "features": {
+    "zh": [
+     "对素地及底漆层的附着力强",
+     "加入适量石英砂作为中涂层，抗冲击及载重性能强",
+     "防腐蚀性能好，具有一定的柔韧性",
+     "地坪找平作为填充物无明显的伸缩现象"
+    ],
+    "en": [
+     "Strong adhesion to the substrate and primer layer",
+     "With suitable quartz sand as a midcoat, high impact and load resistance",
+     "Good corrosion resistance with some flexibility",
+     "As a leveling filler, no noticeable shrinkage or expansion"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20 kg/桶，B组份 10 kg/桶（铁桶）",
+    "en": "Part A 20 kg pail, Part B 10 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 2:1",
+   "coverage": "0.1–1.0",
+   "filmThickness": "80–850 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "80–850",
+      "en": "80–850"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.1–1.0",
+      "en": "0.1–1.0"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "30 分钟（表内）；说明栏写 40 分钟",
+      "en": "30 min per table; the note says 40 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "混合后可使用时间（25℃）40 分钟，温度越高可使用时间越短",
+      "en": "Pot life 40 min at 25 °C per note; shorter at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "24h",
+      "en": "24 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 24h，最长 36h",
+      "en": "Min 24 h, max 36 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "可根据需要添加稀释剂 BATOV-X001（面漆稀释剂）",
+      "en": "Thinner may be added as needed: BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或滚筒滚涂。素地平整、光滑、强度好时采用刮刀披刮；素地起砂、毛糙、强度差时采用滚筒滚涂",
+      "en": "Squeegee/trowel or roller. Use a squeegee/trowel on flat, smooth, strong substrates; use a roller on dusting, rough or weak substrates"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-1004 : B组份 BATOV-G104 = 2:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-1004 : Part B BATOV-G104 = 2:1; mix thoroughly"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "12 个月",
+    "en": "12 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-1005",
+   "slug": "batov-1005",
+   "name": {
+    "zh": "改性环氧通用底漆",
+    "en": "Modified epoxy universal primer"
+   },
+   "summary": {
+    "zh": "改性环氧通用底漆（A组份 BATOV-1005）是以环氧树脂为主、含少量助剂的双组分无溶剂型环氧树脂底漆材料，与配套环氧底漆固化剂（B组份 BATOV-G105）使用。作为地坪漆底涂材料具有极强的附着力与封闭性能；同时作为环氧树脂地坪中涂材料，加入适量石英砂具有优异的找平及载重抗压、抗拉裂、抗冲击性能。",
+    "en": "Modified epoxy universal primer (Part A BATOV-1005) is a two-component, solvent-free epoxy resin primer used with epoxy primer hardener (Part B BATOV-G105). As a primer it gives very strong adhesion and sealing; with suitable quartz sand it serves as an epoxy floor midcoat with excellent leveling, load and compressive strength, crack and impact resistance."
+   },
+   "uses": {
+    "zh": "适用于地坪涂装系统中的底涂与中涂材料",
+    "en": "Primer and midcoat material in flooring coating systems"
+   },
+   "features": {
+    "zh": [
+     "对素地及底漆层的附着力强",
+     "加入适量石英砂作为中涂层，抗冲击及载重性能强",
+     "防腐蚀性能好，具有一定的柔韧性",
+     "地坪找平作为填充物无明显的伸缩现象"
+    ],
+    "en": [
+     "Strong adhesion to the substrate and primer layer",
+     "With suitable quartz sand as a midcoat, high impact and load resistance",
+     "Good corrosion resistance with some flexibility",
+     "As a leveling filler, no noticeable shrinkage or expansion"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 15 kg/桶，B组份 18 kg/桶（铁桶）",
+    "en": "Part A 15 kg pail, Part B 18 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 5:6",
+   "coverage": "0.1–1.0",
+   "filmThickness": "80–850 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "80–850",
+      "en": "80–850"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.1–1.0",
+      "en": "0.1–1.0"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "25 分钟",
+      "en": "25 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "混合后可使用时间（25℃）25 分钟，温度越高可使用时间越短",
+      "en": "Pot life 25 min at 25 °C; shorter at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "4h",
+      "en": "4 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "20h",
+      "en": "20 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 20h，最长 30h",
+      "en": "Min 20 h, max 30 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "可根据需要添加稀释剂 BATOV-X001（面漆稀释剂）",
+      "en": "Thinner may be added as needed: BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或滚筒滚涂。素地平整、光滑、强度好时采用刮刀披刮；素地起砂、毛糙、强度差时采用滚筒滚涂",
+      "en": "Squeegee/trowel or roller. Use a squeegee/trowel on flat, smooth, strong substrates; use a roller on dusting, rough or weak substrates"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-1005 : B组份 BATOV-G105 = 5:6，混合后充分搅拌均匀",
+      "en": "Part A BATOV-1005 : Part B BATOV-G105 = 5:6; mix thoroughly"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "10 个月",
+    "en": "10 months"
+   },
+   "techSupport": false
+  }
+ ]
+}

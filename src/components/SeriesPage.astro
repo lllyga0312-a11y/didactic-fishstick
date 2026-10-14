@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+import { type Lang } from '../data/site';
+import { groups, seriesPhotos, type Series } from '../data/catalog';
+import { href, asset } from '../lib/paths';
+
+interface Props { lang: Lang; series: Series }
+const { lang, series: s } = Astro.props;
+const zh = lang === 'zh';
+const group = groups.find((g) => g.series.includes(s.id))!;
+const photos = seriesPhotos(s.id);
+// Notes are short markdown: paragraphs, "- " bullets and **bold**.
+const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const md = (t: string) =>
+  esc(t)
+    .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+    .split(/\n{2,}/)
+    .map((block) => {
+      const lines = block.split('\n');
+      const items = lines.filter((l) => /^\s*[-•]\s+/.test(l));
+      if (items.length && items.length === lines.filter((l) => l.trim()).length - (/^\s*[-•]/.test(lines[0]) ? 0 : 1)) {
+        const head = /^\s*[-•]/.test(lines[0]) ? '' : `<p>${lines[0]}</p>`;
+        return head + '<ul>' + items.map((l) => `<li>${l.replace(/^\s*[-•]\s+/, '')}</li>`).join('') + '</ul>';
+      }
+      return `<p>${lines.join('<br />')}</p>`;
+    })
+    .join('');
+---
+<Base
+  lang={lang}
+  path={`/systems/${s.id}/`}
+  title={zh ? `${s.name.zh}：产品和技术参数` : `${s.name.en}: products and technical data`}
+  description={(s.intro[lang] || s.products.map((p) => p.name[lang]).join(zh ? '、' : ', ')).slice(0, 150)}
+>
+  <section class="page-hero dark">
+    <div class="wrap">
+      <div class="crumbs">
+        <a href={href(lang, '/')}>{zh ? '首页' : 'Home'}</a>{' / '}
+        <a href={href(lang, '/systems/')}>{zh ? '产品中心' : 'Products'}</a>{' / '}
+        <a href={href(lang, `/systems/#${group.id}`)}>{group.name[lang]}</a>
+      </div>
+      <h1>{s.name[lang]}</h1>
+      {s.intro[lang] && <p>{s.intro[lang]}</p>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>{zh ? `本系列产品（${s.products.length}）` : `Products in this series (${s.products.length})`}</h2>
+      <div class="table-scroll">
+        <table class="table list-table">
+          <thead>
+            <tr>
+              <th>{zh ? '产品' : 'Product'}</th>
+              <th>{zh ? '用途' : 'Typical use'}</th>
+              <th>{zh ? '涂布率' : 'Coverage'}</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {s.products.map((p) => (
+              <tr>
+                <td><a href={href(lang, `/products/${p.slug}/`)}><b>{p.name[lang]}</b></a>{p.code && <><br /><span class="code">{p.code}</span></>}</td>
+                <td class="muted">{(p.uses[lang] || p.summary[lang]).slice(0, zh ? 60 : 140)}{(p.uses[lang] || p.summary[lang]).length > (zh ? 60 : 140) ? '…' : ''}</td>
+                <td style="white-space:nowrap">{p.coverage ? `${p.coverage} kg/m²` : '—'}</td>
+                <td><button class="btn btn-ghost btn-sm" type="button" data-add={p.slug} data-added="✓">{zh ? '加入询价单' : 'Add to list'}</button></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {photos.length > 0 && (
+        <>
+          <h2 style="margin-top:44px">{zh ? '施工实拍' : 'On-site photos'}</h2>
+          <div class="grid g3">
+            {photos.map((ph) => (
+              <figure class="shot">
+                <img src={asset(ph.sm)} alt={ph.alt[lang]} width="600" height={Math.round(600 * ph.h / ph.w)} loading="lazy" decoding="async" />
+                <figcaption>{ph.alt[lang]}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </>
+      )}
+
+      {s.notes.length > 0 && (
+        <div class="prose" style="margin-top:44px">
+          {s.notes.map((n) => (
+            <>
+              <h2>{n.title[lang]}</h2>
+              <div set:html={md(n.body[lang])} />
+            </>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,459 @@
+{
+ "series": {
+  "epoxy-primer": [
+   {
+    "src": "/images/series/epoxy-primer-1.jpg",
+    "sm": "/images/series/epoxy-primer-1-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/环氧底涂/底涂.jpg",
+    "alt": {
+     "zh": "涂刷环氧底漆后的厂房地面，底漆渗入混凝土呈深色",
+     "en": "Workshop floor after epoxy primer, concrete darkened where the primer has soaked in"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-primer-2.jpg",
+    "sm": "/images/series/epoxy-primer-2-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/环氧底涂/无溶剂环氧底漆.jpg",
+    "alt": {
+     "zh": "混凝土地面上已滚涂的深色环氧底漆",
+     "en": "Dark epoxy primer rolled onto a concrete floor"
+    }
+   }
+  ],
+  "epoxy-midcoat": [
+   {
+    "src": "/images/series/epoxy-midcoat-1.jpg",
+    "sm": "/images/series/epoxy-midcoat-1-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/无溶剂环氧中涂/无溶剂环氧中涂.jpg",
+    "alt": {
+     "zh": "厂房内刚完成的无溶剂环氧中涂层",
+     "en": "Freshly applied solvent-free epoxy mid-coat in a factory hall"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-midcoat-2.jpg",
+    "sm": "/images/series/epoxy-midcoat-2-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/无溶剂环氧中涂/无溶剂环氧中涂3.jpg",
+    "alt": {
+     "zh": "环氧中涂层与旁边已完成的绿色面层",
+     "en": "Epoxy mid-coat next to an area already finished in green"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-midcoat-3.jpg",
+    "sm": "/images/series/epoxy-midcoat-3-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/无溶剂环氧中涂/无溶剂环氧中涂--批刮.jpg",
+    "alt": {
+     "zh": "施工人员用刮刀批刮环氧涂层",
+     "en": "Applicator trowelling an epoxy layer by hand"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-midcoat-4.jpg",
+    "sm": "/images/series/epoxy-midcoat-4-sm.jpg",
+    "w": 790,
+    "h": 959,
+    "source": "网站图片/无溶剂环氧中涂/广东佛山公司垫付.jpg",
+    "alt": {
+     "zh": "施工现场搅拌桶中正在搅拌的环氧材料",
+     "en": "Epoxy material being mixed in buckets on site"
+    }
+   }
+  ],
+  "epoxy-topcoat": [
+   {
+    "src": "/images/series/epoxy-topcoat-1.jpg",
+    "sm": "/images/series/epoxy-topcoat-1-sm.jpg",
+    "w": 1200,
+    "h": 900,
+    "source": "网站图片/无溶剂平涂面漆/800501357991441212.jpg",
+    "alt": {
+     "zh": "灰色环氧平涂地面，黄色标线，入口与楼梯",
+     "en": "Grey epoxy roller-coat floor with yellow lines by an entrance and staircase"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-topcoat-2.jpg",
+    "sm": "/images/series/epoxy-topcoat-2-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/无溶剂平涂面漆/环氧平涂面漆.jpg",
+    "alt": {
+     "zh": "绿色环氧平涂面漆地面，多层厂房立柱",
+     "en": "Green epoxy roller-coat floor among the columns of a multi-storey factory"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-topcoat-3.jpg",
+    "sm": "/images/series/epoxy-topcoat-3-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/无溶剂平涂面漆/无溶剂环氧平涂面漆.jpg",
+    "alt": {
+     "zh": "车间流水线旁的绿色高光环氧面漆地面",
+     "en": "Glossy green epoxy topcoat beside a production line"
+    }
+   }
+  ],
+  "epoxy-self-leveling": [
+   {
+    "src": "/images/series/epoxy-self-leveling-1.jpg",
+    "sm": "/images/series/epoxy-self-leveling-1-sm.jpg",
+    "w": 1200,
+    "h": 900,
+    "source": "网站图片/环氧自流平面漆/600382935190381762.jpg",
+    "alt": {
+     "zh": "阳光照射下的绿色环氧自流平地面",
+     "en": "Green epoxy self-levelling floor in sunlight"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-self-leveling-2.jpg",
+    "sm": "/images/series/epoxy-self-leveling-2-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/环氧自流平面漆/环氧自流平--黄色.jpg",
+    "alt": {
+     "zh": "黄色环氧自流平走廊，白色中心标线",
+     "en": "Yellow epoxy self-levelling corridor with a white centre line"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-self-leveling-3.jpg",
+    "sm": "/images/series/epoxy-self-leveling-3-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/环氧自流平面漆/环氧自流平.jpg",
+    "alt": {
+     "zh": "蓝色高光环氧自流平地面",
+     "en": "High-gloss blue epoxy self-levelling floor"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-self-leveling-4.jpg",
+    "sm": "/images/series/epoxy-self-leveling-4-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/环氧自流平面漆/环氧自流平效果.jpg",
+    "alt": {
+     "zh": "绿色环氧自流平地面，镜面倒映窗户",
+     "en": "Green epoxy self-levelling floor with mirror-like window reflections"
+    }
+   }
+  ],
+  "epoxy-esd": [
+   {
+    "src": "/images/series/epoxy-esd-1.jpg",
+    "sm": "/images/series/epoxy-esd-1-sm.jpg",
+    "w": 1200,
+    "h": 900,
+    "source": "网站图片/环氧防静电自流平面漆2.jpg",
+    "alt": {
+     "zh": "大跨度钢结构厂房的米色防静电自流平地面",
+     "en": "Beige anti-static self-levelling floor in a large steel-truss hall"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-esd-2.jpg",
+    "sm": "/images/series/epoxy-esd-2-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/无尘车间防静电自流平.jpg",
+    "alt": {
+     "zh": "无尘车间深绿色防静电自流平地面",
+     "en": "Dark green anti-static self-levelling floor in a cleanroom"
+    }
+   }
+  ],
+  "acrylic": [
+   {
+    "src": "/images/series/acrylic-4.jpg",
+    "sm": "/images/series/acrylic-4-sm.jpg",
+    "w": 720,
+    "h": 837,
+    "source": "网站图片/室外耐紫外线地坪-丙烯酸球场.jpg",
+    "alt": {
+     "zh": "室外红绿丙烯酸球场",
+     "en": "Outdoor red and green acrylic sports court"
+    }
+   }
+  ],
+  "waterborne": [
+   {
+    "src": "/images/series/waterborne-1.jpg",
+    "sm": "/images/series/waterborne-1-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/彩色防滑透水路面/彩色防滑路面.jpg",
+    "alt": {
+     "zh": "绿地间的红色彩色防滑步道",
+     "en": "Red coloured anti-slip footpath through landscaping"
+    }
+   },
+   {
+    "src": "/images/series/waterborne-2.jpg",
+    "sm": "/images/series/waterborne-2-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/彩色防滑透水路面/彩色路面胶黏剂.jpg",
+    "alt": {
+     "zh": "施工人员在沥青路面上铺设红色彩色防滑层",
+     "en": "Crew laying a red anti-slip surface on an asphalt road"
+    }
+   },
+   {
+    "src": "/images/series/waterborne-3.jpg",
+    "sm": "/images/series/waterborne-3-sm.jpg",
+    "w": 750,
+    "h": 750,
+    "source": "网站图片/处理后图片/彩色陶瓷/彩色陶瓷1.jpg",
+    "alt": {
+     "zh": "黄色彩色陶瓷颗粒防滑路面与深色减速带",
+     "en": "Yellow ceramic-granule anti-slip surface with dark bands"
+    }
+   },
+   {
+    "src": "/images/series/waterborne-4.jpg",
+    "sm": "/images/series/waterborne-4-sm.jpg",
+    "w": 750,
+    "h": 750,
+    "source": "网站图片/处理后图片/彩色陶瓷/彩色陶瓷3.jpg",
+    "alt": {
+     "zh": "海边红色彩色防滑道路",
+     "en": "Red coloured anti-slip road along a coastline"
+    }
+   }
+  ],
+  "polyurethane": [
+   {
+    "src": "/images/series/polyurethane-1.jpg",
+    "sm": "/images/series/polyurethane-1-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/微糙/187864062066094178.jpg",
+    "alt": {
+     "zh": "设备间内浅绿色微糙耐磨地面",
+     "en": "Pale green fine-textured wear-resistant floor in a plant room"
+    }
+   },
+   {
+    "src": "/images/series/polyurethane-2.jpg",
+    "sm": "/images/series/polyurethane-2-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/微糙/700144779699043913.jpg",
+    "alt": {
+     "zh": "栏杆与设备旁的浅绿色耐磨地坪",
+     "en": "Pale green wear-resistant floor beside railings and equipment"
+    }
+   },
+   {
+    "src": "/images/series/polyurethane-3.jpg",
+    "sm": "/images/series/polyurethane-3-sm.jpg",
+    "w": 750,
+    "h": 750,
+    "source": "网站图片/处理后图片/哑光地坪/微信图片_20170410091432.jpg",
+    "alt": {
+     "zh": "生产设备间的绿色哑光地坪",
+     "en": "Green matte floor among process equipment"
+    }
+   },
+   {
+    "src": "/images/series/polyurethane-4.jpg",
+    "sm": "/images/series/polyurethane-4-sm.jpg",
+    "w": 750,
+    "h": 750,
+    "source": "网站图片/处理后图片/哑光地坪/微信图片_20170410091423.jpg",
+    "alt": {
+     "zh": "钢结构平台下的哑光地坪",
+     "en": "Matte floor coating beneath steel platforms"
+    }
+   }
+  ],
+  "vinyl-ester": [
+   {
+    "src": "/images/series/vinyl-ester-1.jpg",
+    "sm": "/images/series/vinyl-ester-1-sm.jpg",
+    "w": 1200,
+    "h": 900,
+    "source": "网站图片/乙烯基重防腐底漆3.jpg",
+    "alt": {
+     "zh": "设备与管道旁的蓝色重防腐地面",
+     "en": "Blue heavy-duty anti-corrosion floor beside equipment and pipework"
+    }
+   },
+   {
+    "src": "/images/series/vinyl-ester-2.jpg",
+    "sm": "/images/series/vinyl-ester-2-sm.jpg",
+    "w": 1200,
+    "h": 900,
+    "source": "网站图片/乙烯基重防腐自流平1.jpg",
+    "alt": {
+     "zh": "大型车间的蓝绿色重防腐自流平地面",
+     "en": "Teal heavy-duty anti-corrosion self-levelling floor in a large hall"
+    }
+   }
+  ],
+  "concrete-sealer": [
+   {
+    "src": "/images/series/concrete-sealer-1.jpg",
+    "sm": "/images/series/concrete-sealer-1-sm.jpg",
+    "w": 1200,
+    "h": 900,
+    "source": "网站图片/混凝土密封固化剂4.jpg",
+    "alt": {
+     "zh": "密封固化处理后的光亮混凝土厂房地面",
+     "en": "Polished, sealed concrete floor in a large hall"
+    }
+   }
+  ],
+  "specialty": []
+ },
+ "projects": [
+  {
+   "site": "site-a",
+   "desc": {
+    "zh": "绿色环氧地坪，多层厂房，白色立柱与绿色柱脚",
+    "en": "Green epoxy floor in a multi-storey factory with white columns and green column bases"
+   },
+   "photos": [
+    {
+     "src": "/images/projects/site-a-1.jpg",
+     "sm": "/images/projects/site-a-1-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC03642.jpg",
+     "alt": {
+      "zh": "多层厂房内的绿色环氧地坪与成排白色立柱",
+      "en": "Green epoxy floor with rows of white columns"
+     }
+    },
+    {
+     "src": "/images/projects/site-a-2.jpg",
+     "sm": "/images/projects/site-a-2-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC03653.jpg",
+     "alt": {
+      "zh": "沿窗一侧的绿色高光环氧地坪",
+      "en": "Glossy green epoxy floor along a row of windows"
+     }
+    }
+   ]
+  },
+  {
+   "site": "site-b",
+   "desc": {
+    "zh": "灰色环氧地坪带黄色通道线，多层厂房；含施工前混凝土基面",
+    "en": "Grey epoxy floor with yellow aisle lines in a multi-storey factory, including the bare concrete before coating"
+   },
+   "photos": [
+    {
+     "src": "/images/projects/site-b-1.jpg",
+     "sm": "/images/projects/site-b-1-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC03731.jpg",
+     "alt": {
+      "zh": "完工的灰色环氧地坪与黄色通道线",
+      "en": "Finished grey epoxy floor with yellow aisle lines"
+     }
+    },
+    {
+     "src": "/images/projects/site-b-2.jpg",
+     "sm": "/images/projects/site-b-2-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC03693.jpg",
+     "alt": {
+      "zh": "宽敞厂房内的灰色高光环氧地坪",
+      "en": "Glossy grey epoxy floor across a wide hall"
+     }
+    },
+    {
+     "src": "/images/projects/site-b-3.jpg",
+     "sm": "/images/projects/site-b-3-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC03747.jpg",
+     "alt": {
+      "zh": "施工前的混凝土基面",
+      "en": "Bare concrete floor before coating"
+     }
+    }
+   ]
+  },
+  {
+   "site": "site-c",
+   "desc": {
+    "zh": "单层钢结构车间，灰色地面与绿色通道，黄色标线",
+    "en": "Single-storey steel-framed workshop with grey floor, green walkways and yellow lines"
+   },
+   "photos": [
+    {
+     "src": "/images/projects/site-c-1.jpg",
+     "sm": "/images/projects/site-c-1-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC02708.jpg",
+     "alt": {
+      "zh": "车间中的绿色通道与黄色标线",
+      "en": "Green walkway with yellow lines through a workshop"
+     }
+    },
+    {
+     "src": "/images/projects/site-c-2.jpg",
+     "sm": "/images/projects/site-c-2-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC02715.jpg",
+     "alt": {
+      "zh": "钢结构车间内的灰绿分区环氧地坪",
+      "en": "Grey and green epoxy floor zones in a steel-framed workshop"
+     }
+    }
+   ]
+  },
+  {
+   "site": "site-d",
+   "desc": {
+    "zh": "绿色环氧地坪施工中，带窗户与白色立柱的车间",
+    "en": "Green epoxy floor being applied in a room with windows and white columns"
+   },
+   "photos": [
+    {
+     "src": "/images/projects/site-d-1.jpg",
+     "sm": "/images/projects/site-d-1-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC02294.jpg",
+     "alt": {
+      "zh": "刚施工完成的绿色环氧地坪，倒映窗户",
+      "en": "Freshly coated green epoxy floor reflecting the windows"
+     }
+    },
+    {
+     "src": "/images/projects/site-d-2.jpg",
+     "sm": "/images/projects/site-d-2-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC02296.jpg",
+     "alt": {
+      "zh": "施工人员在绿色环氧地坪上滚涂",
+      "en": "Applicator rolling a green epoxy floor"
+     }
+    }
+   ]
+  }
+ ]
+}

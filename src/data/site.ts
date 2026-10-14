@@ -26,7 +26,7 @@ export const formEndpoint = '';
 
 export const t = {
   zh: {
-    nav: { home: '首页', systems: '产品系统', cases: '工程案例', docs: '技术资料', about: '关于我们', contact: '联系我们' },
+    nav: { home: '首页', systems: '产品中心', cases: '工程案例', docs: '技术资料', about: '关于我们', contact: '联系我们' },
     inquiry: '询价单',
     quote: '获取报价',
     switchLabel: 'EN',
@@ -37,7 +37,7 @@ export const t = {
     hotline: '全国热线',
   },
   en: {
-    nav: { home: 'Home', systems: 'Floor Systems', cases: 'Projects', docs: 'Downloads', about: 'Distributors & OEM', contact: 'Contact' },
+    nav: { home: 'Home', systems: 'Products', cases: 'Projects', docs: 'Downloads', about: 'Distributors & OEM', contact: 'Contact' },
     inquiry: 'Inquiry list',
     quote: 'Get a Quote',
     switchLabel: '中文',

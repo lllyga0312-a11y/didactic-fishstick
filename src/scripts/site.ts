@@ -1,7 +1,7 @@
 // All interactivity on the site: mobile menu, tabs, inquiry list (kept in the
 // visitor's browser only), estimator and form submission. No dependencies.
 
-import { recommend, type Scene } from '../data/systems';
+import { recommend, type Scene } from '../data/recommend';
 
 const KEY = 'batov-inquiry';
 
@@ -27,10 +27,19 @@ export function addItem(slug: string, area?: string) {
   save(items);
 }
 
-// Names and links of every system in the current language, rendered by the page.
-function catalog(): Record<string, { name: string; href: string }> {
-  const el = document.getElementById('catalog');
-  return el ? JSON.parse(el.textContent || '{}') : {};
+interface Catalog {
+  products: Record<string, { name: string; code: string; coverage: string; href: string }>;
+  buildups: Record<string, { layer: string; slug: string }[]>;
+}
+
+// Product names, links and typical build-ups in the page language, rendered by the layout.
+let cached: Catalog | undefined;
+function catalog(): Catalog {
+  if (!cached) {
+    const el = document.getElementById('catalog');
+    cached = el ? JSON.parse(el.textContent || '{}') : { products: {}, buildups: {} };
+  }
+  return cached!;
 }
 
 function render() {
@@ -39,7 +48,7 @@ function render() {
 
   const list = document.querySelector<HTMLElement>('[data-inq-list]');
   if (!list) return;
-  const cat = catalog();
+  const cat = catalog().products;
   const empty = document.querySelector<HTMLElement>('[data-inq-empty]');
   const field = document.querySelector<HTMLInputElement>('[data-inq-field]');
   list.replaceChildren(...items.map((i) => {
@@ -86,28 +95,49 @@ document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((btn) => {
   });
 });
 
-// Estimator: recommends a system only. Prices come from an engineer.
+// Estimator: shows a typical build-up and material quantities from the data
+// sheets' coverage. No prices: an engineer quotes.
 const est = document.querySelector<HTMLFormElement>('[data-estimator]');
 if (est) {
   const out = document.querySelector<HTMLElement>('[data-est-result]')!;
-  let current = '';
+  const list = out.querySelector<HTMLElement>('[data-est-layers]')!;
+  let current: { layer: string; slug: string }[] = [];
+  let area = '';
+  const qty = (coverage: string, m2: number) => {
+    const [lo, hi] = coverage.replace(/[≈~]/g, '').split(/[–-]/).map(Number);
+    if (!m2 || Number.isNaN(lo)) return '';
+    const r = (n: number) => Math.round(n * m2).toLocaleString();
+    return hi ? `${r(lo)}–${r(hi)} kg` : `≈${r(lo)} kg`;
+  };
   est.addEventListener('submit', (e) => {
     e.preventDefault();
     const f = new FormData(est);
     const scene = f.get('scene') as Scene | null;
     if (!scene) return;
-    current = recommend(scene, { heavy: f.has('heavy'), esd: f.has('esd'), chem: f.has('chem') });
-    const area = String(f.get('area') || '').trim();
-    const cat = catalog();
-    out.querySelector<HTMLAnchorElement>('[data-est-name]')!.textContent = cat[current]?.name || current;
-    out.querySelector<HTMLAnchorElement>('[data-est-name]')!.href = cat[current]?.href || '#';
-    out.querySelector<HTMLElement>('[data-est-area]')!.textContent = area || '—';
-    out.dataset.area = area;
+    const { products, buildups } = catalog();
+    current = buildups[recommend(scene, { heavy: f.has('heavy'), esd: f.has('esd'), chem: f.has('chem') })] || [];
+    area = String(f.get('area') || '').trim();
+    const m2 = Number(area);
+    list.replaceChildren(...current.map((l) => {
+      const p = products[l.slug];
+      const li = document.createElement('li');
+      const label = document.createElement('span');
+      label.textContent = l.layer;
+      const a = document.createElement('a');
+      a.href = p.href;
+      a.textContent = (p.code ? p.code + ' ' : '') + p.name;
+      const q = document.createElement('b');
+      q.textContent = p.coverage
+        ? `${p.coverage} kg/m²` + (qty(p.coverage, m2) ? ` → ${qty(p.coverage, m2)}` : '')
+        : (list.dataset.noCoverage || '');
+      li.append(label, a, q);
+      return li;
+    }));
     out.hidden = false;
     out.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
   out.querySelector<HTMLButtonElement>('[data-est-add]')?.addEventListener('click', () => {
-    if (current) addItem(current, out.dataset.area || undefined);
+    current.forEach((l) => addItem(l.slug, area || undefined));
     document.getElementById('inquiry')?.scrollIntoView({ behavior: 'smooth' });
   });
 }

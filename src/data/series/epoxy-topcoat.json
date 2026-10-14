@@ -1,0 +1,1171 @@
+{
+ "id": "epoxy-topcoat",
+ "name": {
+  "zh": "环氧平涂面漆涂装系统",
+  "en": "Epoxy flat topcoats"
+ },
+ "intro": {
+  "zh": "环氧平涂面漆为双组份、无接缝的平涂型环氧树脂地坪面漆，用于普通环氧地坪和环氧砂浆地坪涂装系统的薄涂型面层；本系列包括溶剂型、无溶剂及桔纹防滑面漆。",
+  "en": "Epoxy flat topcoats are two-component, seamless thin-film finish coats for ordinary epoxy and epoxy mortar flooring systems; the range includes solvent-based, solvent-free and orange-peel anti-slip topcoats."
+ },
+ "notes": [],
+ "products": [
+  {
+   "code": "BATOV-3001",
+   "slug": "batov-3001",
+   "name": {
+    "zh": "溶剂型环氧面漆",
+    "en": "Solvent-based epoxy topcoat"
+   },
+   "summary": {
+    "zh": "溶剂型环氧面漆（A组份 BATOV-3001）与配套环氧面漆固化剂（B组份 BATOV-G301），主要用于地坪漆的面涂层涂装，是一种溶剂型、双组份、色彩多样化、无接缝的高性能平涂型环氧树脂地坪面漆。涂装表面平滑美观、颜色一致、持久耐用；干燥后无气味、无毒无害。适用于环氧树脂地坪涂装系统薄涂型面漆，一般需要两遍涂装工序。",
+    "en": "Solvent-based epoxy topcoat (Part A BATOV-3001) with epoxy topcoat hardener (Part B BATOV-G301), mainly used as the finish coat of flooring systems. A solvent-based, two-component, high-performance, seamless flat epoxy topcoat available in many colors, giving a smooth, attractive, uniform and durable surface; odorless and non-toxic once dry. Suitable as the thin-film topcoat of epoxy flooring systems; normally two coats."
+   },
+   "uses": {
+    "zh": "用于普通环氧树脂地坪涂装系统和环氧砂浆地坪涂装系统，适用于电器、电子、食品、医药、化工、机械等行业的制造车间和停车场、办公室、商场、仓库等场所的水泥或水磨石地面的首选涂装体系",
+    "en": "For ordinary epoxy and epoxy mortar flooring systems: preferred coating system for cement or terrazzo floors in manufacturing workshops (electrical, electronics, food, pharmaceutical, chemical, machinery), car parks, offices, shops and warehouses"
+   },
+   "features": {
+    "zh": [
+     "防尘、防潮、耐磨，容易清洁",
+     "耐压、耐冲击",
+     "耐弱酸、弱碱、盐和油的腐蚀",
+     "施工快捷，固化速度快"
+    ],
+    "en": [
+     "Dust-proof, moisture-proof, abrasion resistant, easy to clean",
+     "Pressure and impact resistant",
+     "Resistant to weak acids, weak alkalis, salt and oil",
+     "Quick to apply, fast curing"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20 kg/桶，B组份 5 kg/桶",
+    "en": "Part A 20 kg pail, Part B 5 kg pail"
+   },
+   "mixRatio": "A:B = 3:1",
+   "coverage": "0.2–0.3",
+   "filmThickness": "100–300 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "颜色和外观",
+      "en": "Color and appearance"
+     },
+     "v": {
+      "zh": "颜色一致，平整光滑",
+      "en": "Uniform color, smooth and flat"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间，h 表干",
+      "en": "Drying time, h, surface-dry"
+     },
+     "v": {
+      "zh": "≤6",
+      "en": "≤6"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间，h 实干",
+      "en": "Drying time, h, hard-dry"
+     },
+     "v": {
+      "zh": "≤48",
+      "en": "≤48"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "细度，μm",
+      "en": "Fineness, μm"
+     },
+     "v": {
+      "zh": "≤50",
+      "en": "≤50"
+     },
+     "std": "GB/T 1724-1979"
+    },
+    {
+     "k": {
+      "zh": "固含量（混合后），%",
+      "en": "Solids content (mixed), %"
+     },
+     "v": {
+      "zh": "≥90",
+      "en": "≥90"
+     },
+     "std": "GB/T 1725"
+    },
+    {
+     "k": {
+      "zh": "附着力，级",
+      "en": "Adhesion, grade"
+     },
+     "v": {
+      "zh": "≤1",
+      "en": "≤1"
+     },
+     "std": "GB/T 9286-1988"
+    },
+    {
+     "k": {
+      "zh": "铅笔硬度，H",
+      "en": "Pencil hardness, H"
+     },
+     "v": {
+      "zh": "≥1-2",
+      "en": "≥1-2"
+     },
+     "std": "GB/T 6739-1996"
+    },
+    {
+     "k": {
+      "zh": "耐磨性（750g/500r）",
+      "en": "Abrasion resistance (750 g/500 r)"
+     },
+     "v": {
+      "zh": "≤0.03",
+      "en": "≤0.03"
+     },
+     "std": "GB/T 1768"
+    },
+    {
+     "k": {
+      "zh": "耐冲击性（50cm·kg）",
+      "en": "Impact resistance (50 cm·kg)"
+     },
+     "v": {
+      "zh": "涂层无裂纹、剥落",
+      "en": "No cracking or peeling"
+     },
+     "std": "GB/T 1732-1993"
+    },
+    {
+     "k": {
+      "zh": "耐水性 168h",
+      "en": "Water resistance, 168 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-93"
+    },
+    {
+     "k": {
+      "zh": "耐盐水（3%NaCl）168h",
+      "en": "Salt-water resistance (3% NaCl), 168 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20％NaOH）72h",
+      "en": "Alkali resistance (20% NaOH), 72 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐酸性（10%H2SO4）48h",
+      "en": "Acid resistance (10% H2SO4), 48 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐汽油，120# 72h",
+      "en": "Gasoline resistance, 120#, 72 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1734-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "100–300",
+      "en": "100–300"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.2–0.3",
+      "en": "0.2–0.3"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "20 分钟（倒在地面 40 分钟）",
+      "en": "20 min (40 min once poured on the floor)"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "温度越高可使用时间越短",
+      "en": "Pot life shortens at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "48h",
+      "en": "48 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 48h，最长 60h",
+      "en": "Min 48 h, max 60 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "环境温度 10～35℃ 施工时允许加入不超过涂料重量 3% 的 BATOV-X001（面漆稀释剂），灰色等面漆加入不超过 2% 的 BATOV-X002（灰色面漆专用稀释剂）；施工温度 5～10℃ 时，可加入不超过涂料重量 2% 的 BATOV-X001，灰色面漆不超过 1% 的 BATOV-X002",
+      "en": "At 10–35 °C ambient, up to 3% by weight of BATOV-X001 (topcoat thinner) may be added, and up to 2% of BATOV-X002 (special thinner for grey topcoat) for grey and similar colors; at 5–10 °C, up to 2% BATOV-X001 and up to 1% BATOV-X002 for grey"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或滚筒滚涂。素地平整、光滑、强度好采用刮刀披刮；素地起砂、毛糙、强度差采用滚筒滚涂",
+      "en": "Squeegee/trowel or roller. Use a squeegee on flat, smooth, strong substrates; use a roller on dusting, rough or weak substrates"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-3001 : B组份 BATOV-G301 = 3:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-3001 : Part B BATOV-G301 = 3:1; mix thoroughly"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂装遍数",
+      "en": "Number of coats"
+     },
+     "v": {
+      "zh": "一般需要两遍涂装工序",
+      "en": "Normally two coats"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "混合后可使用时间（25℃）20 分钟，倒在地面可使用时间为 40 分钟",
+      "en": "Pot life 20 min at 25 °C; 40 min once poured on the floor"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "6 个月",
+    "en": "6 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-3002",
+   "slug": "batov-3002",
+   "name": {
+    "zh": "无溶剂环氧面漆",
+    "en": "Solvent-free epoxy topcoat"
+   },
+   "summary": {
+    "zh": "无溶剂环氧面漆（A组份 BATOV-3002）与配套环氧面漆固化剂（B组份 BATOV-G302），主要用于地坪漆的面涂层涂装，是一种无溶剂型、双组份、色彩多样化、无VOC、气味小、无接缝的高性能平涂型环氧树脂地坪面漆。涂装表面平滑美观、颜色一致、持久耐用、漆膜饱和丰满；干燥后无气味、无毒无害。适用于环氧树脂地坪涂装系统薄涂型面漆，一般需要一遍涂装工序。",
+    "en": "Solvent-free epoxy topcoat (Part A BATOV-3002) with epoxy topcoat hardener (Part B BATOV-G302), mainly used as the finish coat of flooring systems. A solvent-free, two-component, high-performance, seamless flat epoxy topcoat available in many colors, VOC-free with low odor, giving a smooth, uniform, durable, full-bodied film; odorless and non-toxic once dry. Suitable as the thin-film topcoat of epoxy flooring systems; normally one coat."
+   },
+   "uses": {
+    "zh": "用于普通环氧树脂地坪涂装系统和环氧砂浆地坪涂装系统，适用于电器、电子、食品、医药、化工、机械等行业的制造车间和停车场、办公室、商场、仓库等场所的水泥或水磨石地面的首选涂装体系",
+    "en": "For ordinary epoxy and epoxy mortar flooring systems: preferred coating system for cement or terrazzo floors in manufacturing workshops (electrical, electronics, food, pharmaceutical, chemical, machinery), car parks, offices, shops and warehouses"
+   },
+   "features": {
+    "zh": [
+     "防尘、防潮、耐磨，容易清洁",
+     "耐压、耐冲击",
+     "耐弱酸、弱碱、盐和油的腐蚀",
+     "施工快捷",
+     "无VOC、气味小",
+     "漆膜饱满度优异、流平性好"
+    ],
+    "en": [
+     "Dust-proof, moisture-proof, abrasion resistant, easy to clean",
+     "Pressure and impact resistant",
+     "Resistant to weak acids, weak alkalis, salt and oil",
+     "Quick to apply",
+     "VOC-free, low odor",
+     "Excellent film fullness and good leveling"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20 kg/桶，B组份 5 kg/桶（铁桶）",
+    "en": "Part A 20 kg pail, Part B 5 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 4:1",
+   "coverage": "0.18–0.25",
+   "filmThickness": "100–200 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "颜色和外观",
+      "en": "Color and appearance"
+     },
+     "v": {
+      "zh": "颜色一致，平整光滑",
+      "en": "Uniform color, smooth and flat"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间，h 表干",
+      "en": "Drying time, h, surface-dry"
+     },
+     "v": {
+      "zh": "≤8",
+      "en": "≤8"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间，h 实干",
+      "en": "Drying time, h, hard-dry"
+     },
+     "v": {
+      "zh": "≤48",
+      "en": "≤48"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "细度，μm",
+      "en": "Fineness, μm"
+     },
+     "v": {
+      "zh": "≤40",
+      "en": "≤40"
+     },
+     "std": "GB/T 1724-1979"
+    },
+    {
+     "k": {
+      "zh": "固含量（混合后），%",
+      "en": "Solids content (mixed), %"
+     },
+     "v": {
+      "zh": "≥95",
+      "en": "≥95"
+     },
+     "std": "GB/T 1725"
+    },
+    {
+     "k": {
+      "zh": "附着力，级",
+      "en": "Adhesion, grade"
+     },
+     "v": {
+      "zh": "≤1",
+      "en": "≤1"
+     },
+     "std": "GB/T 9286-1988"
+    },
+    {
+     "k": {
+      "zh": "铅笔硬度，H",
+      "en": "Pencil hardness, H"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     },
+     "std": "GB/T 6739-1996"
+    },
+    {
+     "k": {
+      "zh": "耐磨性（750g/500r）",
+      "en": "Abrasion resistance (750 g/500 r)"
+     },
+     "v": {
+      "zh": "≤0.04",
+      "en": "≤0.04"
+     },
+     "std": "GB/T 1768"
+    },
+    {
+     "k": {
+      "zh": "耐冲击性（50cm·kg）",
+      "en": "Impact resistance (50 cm·kg)"
+     },
+     "v": {
+      "zh": "涂层无裂纹、剥落",
+      "en": "No cracking or peeling"
+     },
+     "std": "GB/T 1732-1993"
+    },
+    {
+     "k": {
+      "zh": "耐水性 168h",
+      "en": "Water resistance, 168 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-93"
+    },
+    {
+     "k": {
+      "zh": "耐盐水（3%NaCl）168h",
+      "en": "Salt-water resistance (3% NaCl), 168 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20％NaOH）72h",
+      "en": "Alkali resistance (20% NaOH), 72 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐酸性（10%H2SO4）48h",
+      "en": "Acid resistance (10% H2SO4), 48 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐汽油，120# 72h",
+      "en": "Gasoline resistance, 120#, 72 h"
+     },
+     "v": {
+      "zh": "不起泡、不脱落、允许轻微变色",
+      "en": "No blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1734-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "100–200",
+      "en": "100–200"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.18–0.25",
+      "en": "0.18–0.25"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "25 分钟（倒在地面 35 分钟）",
+      "en": "25 min (35 min once poured on the floor)"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "温度越高可使用时间越短",
+      "en": "Pot life shortens at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "8h",
+      "en": "8 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "48h",
+      "en": "48 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 48h，最长 60h",
+      "en": "Min 48 h, max 60 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "环境温度 10～35℃ 施工时允许加入不超过涂料重量 3% 的 BATOV-X001（面漆稀释剂），灰色等面漆加入不超过 2% 的 BATOV-X002（灰色面漆专用稀释剂）；施工温度 5～10℃ 时，可加入不超过涂料重量 2% 的 BATOV-X001，灰色面漆不超过 1% 的 BATOV-X002",
+      "en": "At 10–35 °C ambient, up to 3% by weight of BATOV-X001 (topcoat thinner) may be added, and up to 2% of BATOV-X002 (special thinner for grey topcoat) for grey and similar colors; at 5–10 °C, up to 2% BATOV-X001 and up to 1% BATOV-X002 for grey"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "滚筒滚涂：大面积施工使用（注意接头处与稀释剂添加量）；喷涂：常规喷涂或无气喷涂设备均可；刷涂：建议在小面积或角落位置使用，应采用软毛刷",
+      "en": "Roller: for large areas (take care with joints and thinner addition); spray: conventional or airless equipment; brush: for small areas or corners, using a soft brush"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "＜60%（应用限制栏）；设计规范栏写 ＜80%",
+      "en": "<60% (application limits); the design specification says <80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-3002 : B组份 BATOV-G302 = 4:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-3002 : Part B BATOV-G302 = 4:1; mix thoroughly"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂装遍数",
+      "en": "Number of coats"
+     },
+     "v": {
+      "zh": "一般需要一遍涂装工序",
+      "en": "Normally one coat"
+     }
+    },
+    {
+     "k": {
+      "zh": "设计规范",
+      "en": "Design specification"
+     },
+     "v": {
+      "zh": "施工温度 5～35℃，基面温度至少高于空气露点温度 3℃ 以上，环境湿度 <80%，厚度 200～300 μm",
+      "en": "Application 5–35 °C, substrate at least 3 °C above dew point, humidity <80%, thickness 200–300 μm"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "6 个月",
+    "en": "6 months"
+   },
+   "techSupport": true
+  },
+  {
+   "code": "BATOV-3003",
+   "slug": "batov-3003",
+   "name": {
+    "zh": "环氧桔纹防滑面漆",
+    "en": "Epoxy orange-peel anti-slip topcoat"
+   },
+   "summary": {
+    "zh": "环氧桔纹防滑面漆（A组份 BATOV-3003）与配套环氧面漆固化剂（B组份 BATOV-G303），主要用于防滑或特殊效果地坪漆的面涂层涂装，是一种基于改性胺固化、采用进口原材料配制的高粘度、低VOC、双组份、涂层抗压强度高、耐磨、持久耐用，具有桔纹效果的高性能平涂型环氧树脂地坪面漆。涂装表面呈现桔纹状、颜色一致、漆膜饱和丰满；干燥后无气味、无毒无害。适用于环氧树脂地坪涂装系统薄涂型面漆，一般需要一遍涂装工序。",
+    "en": "Epoxy orange-peel anti-slip topcoat (Part A BATOV-3003) with epoxy topcoat hardener (Part B BATOV-G303), mainly used as the finish coat for anti-slip or special-effect floors. A modified-amine-cured, two-component, high-viscosity, low-VOC, high-performance flat epoxy topcoat made with imported raw materials, with high compressive strength, abrasion resistance and durability, giving an orange-peel texture; uniform color, full-bodied film; odorless and non-toxic once dry. Normally one coat."
+   },
+   "uses": {
+    "zh": "用于普通环氧树脂地坪涂装系统和环氧砂浆地坪涂装系统，适用于要求防滑的车库、厂房、人行道、食品厂、肉联厂、食堂等地坪",
+    "en": "For ordinary epoxy and epoxy mortar flooring systems; suitable for floors requiring slip resistance such as garages, workshops, walkways, food plants, meat-processing plants and canteens"
+   },
+   "features": {
+    "zh": [
+     "防尘、防潮、耐磨，容易清洁",
+     "耐压、耐冲击",
+     "耐弱酸、弱碱、盐和油的腐蚀",
+     "表面粗糙，防滑",
+     "低VOC、气味小",
+     "漆膜饱满度优异、防霉变"
+    ],
+    "en": [
+     "Dust-proof, moisture-proof, abrasion resistant, easy to clean",
+     "Pressure and impact resistant",
+     "Resistant to weak acids, weak alkalis, salt and oil",
+     "Rough surface, anti-slip",
+     "Low VOC, low odor",
+     "Excellent film fullness; mildew resistant"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20 kg/桶，B组份 5 kg/桶（铁桶）",
+    "en": "Part A 20 kg pail, Part B 5 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 4:1",
+   "coverage": "0.25–0.35",
+   "filmThickness": "100–400 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "颜色和外观",
+      "en": "Color and appearance"
+     },
+     "v": {
+      "zh": "颜色一致，平整光滑",
+      "en": "Uniform color, smooth and flat"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）表干，h",
+      "en": "Drying time (25 °C), surface-dry, h"
+     },
+     "v": {
+      "zh": "≤6",
+      "en": "≤6"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）实干，h",
+      "en": "Drying time (25 °C), hard-dry, h"
+     },
+     "v": {
+      "zh": "≤48",
+      "en": "≤48"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "抗压强度，MPa",
+      "en": "Compressive strength, MPa"
+     },
+     "v": {
+      "zh": "≥70",
+      "en": "≥70"
+     },
+     "std": "ASTM C579"
+    },
+    {
+     "k": {
+      "zh": "耐磨性（750g/500r，mg）",
+      "en": "Abrasion resistance (750 g/500 r), mg"
+     },
+     "v": {
+      "zh": "≤0.04",
+      "en": "≤0.04"
+     },
+     "std": "GB/T 1768"
+    },
+    {
+     "k": {
+      "zh": "粘接强度（与水泥），MPa",
+      "en": "Bond strength (to cement), MPa"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     },
+     "std": "GB/T 16777-1997"
+    },
+    {
+     "k": {
+      "zh": "硬度（邵氏硬度计，D型）",
+      "en": "Hardness (Shore D)"
+     },
+     "v": {
+      "zh": "≥70",
+      "en": "≥70"
+     },
+     "std": "GB/T 2411-1980"
+    },
+    {
+     "k": {
+      "zh": "耐冲击性（50cm·kg）",
+      "en": "Impact resistance (50 cm·kg)"
+     },
+     "v": {
+      "zh": "涂层无裂纹、剥落",
+      "en": "No cracking or peeling"
+     },
+     "std": "GB/T 1732-1993"
+    },
+    {
+     "k": {
+      "zh": "耐酸性（10％硫酸）",
+      "en": "Acid resistance (10% H2SO4)"
+     },
+     "v": {
+      "zh": "48小时不起泡、不脱落，允许轻微变色",
+      "en": "48 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20％氢氧化钠）",
+      "en": "Alkali resistance (20% NaOH)"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐水性",
+      "en": "Water resistance"
+     },
+     "v": {
+      "zh": "168小时不起泡、不脱落，允许轻微变色",
+      "en": "168 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1733-1993"
+    },
+    {
+     "k": {
+      "zh": "耐汽油，120#",
+      "en": "Gasoline resistance, 120#"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1734-1993"
+    },
+    {
+     "k": {
+      "zh": "耐3%NaCl",
+      "en": "Resistance to 3% NaCl"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1734-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "100–400",
+      "en": "100–400"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.25–0.35",
+      "en": "0.25–0.35"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "25 分钟（倒在地面 35 分钟）",
+      "en": "25 min (35 min once poured on the floor)"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "温度越高可使用时间越短",
+      "en": "Pot life shortens at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "48h",
+      "en": "48 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 48h，最长 60h",
+      "en": "Min 48 h, max 60 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "环境温度 10～35℃ 施工时允许加入不超过涂料重量 3% 的 BATOV-X001（面漆稀释剂），灰色等面漆加入不超过 2% 的 BATOV-X002（灰色面漆专用稀释剂）；施工温度 5～10℃ 时，可加入不超过涂料重量 2% 的 BATOV-X001，灰色面漆不超过 1% 的 BATOV-X002",
+      "en": "At 10–35 °C ambient, up to 3% by weight of BATOV-X001 (topcoat thinner) may be added, and up to 2% of BATOV-X002 (special thinner for grey topcoat) for grey and similar colors; at 5–10 °C, up to 2% BATOV-X001 and up to 1% BATOV-X002 for grey"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "滚筒滚涂：大面积施工使用（注意接头处与稀释剂添加量）；喷涂：常规喷涂或无气喷涂设备均可；刷涂：建议在小面积或角落位置使用，应采用软毛刷",
+      "en": "Roller: for large areas (take care with joints and thinner addition); spray: conventional or airless equipment; brush: for small areas or corners, using a soft brush"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-3003 : B组份 BATOV-G303 = 4:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-3003 : Part B BATOV-G303 = 4:1; mix thoroughly"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂装遍数",
+      "en": "Number of coats"
+     },
+     "v": {
+      "zh": "一般需要一遍涂装工序",
+      "en": "Normally one coat"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "6 个月",
+    "en": "6 months"
+   },
+   "techSupport": false
+  }
+ ]
+}

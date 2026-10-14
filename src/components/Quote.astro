@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import ContactForm from './ContactForm.astro';
 import { type Lang } from '../data/site';
-import { scenes } from '../data/systems';
+import { scenes } from '../data/scenes';
 import { href } from '../lib/paths';
 
 interface Props { lang: Lang }
@@ -54,19 +54,17 @@ const needs = zh
         <label>{zh ? '面积（㎡，可不填）' : 'Floor area (m², optional)'}
           <input class="field" name="area" type="number" min="1" step="1" inputmode="numeric" />
         </label>
-        <div><button class="btn btn-primary" type="submit">{zh ? '查看推荐系统' : 'Show suggested system'}</button></div>
+        <div><button class="btn btn-primary" type="submit">{zh ? '查看配套和用量' : 'Show build-up & quantities'}</button></div>
       </form>
 
       <div>
         <div class="result" data-est-result hidden>
-          <span class="eyebrow">{zh ? '推荐系统' : 'Suggested system'}</span>
-          <h3 style="font-size:22px"><a data-est-name href="#"></a></h3>
-          <p class="muted">
-            {zh ? '材料用量' : 'Material quantity'}: <span data-est-area></span> m² × <span class="ph">[ ]</span> kg/㎡
-            {zh ? '（每平方米用量待技术部提供）' : ' (coverage per m² to be confirmed)'}
-          </p>
-          <p class="muted" style="font-size:13px">{zh ? '推荐规则为示意，最终方案由工程师确认。' : 'Indicative only. Our engineers confirm the final build-up.'}</p>
-          <button class="btn btn-primary" type="button" data-est-add>{zh ? '加入询价单，工程师报价' : 'Add to inquiry list'}</button>
+          <span class="eyebrow">{zh ? '典型配套和材料用量' : 'Typical build-up and quantities'}</span>
+          <ol class="est-layers" data-est-layers data-no-coverage={zh ? '用量待技术部提供' : 'Coverage to be confirmed'}></ol>
+          <p class="muted" style="font-size:13px">{zh
+            ? '用量按说明书的涂布率 × 面积计算，不含损耗。配套方案为示意，最终方案和报价由工程师确认。'
+            : 'Quantities are data-sheet coverage × area, before wastage. Build-up is indicative; our engineers confirm it and send the quote.'}</p>
+          <button class="btn btn-primary" type="button" data-est-add>{zh ? '全部加入询价单，工程师报价' : 'Add all to inquiry list'}</button>
         </div>
         <div class="card" style="margin-top:18px">
           <h3>{zh ? '不确定选哪套？' : 'Not sure?'}</h3>
@@ -84,7 +82,7 @@ const needs = zh
         <p class="muted" data-inq-empty>{zh
           ? '询价单还是空的。可以用上面的选型工具，或在任一系统页点“加入询价单”。'
           : 'Your list is empty. Use the selector above, or click "Add to inquiry list" on any system page.'}</p>
-        <a class="btn btn-ghost btn-sm" href={href(lang, '/systems/')}>{zh ? '浏览全部系统' : 'Browse all systems'}</a>
+        <a class="btn btn-ghost btn-sm" href={href(lang, '/systems/')}>{zh ? '浏览全部产品' : 'Browse all products'}</a>
       </div>
       <div class="card">
         <h2 style="font-size:22px">{zh ? '3. 留下联系方式' : '3. Your details'}</h2>

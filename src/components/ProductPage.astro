@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import { company, type Lang } from '../data/site';
+import { seriesById, seriesPhotos, type Product } from '../data/catalog';
+import { href, asset } from '../lib/paths';
+
+interface Props { lang: Lang; product: Product }
+const { lang, product: p } = Astro.props;
+const zh = lang === 'zh';
+const s = seriesById(p.series)!;
+const others = s.products.filter((x) => x.slug !== p.slug);
+const photos = seriesPhotos(p.series).slice(0, 3);
+const title = p.code ? `${p.name[lang]} ${p.code}` : p.name[lang];
+
+const facts = [
+  [zh ? '涂布率' : 'Coverage', p.coverage ? `${p.coverage} kg/m²` : ''],
+  [zh ? '干膜厚度' : 'Dry film thickness', p.filmThickness],
+  [zh ? '配比' : 'Mix ratio', p.mixRatio],
+  [zh ? '包装' : 'Packaging', p.packaging[lang]],
+  [zh ? '保质期' : 'Shelf life', p.shelfLife[lang]],
+].filter(([, v]) => v);
+
+const product = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: title,
+  sku: p.code || undefined,
+  description: p.summary[lang],
+  category: s.name[lang],
+  brand: { '@type': 'Brand', name: company.brand },
+  manufacturer: { '@type': 'Organization', name: zh ? company.nameZh : company.brand },
+  url: new URL(href(lang, `/products/${p.slug}/`), Astro.site).href,
+  image: photos[0] ? new URL(asset(photos[0].src), Astro.site).href : undefined,
+  additionalProperty: p.specs.map((x) => ({ '@type': 'PropertyValue', name: x.k[lang], value: x.v[lang] })),
+};
+---
+<Base
+  lang={lang}
+  path={`/products/${p.slug}/`}
+  title={zh ? `${title}：技术参数、用途、用量` : `${title}: technical data, uses, coverage`}
+  description={p.summary[lang].slice(0, 155)}
+  schema={[product]}
+>
+  <section class="page-hero dark">
+    <div class="wrap">
+      <div class="crumbs">
+        <a href={href(lang, '/')}>{zh ? '首页' : 'Home'}</a>{' / '}
+        <a href={href(lang, '/systems/')}>{zh ? '产品中心' : 'Products'}</a>{' / '}
+        <a href={href(lang, `/systems/${s.id}/`)}>{s.name[lang]}</a>
+      </div>
+      {p.code && <span class="eyebrow">{p.code}</span>}
+      <h1>{p.name[lang]}</h1>
+      <p>{p.summary[lang]}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap sys-layout">
+      <div>
+        {p.uses[lang] && (<><h2>{zh ? '适用场合' : 'Typical uses'}</h2><p>{p.uses[lang]}</p></>)}
+
+        {p.features[lang].length > 0 && (
+          <>
+            <h2 style="margin-top:32px">{zh ? '产品特点' : 'Features'}</h2>
+            <ul class="checks">{p.features[lang].map((f) => <li>{f}</li>)}</ul>
+          </>
+        )}
+
+        {p.specs.length > 0 && (
+          <>
+            <h2 style="margin-top:40px">{zh ? '技术参数' : 'Technical data'}</h2>
+            <div class="table-scroll">
+              <table class="table spec-table">
+                <thead><tr><th>{zh ? '项目' : 'Property'}</th><th>{zh ? '指标' : 'Value'}</th><th>{zh ? '检验标准' : 'Test method'}</th></tr></thead>
+                <tbody>
+                  {p.specs.map((x) => (
+                    <tr><td>{x.k[lang]}</td><td>{x.v[lang]}</td><td class="code">{x.std || '—'}</td></tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+
+        {p.application.length > 0 && (
+          <>
+            <h2 style="margin-top:40px">{zh ? '施工参数' : 'Application data'}</h2>
+            <div class="table-scroll">
+              <table class="table">
+                <tbody>
+                  {p.application.map((x) => (<tr><th scope="row">{x.k[lang]}</th><td>{x.v[lang]}</td></tr>))}
+                </tbody>
+              </table>
+            </div>
+            <p class="muted" style="font-size:13px;margin-top:8px">{zh ? '干燥和可使用时间在 25℃ 标准条件下测定，仅供参考，实际随温度、湿度和膜厚变化。' : 'Times measured at 25 °C under standard conditions, for reference only; they vary with temperature, humidity and film thickness.'}</p>
+          </>
+        )}
+
+        {photos.length > 0 && (
+          <>
+            <h2 style="margin-top:40px">{zh ? '施工实拍' : 'On-site photos'}</h2>
+            <div class="grid g3">
+              {photos.map((ph) => (
+                <figure class="shot">
+                  <img src={asset(ph.sm)} alt={ph.alt[lang]} width="600" height={Math.round(600 * ph.h / ph.w)} loading="lazy" decoding="async" />
+                </figure>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+
+      <aside class="card aside-card">
+        <h3>{zh ? '规格一览' : 'At a glance'}</h3>
+        <dl class="facts">
+          {facts.map(([k, v]) => (<><dt>{k}</dt><dd>{v}</dd></>))}
+        </dl>
+        <p style="margin-top:16px;display:grid;gap:8px">
+          <button class="btn btn-primary" type="button" data-add={p.slug} data-added={zh ? '✓ 已加入询价单' : '✓ Added to inquiry list'}>{zh ? '加入询价单' : 'Add to inquiry list'}</button>
+          <a class="btn btn-ghost" href={href(lang, '/quote/#inquiry')}>{zh ? '去询价单' : 'View inquiry list'}</a>
+        </p>
+        {p.techSupport && (
+          <p style="margin-top:14px;font-size:14px">{zh ? '可提供技术支持：设计阶段协助、施工建议，必要时到现场解决问题。' : 'Technical support available: design-stage advice, application guidance and on-site troubleshooting.'}</p>
+        )}
+        <p style="margin-top:14px;font-size:14px">{zh ? '技术说明书（PDF）' : 'Data sheet (PDF)'}: <span class="ph">{zh ? '[待上传]' : '[to upload]'}</span></p>
+      </aside>
+    </div>
+  </section>
+
+  {others.length > 0 && (
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <h2>{zh ? `同系列：${s.name.zh}` : `More in ${s.name.en}`}</h2>
+        <div class="grid g3">
+          {others.map((r) => (
+            <a class="card" href={href(lang, `/products/${r.slug}/`)}>
+              {r.code && <span class="code">{r.code}</span>}
+              <h3>{r.name[lang]}</h3>
+              <p>{r.summary[lang].length > (zh ? 50 : 120) ? r.summary[lang].slice(0, zh ? 50 : 120) + '…' : r.summary[lang]}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>

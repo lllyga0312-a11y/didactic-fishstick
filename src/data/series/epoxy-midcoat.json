@@ -1,0 +1,770 @@
+{
+ "id": "epoxy-midcoat",
+ "name": {
+  "zh": "环氧中涂涂装系统",
+  "en": "Epoxy midcoats"
+ },
+ "intro": {
+  "zh": "环氧中涂与各类底漆配套使用，可作嵌缝填补材料、环氧树脂腻子、自流平中涂、中层砂浆漆及彩砂压砂树脂，提高地坪系统的厚度、强度、载重及耐冲击性。",
+  "en": "Epoxy midcoats are used over primers as crack filler, epoxy putty, self-leveling midcoat, mortar midcoat and binder for broadcast colored sand, increasing the thickness, strength, load capacity and impact resistance of the flooring system."
+ },
+ "notes": [],
+ "products": [
+  {
+   "code": "BATOV-2001",
+   "slug": "batov-2001",
+   "name": {
+    "zh": "无溶剂型环氧中涂",
+    "en": "Solvent-free epoxy midcoat"
+   },
+   "summary": {
+    "zh": "无溶剂型环氧中涂（A组份 BATOV-2001）与配套环氧中涂固化剂（B组份 BATOV-G201）是一种双组分、无溶剂、可厚涂的环氧树脂地坪涂料。与各类底漆配套使用，可作为嵌缝填补材料、环氧树脂腻子（配粉）、自流平中涂漆以及中层砂浆漆（配石英砂），可提高整个地坪涂装系统的厚度、强度、载重及耐冲击性；同时作彩砂地坪压砂用的树脂，具有较高的耐冲击性以及粘结强度。",
+    "en": "Solvent-free epoxy midcoat (Part A BATOV-2001) with epoxy midcoat hardener (Part B BATOV-G201) is a two-component, solvent-free, high-build epoxy flooring coating. Used over primers, it can serve as crack filler, epoxy putty (with powder), self-leveling midcoat or mortar midcoat (with quartz sand), increasing system thickness, strength, load capacity and impact resistance; also as the resin for broadcast colored-sand floors, with high impact resistance and bond strength."
+   },
+   "uses": {
+    "zh": "适用于地坪涂装系统中的中涂找平层、砂浆层、压砂层、透明面漆层等，作为油漆粘结料使用",
+    "en": "Used as binder in flooring systems for the midcoat leveling layer, mortar layer, broadcast-sand layer and clear topcoat layer"
+   },
+   "features": {
+    "zh": [
+     "对底材、底漆的附着力高",
+     "作为砂浆粘结料的抗压强度高",
+     "与环氧面漆的粘结力高",
+     "作为压砂的粘接料，强度非常高",
+     "经济适用"
+    ],
+    "en": [
+     "High adhesion to substrate and primer",
+     "High compressive strength as a mortar binder",
+     "High bond to epoxy topcoats",
+     "Very high strength as a binder for broadcast sand",
+     "Economical and practical"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20 kg/桶，B组份 5 kg/桶（铁桶）",
+    "en": "Part A 20 kg pail, Part B 5 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 4:1",
+   "coverage": "0.1–0.3",
+   "filmThickness": "80–250 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "颜色和外观",
+      "en": "Color and appearance"
+     },
+     "v": {
+      "zh": "颜色一致，平整光滑",
+      "en": "Uniform color, smooth and flat"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）表干，h",
+      "en": "Drying time (25 °C), surface-dry, h"
+     },
+     "v": {
+      "zh": "≤6",
+      "en": "≤6"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）实干，h",
+      "en": "Drying time (25 °C), hard-dry, h"
+     },
+     "v": {
+      "zh": "＞24",
+      "en": "＞24"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "抗压强度，MPa",
+      "en": "Compressive strength, MPa"
+     },
+     "v": {
+      "zh": "≥80",
+      "en": "≥80"
+     },
+     "std": "ASTM C579"
+    },
+    {
+     "k": {
+      "zh": "拉伸强度，MPa",
+      "en": "Tensile strength, MPa"
+     },
+     "v": {
+      "zh": "≥9",
+      "en": "≥9"
+     },
+     "std": "ASTM C307"
+    },
+    {
+     "k": {
+      "zh": "弯曲强度，MPa",
+      "en": "Flexural strength, MPa"
+     },
+     "v": {
+      "zh": "≥7",
+      "en": "≥7"
+     },
+     "std": "ASTM C580"
+    },
+    {
+     "k": {
+      "zh": "粘接强度（与水泥），MPa",
+      "en": "Bond strength (to cement), MPa"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     },
+     "std": "GB/T 16777-1997"
+    },
+    {
+     "k": {
+      "zh": "硬度（邵氏硬度计，D型）",
+      "en": "Hardness (Shore D)"
+     },
+     "v": {
+      "zh": "≥75",
+      "en": "≥75"
+     },
+     "std": "GB/T 2411-1980"
+    },
+    {
+     "k": {
+      "zh": "耐冲击性（50cm·kg）",
+      "en": "Impact resistance (50 cm·kg)"
+     },
+     "v": {
+      "zh": "涂层无裂纹、剥落",
+      "en": "No cracking or peeling"
+     },
+     "std": "GB/T 1732-1993"
+    },
+    {
+     "k": {
+      "zh": "耐磨性（750g/500r，g）",
+      "en": "Abrasion resistance (750 g/500 r), g"
+     },
+     "v": {
+      "zh": "≤0.02",
+      "en": "≤0.02"
+     },
+     "std": "GB/T 1768"
+    },
+    {
+     "k": {
+      "zh": "耐酸性（10％硫酸）",
+      "en": "Acid resistance (10% H2SO4)"
+     },
+     "v": {
+      "zh": "48小时不起泡、不脱落，允许轻微变色",
+      "en": "48 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20％氢氧化钠）",
+      "en": "Alkali resistance (20% NaOH)"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐水性",
+      "en": "Water resistance"
+     },
+     "v": {
+      "zh": "168小时不起泡、不脱落，允许轻微变色",
+      "en": "168 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1733-1993"
+    },
+    {
+     "k": {
+      "zh": "耐汽油，120#",
+      "en": "Gasoline resistance, 120#"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1734-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "80–250",
+      "en": "80–250"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.1–0.3",
+      "en": "0.1–0.3"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "35 分钟（表内）；说明栏写 25 分钟",
+      "en": "35 min per table; the note says 25 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "说明栏：混合后可使用时间（25℃）25 分钟，温度越高越短",
+      "en": "Note: pot life 25 min at 25 °C; shorter at higher temperatures"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "24h",
+      "en": "24 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 24h，最长 36h",
+      "en": "Min 24 h, max 36 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "可以添加稀释剂 BATOV-X001（面漆稀释剂）",
+      "en": "Thinner BATOV-X001 (topcoat thinner) may be added"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或馒刀馒涂（抹涂）。素地平整、光滑、强度好时可加入适量石英砂或石英粉，用刮刀披刮；素地基面坑洼或要求地坪结构有指定厚度时，加入适量石英砂馒涂",
+      "en": "Squeegee/trowel application or trowelling. On flat, smooth, strong substrates, add suitable quartz sand or quartz powder and apply with a squeegee; on pitted substrates or where a specified thickness is required, add suitable quartz sand and trowel"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-2001 : B组份 BATOV-G201 = 4:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-2001 : Part B BATOV-G201 = 4:1; mix thoroughly"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间说明",
+      "en": "Hard-dry discrepancy"
+     },
+     "v": {
+      "zh": "技术参数表为实干 ＞24 h，施工参数表为 24 h",
+      "en": "Spec table gives hard-dry ＞24 h; application table gives 24 h"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "12 个月",
+    "en": "12 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-2002",
+   "slug": "batov-2002",
+   "name": {
+    "zh": "纯树脂环氧中涂",
+    "en": "Pure-resin epoxy midcoat"
+   },
+   "summary": {
+    "zh": "纯树脂环氧中涂（A组份 BATOV-2002）是以环氧树脂为主、含少量助剂的双组分纯环氧树脂中涂材料，与配套环氧底漆固化剂（B组份 BATOV-G202）使用。与各类底漆配套使用，可作为嵌缝填补材料、环氧树脂腻子（配粉）、自流平中涂漆以及中层砂浆漆（配石英砂），可提高整个地坪涂装系统的厚度、强度、载重及耐冲击性；同时作彩砂地坪压砂用的树脂，具有较高的耐冲击性以及粘结强度。",
+    "en": "Pure-resin epoxy midcoat (Part A BATOV-2002) is a two-component epoxy resin midcoat with few additives, used with epoxy primer hardener (Part B BATOV-G202). Used over primers, it can serve as crack filler, epoxy putty (with powder), self-leveling midcoat or mortar midcoat (with quartz sand), increasing system thickness, strength, load capacity and impact resistance; also as the resin for broadcast colored-sand floors, with high impact resistance and bond strength."
+   },
+   "uses": {
+    "zh": "适用于地坪涂装系统中的中涂找平层、砂浆层、压砂层、透明面漆层等，作为油漆粘结料使用",
+    "en": "Used as binder in flooring systems for the midcoat leveling layer, mortar layer, broadcast-sand layer and clear topcoat layer"
+   },
+   "features": {
+    "zh": [
+     "对底材、底漆的附着力高",
+     "作为砂浆粘结料的抗压强度高",
+     "与环氧面漆的粘结力高",
+     "作为压砂的粘接料，强度非常高",
+     "柔韧性好",
+     "可与石英砂混合馒涂，效果好"
+    ],
+    "en": [
+     "High adhesion to substrate and primer",
+     "High compressive strength as a mortar binder",
+     "High bond to epoxy topcoats",
+     "Very high strength as a binder for broadcast sand",
+     "Good flexibility",
+     "Mixes well with quartz sand for trowelling"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20 kg/桶，B组份 10 kg/桶（铁桶）",
+    "en": "Part A 20 kg pail, Part B 10 kg pail (steel drums)"
+   },
+   "mixRatio": "A:B = 2:1",
+   "coverage": "0.1–0.3",
+   "filmThickness": "100–250 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "颜色和外观",
+      "en": "Color and appearance"
+     },
+     "v": {
+      "zh": "颜色为树脂本色，平整光滑",
+      "en": "Natural resin color, smooth and flat"
+     },
+     "std": "目测"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）表干，h",
+      "en": "Drying time (25 °C), surface-dry, h"
+     },
+     "v": {
+      "zh": "≤6",
+      "en": "≤6"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "干燥时间（25℃）实干，h",
+      "en": "Drying time (25 °C), hard-dry, h"
+     },
+     "v": {
+      "zh": "≤24",
+      "en": "≤24"
+     },
+     "std": "GB/T 1728-1989"
+    },
+    {
+     "k": {
+      "zh": "抗压强度，MPa",
+      "en": "Compressive strength, MPa"
+     },
+     "v": {
+      "zh": "≥85",
+      "en": "≥85"
+     },
+     "std": "ASTM C579"
+    },
+    {
+     "k": {
+      "zh": "拉伸强度，MPa",
+      "en": "Tensile strength, MPa"
+     },
+     "v": {
+      "zh": "≥9",
+      "en": "≥9"
+     },
+     "std": "ASTM C307"
+    },
+    {
+     "k": {
+      "zh": "弯曲强度，MPa",
+      "en": "Flexural strength, MPa"
+     },
+     "v": {
+      "zh": "≥7",
+      "en": "≥7"
+     },
+     "std": "ASTM C580"
+    },
+    {
+     "k": {
+      "zh": "粘接强度（与水泥），MPa",
+      "en": "Bond strength (to cement), MPa"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     },
+     "std": "GB/T 16777-1997"
+    },
+    {
+     "k": {
+      "zh": "硬度（邵氏硬度计，D型）",
+      "en": "Hardness (Shore D)"
+     },
+     "v": {
+      "zh": "≥70",
+      "en": "≥70"
+     },
+     "std": "GB/T 2411-1980"
+    },
+    {
+     "k": {
+      "zh": "耐冲击性（50cm·kg）",
+      "en": "Impact resistance (50 cm·kg)"
+     },
+     "v": {
+      "zh": "涂层无裂纹、剥落",
+      "en": "No cracking or peeling"
+     },
+     "std": "GB/T 1732-1993"
+    },
+    {
+     "k": {
+      "zh": "耐磨性（750g/500r，g）",
+      "en": "Abrasion resistance (750 g/500 r), g"
+     },
+     "v": {
+      "zh": "≤0.02",
+      "en": "≤0.02"
+     },
+     "std": "GB/T 1768"
+    },
+    {
+     "k": {
+      "zh": "耐酸性（10％硫酸）",
+      "en": "Acid resistance (10% H2SO4)"
+     },
+     "v": {
+      "zh": "48小时不起泡、不脱落，允许轻微变色",
+      "en": "48 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20％氢氧化钠）",
+      "en": "Alkali resistance (20% NaOH)"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 9274-88"
+    },
+    {
+     "k": {
+      "zh": "耐水性",
+      "en": "Water resistance"
+     },
+     "v": {
+      "zh": "168小时不起泡、不脱落，允许轻微变色",
+      "en": "168 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1733-1993"
+    },
+    {
+     "k": {
+      "zh": "耐汽油，120#",
+      "en": "Gasoline resistance, 120#"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering or peeling; slight discoloration allowed"
+     },
+     "std": "GB/T 1734-1993"
+    },
+    {
+     "k": {
+      "zh": "干膜厚度，μm",
+      "en": "Dry film thickness, μm"
+     },
+     "v": {
+      "zh": "100–250",
+      "en": "100–250"
+     }
+    },
+    {
+     "k": {
+      "zh": "涂布率，kg/m²",
+      "en": "Coverage, kg/m²"
+     },
+     "v": {
+      "zh": "0.1–0.3",
+      "en": "0.1–0.3"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "30 分钟（表内）；施工参数正文写 20 分钟（倒在地面 30 分钟）；说明栏写 25 分钟",
+      "en": "30 min per table; the text says 20 min (30 min once poured on the floor); the note says 25 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间补充说明",
+      "en": "Pot life note"
+     },
+     "v": {
+      "zh": "温度越高可使用时间越短；环境温度高于 35℃ 一般不建议施工",
+      "en": "Pot life shortens at higher temperatures; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "6h",
+      "en": "6 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Full cure / hard-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "24h",
+      "en": "24 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 24h，最长 36h",
+      "en": "Min 24 h, max 36 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "可以添加稀释剂 BATOV-X001（面漆稀释剂）",
+      "en": "Thinner BATOV-X001 (topcoat thinner) may be added"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或馒刀馒涂（抹涂）。素地平整、光滑、强度好时可加入适量石英砂或石英粉，用刮刀披刮；素地基面坑洼或要求地坪结构有指定厚度时，加入适量石英砂馒涂",
+      "en": "Squeegee/trowel application or trowelling. On flat, smooth, strong substrates, add suitable quartz sand or quartz powder and apply with a squeegee; on pitted substrates or where a specified thickness is required, add suitable quartz sand and trowel"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃；基面温度至少高于空气露点温度 3℃ 以上；环境温度高于 35℃ 一般不建议施工",
+      "en": "5–35 °C; substrate at least 3 °C above dew point; application above 35 °C generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "环境湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "<80%",
+      "en": "<80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the area ventilated and dust-free, without strong wind that blows in dust and spoils the finish"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying-time note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60% 湿度）下测定，仅供参考；不同温度和湿度下差异较大，还受漆膜厚度、通风状况、下层涂料等影响。温度升高干燥时间缩短，温度降低则加长",
+      "en": "Drying times measured at 25 °C, 60% RH, for reference only; they vary with temperature, humidity, film thickness, ventilation and substrate coating (shorter when warmer, longer when colder)"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "25℃",
+      "en": "25 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件，避免高温和火源；运输时保证车厢环境干燥、封闭，材料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; keep the vehicle dry and enclosed in transit and stack stably"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合比（重量比）",
+      "en": "Mix ratio (by weight)"
+     },
+     "v": {
+      "zh": "A组份 BATOV-2002 : B组份 BATOV-G202 = 2:1，混合后充分搅拌均匀",
+      "en": "Part A BATOV-2002 : Part B BATOV-G202 = 2:1; mix thoroughly"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "12 个月",
+    "en": "12 months"
+   },
+   "techSupport": false
+  }
+ ]
+}

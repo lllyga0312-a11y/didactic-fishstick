@@ -1,6 +1,6 @@
 ---
 import { company, t, type Lang } from '../data/site';
-import { categories } from '../data/systems';
+import { groups } from '../data/catalog';
 import { href } from '../lib/paths';
 
 interface Props { lang: Lang }
@@ -20,7 +20,7 @@ const zh = lang === 'zh';
       <div>
         <h4>{s.nav.systems}</h4>
         <ul>
-          {categories.filter((c) => c.id !== 'other').map((c) => (
+          {groups.map((c) => (
             <li><a href={href(lang, `/systems/#${c.id}`)}>{c.name[lang]}</a></li>
           ))}
         </ul>

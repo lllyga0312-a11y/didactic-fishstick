@@ -1,0 +1,89 @@
+---
+import Base from '../layouts/Base.astro';
+import { type Lang } from '../data/site';
+import { groups, seriesById, seriesPhotos } from '../data/catalog';
+import { scenes, buildups } from '../data/scenes';
+import { href, asset } from '../lib/paths';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+
+const listSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: groups.flatMap((g) => g.series).map((id, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: seriesById(id)?.name[lang],
+    url: new URL(href(lang, `/systems/${id}/`), Astro.site).href,
+  })),
+};
+---
+<Base
+  lang={lang}
+  path="/systems/"
+  title={zh ? '产品中心：环氧、聚氨酯、重防腐、水性地坪涂料' : 'Products: Epoxy, PU, Vinyl Ester & Waterborne Floor Coatings'}
+  description={zh
+    ? '巴特夫地坪涂料产品中心：环氧底漆、中涂、面漆、自流平、防静电，聚氨酯、乙烯基重防腐、水性地坪、丙烯酸和混凝土密封固化剂，均有技术参数。'
+    : 'BATOV floor coating range: epoxy primers, body coats, topcoats, self-leveling and ESD, polyurethane, vinyl ester, waterborne, acrylic and concrete sealer, with full technical data.'}
+  schema={[listSchema]}
+>
+  <section class="page-hero dark">
+    <div class="wrap">
+      <div class="crumbs"><a href={href(lang, '/')}>{zh ? '首页' : 'Home'}</a>{' / '}{zh ? '产品中心' : 'Products'}</div>
+      <h1>{zh ? '产品中心' : 'Products'}</h1>
+      <p>{zh
+        ? '每个系列都从底漆到面漆整体配套，每个产品都有完整的技术参数。按材料找，或者往下按使用场合找。'
+        : 'Every series is designed as a matched system from primer to topcoat, and every product comes with full technical data. Browse by chemistry, or scroll down to browse by application.'}</p>
+    </div>
+  </section>
+
+  {groups.map((g) => (
+    <section class="section" id={g.id} style="padding-bottom:0">
+      <div class="wrap">
+        <div class="section-head"><h2>{g.name[lang]}</h2><p>{g.desc[lang]}</p></div>
+        <div class="grid g3">
+          {g.series.map((id) => {
+            const s = seriesById(id);
+            if (!s) return null;
+            const cover = seriesPhotos(id)[0];
+            return (
+              <a class="card" href={href(lang, `/systems/${id}/`)}>
+                {cover
+                  ? <img class="card-img" src={asset(cover.sm)} alt={cover.alt[lang]} width="600" height={Math.round(600 * cover.h / cover.w)} loading="lazy" decoding="async" />
+                  : <div class="photo" style="margin-bottom:16px">{zh ? '[待补实拍照片]' : '[Photo to add]'}</div>}
+                <h3>{s.name[lang]}</h3>
+                <p>{s.products.map((p) => p.name[lang]).join(zh ? '、' : ', ')}</p>
+                <span class="more">{zh ? `${s.products.length} 个产品 →` : `${s.products.length} products →`}</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" id="by-application">
+        <h2>{zh ? '按场合找' : 'By application'}</h2>
+        <p>{zh ? '常见场合的典型配套，最终方案由工程师按现场情况确认。' : 'Typical build-ups for common applications. Our engineers confirm the final build-up for your site.'}</p>
+      </div>
+      <div class="grid g3">
+        {scenes.map((sc) => (
+          <div class="card" id={`scene-${sc.id}`}>
+            <h3>{sc.name[lang]}</h3>
+            <p>{sc.need[lang]}</p>
+            <ol class="mini-stack">
+              {buildups[sc.id].map((l) => (
+                <li><span>{l.layer[lang]}</span> <a href={href(lang, `/products/${l.product.slug}/`)}>{l.product.code ? `${l.product.code} ` : ''}{l.product.name[lang]}</a></li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </div>
+      <p class="muted" style="font-size:13px;margin-top:12px">{zh ? '配套方案为示意，待技术同事确认。' : 'Indicative only; to be confirmed by our technical team.'}</p>
+    </div>
+  </section>
+</Base>

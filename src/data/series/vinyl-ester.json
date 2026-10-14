@@ -1,0 +1,1054 @@
+{
+ "id": "vinyl-ester",
+ "name": {
+  "zh": "乙烯基重防腐地坪漆涂装系统",
+  "en": "Vinyl ester heavy-duty anticorrosive floor coating system"
+ },
+ "intro": {
+  "zh": "乙烯基酯树脂体系的重防腐地坪材料，包含底漆（兼作中涂）、平涂面漆与自流平面漆，用于腐蚀环境恶劣、直接接触腐蚀介质的设备、管道及地坪。",
+  "en": "Vinyl ester resin heavy-duty anticorrosive flooring materials—a primer (also used as intermediate coat), a flat-coat topcoat and a self-leveling topcoat—for equipment, pipework and floors in severely corrosive environments with direct contact with corrosive media."
+ },
+ "notes": [
+  {
+   "title": {
+    "zh": "3mm乙烯基重防腐自流平地坪涂装系统",
+    "en": "3 mm vinyl ester heavy-duty anticorrosive self-leveling floor system"
+   },
+   "body": {
+    "zh": "工序、产品与用量：\n- 素地处理：打磨、清洁地面，1–2 遍，无材料用量\n- 底漆层：BATOV-1111 乙烯基重防腐地坪底漆，1 遍，0.15–0.25 kg/m²\n- 粘贴玻纤布：BATOV-1111 乙烯基重防腐地坪底漆 + 耐腐蚀纤维布，2 遍，0.5–0.8 kg/m²\n- 披刮砂浆层：BATOV-1111 乙烯基重防腐地坪底漆 + 中砂、细砂，1–2 遍，0.3–0.6 kg/m²\n- 披刮腻子层：BATOV-1111 乙烯基重防腐地坪底漆 + 石英粉，1–2 遍，0.15–0.3 kg/m²\n- 面漆层馒涂：BATOV-1113 乙烯基重防腐地坪自流平面漆，1 遍，0.8–1.5 kg/m²\n\n基面要求：新旧地面基本强度达到 C25 或以上，水泥砂浆、混凝土表面必须平整、坚固、密实；不得有起砂、脱壳、裂缝、蜂窝麻面等现象，不允许裂缝存在。涂装表面无油污，清洁干燥无积水，表面含水率小于 6%。新铺设的混凝土基层宜养护 30 天，在混凝土彻底固化、泛碱、干燥后方可施工。旧混凝土地面应除掉表面的涂料、油污、浮石等缺陷，裂缝应预先使用水泥砂浆或类似材料填补。\n\n素地处理：打磨清洁地面。施工标准：地面无油渍、无水痕、沥青、无水泥疙瘩、无乳胶漆、无水泥浮灰等异物，2m 靠尺不大于 3mm。\n\n底漆施工：素地处理完毕后滚涂底漆；如基面不平整，用底漆加砂刮一道砂。\n\n纤维布层粘贴：按配比把底漆与引发剂充分混合，再与促进剂搅拌均匀；用滚筒纵横各滚涂一遍后，随即粘贴第一层耐腐蚀纤维布，用刮板或滚筒反复滚压使玻纤布充分浸透胶料，挤出气体和多余胶料，然后连续粘贴。上层每幅布应压住下层各幅布，顺序是先沟道、孔洞、设备基础等，后地面、墙裙、踢脚。\n\n砂浆层披刮：上层工艺干燥 24h 后，修补突起、毛刺、凹陷部分，整体打磨清扫。按配比混合后分别加适量中砂、细砂（漆料:砂的重量比 ≤1:1 为宜），刮砂浆两遍增厚，以提高抗压强度及平整度。\n\n腻子层披刮：上层干硬后，修补突起、毛刺、凹陷部分并打磨；然后用带色的底漆（加石英粉）刮腻子两遍，以提高密实性。\n\n面漆施工：腻子层干硬、清扫灰尘后，方能施工面漆。按比例充分混合自流平面漆与引发剂，再与促进剂搅拌均匀，采用镘刀镘涂施工。\n\n清洁：施工完毕，应立即用水或稀释剂清洗工具和设备。\n\n养护：刚施工完的地坪，建议待自流平面漆干燥 24h 后方可上人。",
+    "en": "Steps, products and consumption:\n- Substrate preparation: grind and clean, 1–2 passes, no material\n- Primer: BATOV-1111 vinyl ester heavy-duty anticorrosive floor primer, 1 coat, 0.15–0.25 kg/m²\n- Fiber cloth lamination: BATOV-1111 primer + corrosion-resistant fiber cloth, 2 passes, 0.5–0.8 kg/m²\n- Mortar layer: BATOV-1111 primer + medium and fine sand, 1–2 passes, 0.3–0.6 kg/m²\n- Putty layer: BATOV-1111 primer + quartz powder, 1–2 passes, 0.15–0.3 kg/m²\n- Topcoat (trowel-applied): BATOV-1113 vinyl ester heavy-duty anticorrosive self-leveling topcoat, 1 coat, 0.8–1.5 kg/m²\n\nSubstrate requirements: new and old floors must reach C25 strength or above; cement mortar or concrete must be flat, sound and dense, with no dusting, delamination, cracks or honeycombing (cracks are not allowed). The surface must be free of oil, clean, dry, with no standing water, and moisture content below 6%. New concrete should cure for 30 days and be fully hardened, free of efflorescence and dry before application. On old concrete remove coatings, oil, loose stone and other defects; fill cracks beforehand with cement mortar or similar.\n\nSubstrate preparation: grind and clean. Standard: no oil stains, water marks, bitumen, cement lumps, latex paint or laitance; 2 m straightedge deviation not more than 3 mm.\n\nPrimer: after preparation roll on the primer; if the substrate is uneven, scrape one coat of primer mixed with sand.\n\nFiber cloth lamination: mix primer with initiator at the specified ratio, then with accelerator; roll once lengthwise and once crosswise, immediately lay the first layer of corrosion-resistant fiber cloth and press repeatedly with a squeegee or roller until saturated, expelling air and excess resin; continue laying. Each upper strip must overlap the lower strips; work gutters, openings and equipment bases first, then floor, wall skirting and baseboards.\n\nMortar layer: after the previous layer has dried 24 h, repair protrusions, burrs and depressions, then sand and sweep. Mix at ratio, add suitable medium and fine sand (paint:sand weight ratio ≤1:1 recommended) and scrape two mortar coats to build thickness and improve compressive strength and flatness.\n\nPutty layer: once hard, repair and sand; scrape two coats of tinted primer with quartz powder to improve density.\n\nTopcoat: only after the putty layer is hard and dust is swept. Mix topcoat with initiator at ratio, then with accelerator, and apply with a trowel.\n\nCleaning: clean tools and equipment immediately after use with water or thinner.\n\nCuring: allow the self-leveling topcoat to dry 24 h before foot traffic."
+   }
+  },
+  {
+   "title": {
+    "zh": "注意事项：健康与安全、消防、废物处理",
+    "en": "Precautions: health and safety, fire, waste disposal"
+   },
+   "body": {
+    "zh": "健康与安全：使用前请仔细阅读施工说明和包装容器上的警告标识。必须在通风良好的条件下使用。施工现场禁止明火，如电焊、打磨、吸烟及其它未说明的情况。涂料含有有机溶剂，具有一定毒性，施工时请佩戴防毒面具和其它防护用具；不要吸入漆雾，避免皮肤接触。油漆溅在皮肤上要立即用合适的清洗剂、肥皂和大量水冲洗干净；溅入眼睛时要用水充分冲洗，并立即就医。正常施工条件下，干燥的涂层无毒。详细的毒害、安全与急救事项请参看该产品《物料安全技术说明书（MSDS）》。\n\n消防安全：乙烯基重防腐涂料是易燃材料，切勿放近火源，禁止吸烟。如遇火灾，使用二氧化碳或泡沫型灭火器灭火，不得用水喷射。闪点：23℃。\n\n废物处理：应用沙、土或其他惰性材料吸收飞溅出的各组分材料，放置在合适的容器中，并按照当地的废物处理法规对飞溅材料或空包装物进行处置。",
+    "en": "Health and safety: read the instructions and container warning labels before use. Use only with good ventilation. No open flame on site, such as welding, grinding or smoking. The coating contains organic solvents and is somewhat toxic; wear a respirator and other protective equipment, do not inhale spray mist and avoid skin contact. If splashed on skin, rinse immediately with a suitable cleaner, soap and plenty of water; if splashed in the eyes, rinse thoroughly with water and seek medical attention at once. Under normal application conditions the dry film is non-toxic. See the product's Material Safety Data Sheet (MSDS) for details.\n\nFire safety: vinyl ester heavy-duty anticorrosive coatings are flammable; keep away from fire sources and do not smoke. In case of fire use carbon dioxide or foam extinguishers; do not spray with water. Flash point: 23 °C.\n\nWaste disposal: absorb spilled components with sand, soil or other inert material, place in suitable containers, and dispose of spilled material and empty packaging according to local waste regulations."
+   }
+  }
+ ],
+ "products": [
+  {
+   "code": "BATOV-9001",
+   "slug": "batov-9001",
+   "name": {
+    "zh": "乙烯基重防腐底漆",
+    "en": "Vinyl ester heavy-duty anticorrosive primer"
+   },
+   "summary": {
+    "zh": "乙烯基重防腐底漆（A组份BATOV-9001）由乙烯基酯树脂、活性稀释剂、填充料，配套乙烯基底漆引发剂（B组份BATOV-Y112）和配套乙烯基底漆促进剂（C组份BATOV-C903）组成。作为重防腐地坪漆底涂材料与耐腐蚀纤维布铺贴使用，具有极强的附着力与耐酸碱性能；同时作为乙烯基重防腐地坪中涂材料加入适量石英砂，具有优异的找平及载重抗压、耐高浓度酸碱、抗冲击性能。",
+    "en": "Vinyl ester heavy-duty anticorrosive primer (Part A BATOV-9001) is made of vinyl ester resin, reactive diluent and fillers, supplied with a matching primer initiator (Part B BATOV-Y112) and accelerator (Part C BATOV-C903). Used as the primer with corrosion-resistant fiber cloth in heavy-duty anticorrosive floor systems, it gives very strong adhesion and acid/alkali resistance; with a suitable amount of quartz sand added it also works as an intermediate (body) coat with excellent leveling, load-bearing and compressive strength, high-concentration acid/alkali resistance and impact resistance."
+   },
+   "uses": {
+    "zh": "适用于腐蚀环境恶劣、与腐蚀介质直接接触的设备、管道、地坪构筑物等，作重防腐地坪涂装系统中的底涂与中涂材料。",
+    "en": "For equipment, pipework and floor structures in severely corrosive environments in direct contact with corrosive media; used as the primer and intermediate coat in heavy-duty anticorrosive floor systems."
+   },
+   "features": {
+    "zh": [
+     "对金属及混凝土基材具有优良的附着力",
+     "耐磨损、抗冲击性能优越",
+     "可耐除冰酯酸外的几乎所有无机酸",
+     "耐腐蚀性能优越"
+    ],
+    "en": [
+     "Excellent adhesion to metal and concrete substrates",
+     "Excellent abrasion and impact resistance",
+     "Resists almost all inorganic acids except glacial acetic acid",
+     "Excellent corrosion resistance"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20kg/桶，B组份 400g/瓶，C组份 500g/瓶（塑料桶/瓶包装）",
+    "en": "Part A 20 kg pail, Part B 400 g bottle, Part C 500 g bottle (plastic pail/bottles)"
+   },
+   "mixRatio": "A:B:C = 100:2:2.5",
+   "coverage": "0.1–1.2",
+   "filmThickness": "80–1000 μm",
+   "specs": [],
+   "application": [
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "刮刀披刮或滚筒滚涂。建议：①素地平整、光滑、强度好，采用刮刀披刮；②素地起砂、毛糙、强度差，采用滚筒滚涂",
+      "en": "Squeegee/trowel or roller. Recommended: (1) smooth, even, strong substrate—apply by squeegee; (2) sanding, rough or weak substrate—apply by roller"
+     }
+    },
+    {
+     "k": {
+      "zh": "多组份混合",
+      "en": "Mixing"
+     },
+     "v": {
+      "zh": "A组份开启包装后，按重量比先加入B组份（引发剂）充分搅拌均匀，再按重量比加入C组份（促进剂），再次充分搅拌均匀。配比时需要电子秤精确称量。其比例浮动范围因使用环境不同而有所区别，最适宜的加入比例敬请用户通过小试或咨询巴特夫公司来确定。",
+      "en": "After opening Part A, add Part B (initiator) by weight and stir thoroughly, then add Part C (accelerator) by weight and stir thoroughly again. Weigh accurately on an electronic scale. The allowable ratio range varies with site conditions; confirm the best ratio by a small trial or by consulting Batov."
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "可根据需要添加稀释剂 BATOV-X204（乙烯基稀释剂）",
+      "en": "Thinner may be added as needed: BATOV-X204 (vinyl thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X204（乙烯基稀释剂）；施工完毕用稀释剂清洗涂装工具设备，已固化的漆污用机械方法清除",
+      "en": "BATOV-X204 (vinyl thinner); clean tools and equipment with thinner after application; remove cured paint mechanically"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "20 分钟；说明文字写为 30 分钟",
+      "en": "20 min per table; the note text says 30 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "4h",
+      "en": "4h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Through-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "36h",
+      "en": "36h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 24h，最长 48h",
+      "en": "min 24h, max 48h"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃",
+      "en": "5–35℃"
+     }
+    },
+    {
+     "k": {
+      "zh": "基面温度",
+      "en": "Substrate temperature"
+     },
+     "v": {
+      "zh": "至少高于空气露点温度 3℃ 以上",
+      "en": "At least 3 °C above the dew point"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境空气湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "＜60%",
+      "en": "＜60%"
+     }
+    },
+    {
+     "k": {
+      "zh": "高温限制",
+      "en": "High-temperature limit"
+     },
+     "v": {
+      "zh": "当环境温度高于35℃，一般不建议施工",
+      "en": "Application above 35 °C is generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the site ventilated and dust-free, but avoid strong wind that blows in dust"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存配置和使用",
+      "en": "Storage, mixing and use"
+     },
+     "v": {
+      "zh": "避免混入水和任何杂质",
+      "en": "Avoid water and any impurities"
+     }
+    },
+    {
+     "k": {
+      "zh": "安全警示",
+      "en": "Safety warning"
+     },
+     "v": {
+      "zh": "B组份（引发剂）和C组份（促进剂）必须分开存放，绝对不能让两者直接接触；配料时切不可同时加入，只能先加入一种、充分搅匀后再加入另一种，否则有引起爆炸事故的危险",
+      "en": "Keep Part B (initiator) and Part C (accelerator) stored separately and never let them touch directly; never add them together when mixing—add one, stir thoroughly, then add the other, otherwise there is a risk of explosion"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "23℃",
+      "en": "23 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "说明",
+      "en": "Notes"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60%湿度）下测定，仅供参考；温度越高，混合后可使用时间越短",
+      "en": "Drying times are measured at standard conditions (25 °C, 60% RH) and are for reference only; higher temperature shortens pot life"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工单位",
+      "en": "Applicator"
+     },
+     "v": {
+      "zh": "应当由专业的承包单位按产品施工说明进行施工；巴特夫与许多受过专业培训的施工队有长期合作",
+      "en": "Should be applied by a professional contractor following the product instructions; Batov works long-term with many professionally trained crews"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "3 个月",
+    "en": "3 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-9002",
+   "slug": "batov-9002",
+   "name": {
+    "zh": "乙烯基重防腐平涂面漆",
+    "en": "Vinyl ester heavy-duty anticorrosive flat-coat topcoat"
+   },
+   "summary": {
+    "zh": "乙烯基重防腐平涂面漆（A组份BATOV-9002）由乙烯基酯树脂、活性稀释剂、颜料、填充料，配套乙烯基平涂面漆引发剂（B组份BATOV-Y212）和配套乙烯基平涂面漆促进剂（C组份BATOV-C902）组成。作为重防腐地坪漆面涂材料，具有极强的附着力，耐高浓度酸碱、抗冲击、耐磨损性能。巴特夫乙烯基重防腐地坪面漆是一种新型的耐腐蚀材料，A、B、C组份反应类型属于氧化还原反应，配比时需要电子秤精确称量。",
+    "en": "Vinyl ester heavy-duty anticorrosive flat-coat topcoat (Part A BATOV-9002) is made of vinyl ester resin, reactive diluent, pigments and fillers, supplied with a matching initiator (Part B BATOV-Y212) and accelerator (Part C BATOV-C902). As the finish coat of heavy-duty anticorrosive floors it offers very strong adhesion, high-concentration acid/alkali resistance, impact resistance and abrasion resistance. It is a new type of corrosion-resistant material; Parts A, B and C cure by a redox reaction, so ratios must be weighed accurately on an electronic scale."
+   },
+   "uses": {
+    "zh": "适用于实验室、汽车零配件厂、PCB工厂、石油化工厂、电子厂、冶金厂、纺织厂、电厂等具有超强防腐区域的地坪系统中。",
+    "en": "For floor systems in highly corrosive areas such as laboratories, auto-parts plants, PCB factories, petrochemical plants, electronics plants, metallurgical plants, textile mills and power plants."
+   },
+   "features": {
+    "zh": [
+     "涂膜坚固耐磨、耐热、耐压、寿命持久",
+     "耐磨损、抗冲击性能优越",
+     "耐强溶剂，耐强氧化剂，耐强酸强碱的腐蚀",
+     "漆膜致密，附着力强"
+    ],
+    "en": [
+     "Hard, wear-resistant film; heat and pressure resistant; long service life",
+     "Excellent abrasion and impact resistance",
+     "Resists strong solvents, strong oxidizers, strong acids and alkalis",
+     "Dense film with strong adhesion"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20kg/桶，B组份 200g/瓶，C组份 300g/瓶（塑料桶/瓶包装）",
+    "en": "Part A 20 kg pail, Part B 200 g bottle, Part C 300 g bottle (plastic pail/bottles)"
+   },
+   "mixRatio": "A:B:C = 200:2:3",
+   "coverage": "0.2–0.3",
+   "filmThickness": "120–210 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "胶凝时间（min）",
+      "en": "Gel time (min)"
+     },
+     "v": {
+      "zh": "≥25",
+      "en": "≥25"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）（h）",
+      "en": "Surface-dry time (25 °C) (h)"
+     },
+     "v": {
+      "zh": "≤4",
+      "en": "≤4"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）（h）",
+      "en": "Through-dry time (25 °C) (h)"
+     },
+     "v": {
+      "zh": "≤24",
+      "en": "≤24"
+     }
+    },
+    {
+     "k": {
+      "zh": "颜色",
+      "en": "Color"
+     },
+     "v": {
+      "zh": "淡绿，艳绿，深灰，中灰，浅灰",
+      "en": "Light green, bright green, dark gray, medium gray, light gray"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐水性",
+      "en": "Water resistance"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（H2SO4，30%）",
+      "en": "Acid resistance (H2SO4, 30%)"
+     },
+     "v": {
+      "zh": "20天：不起泡，不脱落，无明显变色",
+      "en": "20 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（H2NO3，30%）",
+      "en": "Acid resistance"
+     },
+     "v": {
+      "zh": "20天：不起泡，不脱落，无明显变色",
+      "en": "20 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（HF，20%）",
+      "en": "Acid resistance (HF, 20%)"
+     },
+     "v": {
+      "zh": "20天：不起泡，不脱落，无明显变色",
+      "en": "20 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（HCl，30%）",
+      "en": "Acid resistance (HCl, 30%)"
+     },
+     "v": {
+      "zh": "20天：不起泡，不脱落，无明显变色",
+      "en": "20 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（CH3COOH，75%）",
+      "en": "Acid resistance (CH3COOH, 75%)"
+     },
+     "v": {
+      "zh": "20天：不起泡，不脱落，无明显变色",
+      "en": "20 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐碱性（NaOH，40%）",
+      "en": "Alkali resistance (NaOH, 40%)"
+     },
+     "v": {
+      "zh": "20天：不起泡，不脱落，无明显变色",
+      "en": "20 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐盐水性（NaCl，10%）",
+      "en": "Salt water resistance (NaCl, 10%)"
+     },
+     "v": {
+      "zh": "20天：不起泡，不脱落，无明显变色",
+      "en": "20 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐双氧水（30% H2O2）",
+      "en": "Hydrogen peroxide resistance (30% H2O2)"
+     },
+     "v": {
+      "zh": "30天：不起泡，不脱落，无明显变色",
+      "en": "30 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐油性（120#溶剂油）",
+      "en": "Oil resistance (120# solvent oil)"
+     },
+     "v": {
+      "zh": "168h：不起泡，不脱落，无明显变色",
+      "en": "168 h: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐丙酮擦试",
+      "en": "Acetone rub resistance"
+     },
+     "v": {
+      "zh": "100次：不起泡，不脱落，无明显变色",
+      "en": "100 rubs: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "硬度（邵氏硬度计，D型）",
+      "en": "Hardness (Shore D)"
+     },
+     "v": {
+      "zh": "≥60",
+      "en": "≥60"
+     }
+    },
+    {
+     "k": {
+      "zh": "抗压强度（MPa）",
+      "en": "Compressive strength (MPa)"
+     },
+     "v": {
+      "zh": "≥80",
+      "en": "≥80"
+     }
+    },
+    {
+     "k": {
+      "zh": "粘结强度（MPa）",
+      "en": "Bond strength (MPa)"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "滚筒滚涂施工",
+      "en": "Roller application"
+     }
+    },
+    {
+     "k": {
+      "zh": "多组份混合",
+      "en": "Mixing"
+     },
+     "v": {
+      "zh": "A组份开启包装后，按重量比先加入B组份（引发剂）充分搅拌均匀，再按重量比加入C组份（促进剂），再次充分搅拌均匀。配比时需要电子秤精确称量。其比例浮动范围因使用环境不同而有所区别，最适宜的加入比例敬请用户通过小试或咨询巴特夫公司来确定。",
+      "en": "After opening Part A, add Part B (initiator) by weight and stir thoroughly, then add Part C (accelerator) by weight and stir thoroughly again. Weigh accurately on an electronic scale. The allowable ratio range varies with site conditions; confirm the best ratio by a small trial or by consulting Batov."
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "可根据需要添加稀释剂 BATOV-X204（乙烯基稀释剂）",
+      "en": "Thinner may be added as needed: BATOV-X204 (vinyl thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X204（乙烯基稀释剂）；施工完毕用稀释剂清洗涂装工具设备，已固化的漆污用机械方法清除",
+      "en": "BATOV-X204 (vinyl thinner); clean tools and equipment with thinner after application; remove cured paint mechanically"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "30 分钟",
+      "en": "30 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "1h",
+      "en": "1h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Through-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "4h",
+      "en": "4h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 4h，最长 24h",
+      "en": "min 4h, max 24h"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～40℃",
+      "en": "5–40℃"
+     }
+    },
+    {
+     "k": {
+      "zh": "基面温度",
+      "en": "Substrate temperature"
+     },
+     "v": {
+      "zh": "至少高于空气露点温度 3℃ 以上",
+      "en": "At least 3 °C above the dew point"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境空气湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "＜85%",
+      "en": "＜85%"
+     }
+    },
+    {
+     "k": {
+      "zh": "高温限制",
+      "en": "High-temperature limit"
+     },
+     "v": {
+      "zh": "当环境温度高于45℃，一般不建议施工",
+      "en": "Application above 45 °C is generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the site ventilated and dust-free, but avoid strong wind that blows in dust"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存配置和使用",
+      "en": "Storage, mixing and use"
+     },
+     "v": {
+      "zh": "避免混入水和任何杂质",
+      "en": "Avoid water and any impurities"
+     }
+    },
+    {
+     "k": {
+      "zh": "安全警示",
+      "en": "Safety warning"
+     },
+     "v": {
+      "zh": "B组份（引发剂）和C组份（促进剂）必须分开存放，绝对不能让两者直接接触；配料时切不可同时加入，只能先加入一种、充分搅匀后再加入另一种，否则有引起爆炸事故的危险",
+      "en": "Keep Part B (initiator) and Part C (accelerator) stored separately and never let them touch directly; never add them together when mixing—add one, stir thoroughly, then add the other, otherwise there is a risk of explosion"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "23℃",
+      "en": "23 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "说明",
+      "en": "Notes"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60%湿度）下测定，仅供参考；温度越高，混合后可使用时间越短",
+      "en": "Drying times are measured at standard conditions (25 °C, 60% RH) and are for reference only; higher temperature shortens pot life"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "3 个月",
+    "en": "3 months"
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-9003",
+   "slug": "batov-9003",
+   "name": {
+    "zh": "乙烯基重防腐自流平",
+    "en": "Vinyl ester heavy-duty anticorrosive self-leveling topcoat"
+   },
+   "summary": {
+    "zh": "乙烯基重防腐自流平（A组份BATOV-9003）由乙烯基酯树脂、活性稀释剂、颜料、填充料，配套乙烯基自流平引发剂（B组份BATOV-Y312）和配套乙烯基自流平促进剂（C组份BATOV-C903）组成。作为重防腐地坪漆面涂材料，具有极强的附着力，耐高浓度酸碱、抗冲击、耐磨损性能。巴特夫乙烯基重防腐地坪自流平面漆是一种新型的耐腐蚀材料，A、B、C组份反应类型属于氧化还原反应，配比时需要电子秤精确称量。",
+    "en": "Vinyl ester heavy-duty anticorrosive self-leveling (Part A BATOV-9003) is made of vinyl ester resin, reactive diluent, pigments and fillers, supplied with a matching self-leveling initiator (Part B BATOV-Y312) and accelerator (Part C BATOV-C903). As the finish coat of heavy-duty anticorrosive floors it offers very strong adhesion, high-concentration acid/alkali resistance, impact resistance and abrasion resistance. It is a new type of corrosion-resistant material; Parts A, B and C cure by a redox reaction, so ratios must be weighed accurately on an electronic scale."
+   },
+   "uses": {
+    "zh": "适用于实验室、汽车零配件厂、PCB工厂、石油化工厂、电子厂、冶金厂、纺织厂、电厂等具有超强防腐区域的地坪系统中。",
+    "en": "For floor systems in highly corrosive areas such as laboratories, auto-parts plants, PCB factories, petrochemical plants, electronics plants, metallurgical plants, textile mills and power plants."
+   },
+   "features": {
+    "zh": [
+     "涂膜坚固耐磨、耐热、耐压、寿命持久",
+     "耐磨损、抗冲击性能优越",
+     "耐强溶剂，耐强氧化剂，耐强酸强碱的腐蚀",
+     "漆膜致密，附着力强",
+     "地坪平整美观、流平性优异"
+    ],
+    "en": [
+     "Hard, wear-resistant film; heat and pressure resistant; long service life",
+     "Excellent abrasion and impact resistance",
+     "Resists strong solvents, strong oxidizers, strong acids and alkalis",
+     "Dense film with strong adhesion",
+     "Smooth, attractive floor with excellent leveling"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20kg/桶，B组份 200g/瓶，C组份 300g/瓶（塑料桶/瓶包装）",
+    "en": "Part A 20 kg pail, Part B 200 g bottle, Part C 300 g bottle (plastic pail/bottles)"
+   },
+   "mixRatio": "A:B:C = 200:2:3",
+   "coverage": "0.8–1.5",
+   "filmThickness": "600–1300 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "胶凝时间（min）",
+      "en": "Gel time (min)"
+     },
+     "v": {
+      "zh": "≥25",
+      "en": "≥25"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）（h）",
+      "en": "Surface-dry time (25 °C) (h)"
+     },
+     "v": {
+      "zh": "≤4",
+      "en": "≤4"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）（h）",
+      "en": "Through-dry time (25 °C) (h)"
+     },
+     "v": {
+      "zh": "≤24",
+      "en": "≤24"
+     }
+    },
+    {
+     "k": {
+      "zh": "颜色",
+      "en": "Color"
+     },
+     "v": {
+      "zh": "淡绿，艳绿，深灰，中灰，浅灰",
+      "en": "Light green, bright green, dark gray, medium gray, light gray"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐水性",
+      "en": "Water resistance"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（H2SO4，30%）",
+      "en": "Acid resistance (H2SO4, 30%)"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（H2NO3，30%）",
+      "en": "Acid resistance"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（HF，20%）",
+      "en": "Acid resistance (HF, 20%)"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（HCl，30%）",
+      "en": "Acid resistance (HCl, 30%)"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（CH3COOH，75%）",
+      "en": "Acid resistance (CH3COOH, 75%)"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐碱性（NaOH，40%）",
+      "en": "Alkali resistance (NaOH, 40%)"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐盐水性（NaCl，10%）",
+      "en": "Salt water resistance (NaCl, 10%)"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐双氧水（30% H2O2）",
+      "en": "Hydrogen peroxide resistance (30% H2O2)"
+     },
+     "v": {
+      "zh": "60天：不起泡，不脱落，无明显变色",
+      "en": "60 days: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐油性（120#溶剂油）",
+      "en": "Oil resistance (120# solvent oil)"
+     },
+     "v": {
+      "zh": "168h：不起泡，不脱落，无明显变色",
+      "en": "168 h: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐丙酮擦试",
+      "en": "Acetone rub resistance"
+     },
+     "v": {
+      "zh": "500次：不起泡，不脱落，无明显变色",
+      "en": "500 rubs: no blistering, no peeling, no obvious discoloration"
+     }
+    },
+    {
+     "k": {
+      "zh": "硬度（邵氏硬度计，D型）",
+      "en": "Hardness (Shore D)"
+     },
+     "v": {
+      "zh": "≥70",
+      "en": "≥70"
+     }
+    },
+    {
+     "k": {
+      "zh": "抗压强度（MPa）",
+      "en": "Compressive strength (MPa)"
+     },
+     "v": {
+      "zh": "≥80",
+      "en": "≥80"
+     }
+    },
+    {
+     "k": {
+      "zh": "粘结强度（MPa）",
+      "en": "Bond strength (MPa)"
+     },
+     "v": {
+      "zh": "≥2",
+      "en": "≥2"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "镘刀镘涂施工",
+      "en": "Trowel application"
+     }
+    },
+    {
+     "k": {
+      "zh": "多组份混合",
+      "en": "Mixing"
+     },
+     "v": {
+      "zh": "多组份混合比（重量比）A:B:C＝200:2:3。A组份开启包装后，按重量比先加入B组份（引发剂）充分搅拌均匀，再按重量比加入C组份（促进剂），再次充分搅拌均匀。配比时需要电子秤精确称量。其比例浮动范围因使用环境不同而有所区别，最适宜的加入比例敬请用户通过小试或咨询巴特夫公司来确定。",
+      "en": "Mix ratio by weight A:B:C = 200:2:3. After opening Part A, add Part B (initiator) by weight and stir thoroughly, then add Part C (accelerator) by weight and stir thoroughly again. Weigh accurately on an electronic scale. The allowable ratio range varies with site conditions; confirm the best ratio by a small trial or by consulting Batov."
+     }
+    },
+    {
+     "k": {
+      "zh": "稀释剂",
+      "en": "Thinner"
+     },
+     "v": {
+      "zh": "可根据需要添加稀释剂 BATOV-X204（乙烯基稀释剂）",
+      "en": "Thinner may be added as needed: BATOV-X204 (vinyl thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X204（乙烯基稀释剂）；施工完毕用稀释剂清洗涂装工具设备，已固化的漆污用机械方法清除",
+      "en": "BATOV-X204 (vinyl thinner); clean tools and equipment with thinner after application; remove cured paint mechanically"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合后可使用时间（25℃）",
+      "en": "Pot life (25 °C)"
+     },
+     "v": {
+      "zh": "25 分钟",
+      "en": "25 min"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "2h",
+      "en": "2h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Through-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "8h",
+      "en": "8h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 8h，最长 24h",
+      "en": "min 8h, max 24h"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～40℃",
+      "en": "5–40℃"
+     }
+    },
+    {
+     "k": {
+      "zh": "基面温度",
+      "en": "Substrate temperature"
+     },
+     "v": {
+      "zh": "至少高于空气露点温度 3℃ 以上",
+      "en": "At least 3 °C above the dew point"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境空气湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "＜80%",
+      "en": "＜80%"
+     }
+    },
+    {
+     "k": {
+      "zh": "高温限制",
+      "en": "High-temperature limit"
+     },
+     "v": {
+      "zh": "当环境温度高于45℃，一般不建议施工",
+      "en": "Application above 45 °C is generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the site ventilated and dust-free, but avoid strong wind that blows in dust"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存配置和使用",
+      "en": "Storage, mixing and use"
+     },
+     "v": {
+      "zh": "避免混入水和任何杂质",
+      "en": "Avoid water and any impurities"
+     }
+    },
+    {
+     "k": {
+      "zh": "安全警示",
+      "en": "Safety warning"
+     },
+     "v": {
+      "zh": "B组份（引发剂）和C组份（促进剂）必须分开存放，绝对不能让两者直接接触；配料时切不可同时加入，只能先加入一种、充分搅匀后再加入另一种，否则有引起爆炸事故的危险",
+      "en": "Keep Part B (initiator) and Part C (accelerator) stored separately and never let them touch directly; never add them together when mixing—add one, stir thoroughly, then add the other, otherwise there is a risk of explosion"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "23℃",
+      "en": "23 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "说明",
+      "en": "Notes"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60%湿度）下测定，仅供参考；温度越高，混合后可使用时间越短",
+      "en": "Drying times are measured at standard conditions (25 °C, 60% RH) and are for reference only; higher temperature shortens pot life"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "3 个月",
+    "en": "3 months"
+   },
+   "techSupport": false
+  }
+ ]
+}

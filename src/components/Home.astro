@@ -2,8 +2,9 @@
 import Base from '../layouts/Base.astro';
 import ContactForm from './ContactForm.astro';
 import { company, type Lang } from '../data/site';
-import { categories, scenes, systems } from '../data/systems';
-import { href } from '../lib/paths';
+import { groups, seriesById, seriesPhotos, projectSites } from '../data/catalog';
+import { scenes, buildups } from '../data/scenes';
+import { href, asset } from '../lib/paths';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -45,7 +46,7 @@ const c = zh
       why: [
         ['按工况配系统', '根据荷载、化学品、温湿度配一整套系统，不过度设计，也不偷工减料。'],
         ['自有工厂直供', '无锡自有工厂研发生产，没有中间环节，批次质量可追溯。'],
-        ['施工技术支持', `${P('[待确认是否提供]')} 提供施工工艺指导，降低返工风险。`],
+        ['施工技术支持', '可提供设计阶段协助、施工建议，必要时到施工现场解决问题，降低返工风险。'],
         ['参数公开透明', `每个产品公开技术参数和说明书，${P('[检测报告 / 认证名称]')}。`],
       ],
       factoryTitle: '走进我们的工厂',
@@ -104,7 +105,7 @@ const c = zh
       sysEyebrow: 'Floor systems',
       sysTitle: 'Find the right system for your floor',
       sysLead: 'Browse by chemistry or by application. Every system comes with its full build-up and data sheets.',
-      byMat: 'By chemistry', byScene: 'By application', view: 'View systems →', rec: 'Suggested: ',
+      byMat: 'By chemistry', byScene: 'By application', view: 'View products →', rec: 'Typical build-up: ',
       sceneNote: 'Suggestions are indicative; our engineers confirm the final build-up.',
       bandTitle: 'Not sure which system you need?',
       bandText: 'Pick your application and floor area, get a suggested system and add it to your inquiry list. Our engineers send the quote.',
@@ -116,7 +117,7 @@ const c = zh
         ['Direct factory pricing', 'We formulate and produce in our own plant in Wuxi. No trading margins.'],
         ['Matched systems', 'Primer, body coat and topcoat designed to work together, specified to your loads and chemicals.'],
         ['Published data', `Technical data sheets for every product. ${P('[Certifications: to fill]')}`],
-        ['Application support', `${P('[To confirm]')} Remote guidance for your installers on mixing and application.`],
+        ['Application support', 'Design-stage advice, application guidance and on-site troubleshooting when needed, so your installers get it right first time.'],
       ],
       factoryTitle: 'Inside our factory',
       factoryLead: 'R&D, production and quality control, all in our own plant in Wuxi.',
@@ -155,7 +156,7 @@ const dist = [
 ];
 
 const ph = (s: string) => (s.includes('[') ? `<span class="ph">${s}</span>` : s);
-const sysBy = (scene: string) => systems.filter((s) => s.scenes.includes(scene as any)).map((s) => s.name[lang]);
+const cover = (g: (typeof groups)[number]) => g.series.map((id) => seriesPhotos(id)[0]).find(Boolean);
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -224,15 +225,20 @@ const faqSchema = {
           <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="tab-scene">{c.byScene}</button>
         </div>
         <div class="tab-panel grid g4" id="tab-mat" role="tabpanel">
-          {categories.map((cat, i) => (
-            <a class="card" href={href(lang, `/systems/#${cat.id}`)}>
-              <div class="photo" style="margin-bottom:16px">{zh ? `[${cat.name.zh}实拍照片]` : `[${cat.name.en} photo]`}</div>
-              <span class="muted" style="font-size:13px">0{i + 1}</span>
-              <h3>{cat.name[lang]}</h3>
-              <p set:html={ph(cat.desc[lang])} />
-              <span class="more">{c.view}</span>
-            </a>
-          ))}
+          {groups.map((g, i) => {
+            const img = cover(g);
+            return (
+              <a class="card" href={href(lang, `/systems/#${g.id}`)}>
+                {img
+                  ? <img class="card-img" src={asset(img.sm)} alt={img.alt[lang]} width="600" height={Math.round(600 * img.h / img.w)} loading="lazy" decoding="async" />
+                  : <div class="photo" style="margin-bottom:16px">{zh ? '[待补实拍照片]' : '[Photo to add]'}</div>}
+                <span class="muted" style="font-size:13px">0{i + 1}</span>
+                <h3>{g.name[lang]}</h3>
+                <p>{g.desc[lang]}</p>
+                <span class="more">{c.view}</span>
+              </a>
+            );
+          })}
         </div>
         <div class="tab-panel" id="tab-scene" role="tabpanel" hidden>
           <div class="grid g3">
@@ -240,7 +246,7 @@ const faqSchema = {
               <a class="card" href={href(lang, `/systems/#scene-${s.id}`)}>
                 <h3>{s.name[lang]} →</h3>
                 <p>{s.need[lang]}</p>
-                <p style="margin-top:10px;color:var(--accent);font-size:14px">{c.rec}{sysBy(s.id).join(zh ? ' / ' : ' / ')}</p>
+                <p style="margin-top:10px;color:var(--accent);font-size:14px">{c.rec}{buildups[s.id].map((l) => l.product.name[lang]).join(' → ')}</p>
               </a>
             ))}
           </div>
@@ -306,19 +312,20 @@ const faqSchema = {
   <section class="section" style="padding-top:0" id="cases">
     <div class="wrap">
       <div class="section-head"><span class="eyebrow">{zh ? '工程案例' : 'Projects'}</span><h2>{c.casesTitle}</h2></div>
-      <div class="grid g3">
-        {c.cases.map(([n, sector]) => (
+      <div class="grid g4">
+        {projectSites.map((site) => (
           <div class="card">
-            <div class="photo" style="margin-bottom:16px">{c.caseLabels[3]}</div>
-            <h3 set:html={ph(n)} />
-            <p>
-              {c.caseLabels[0]}{zh ? '：' : ': '}<span set:html={ph(sector)} /><br />
+            <img class="card-img" src={asset(site.photos[0].sm)} alt={site.photos[0].alt[lang]} width="600" height="600" loading="lazy" decoding="async" />
+            <h3><span class="ph">{zh ? '[项目名称]' : '[Project name]'}</span></h3>
+            <p>{site.desc[lang]}</p>
+            <p style="margin-top:8px">
               {c.caseLabels[1]}{zh ? '：' : ': '}<span class="ph">[ ]</span><br />
               {c.caseLabels[2]}{zh ? '：' : ': '}<span class="ph">[ ]</span> m²
             </p>
           </div>
         ))}
       </div>
+      <p class="muted" style="font-size:13px;margin-top:12px">{zh ? '以上为公司提供的施工现场实拍。项目名称、面积和所用产品待补充。' : 'On-site photos supplied by our team. Project names, areas and products to be added.'}</p>
     </div>
   </section>
 

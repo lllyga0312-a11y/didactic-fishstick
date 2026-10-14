@@ -1,0 +1,282 @@
+{
+ "id": "specialty",
+ "name": {
+  "zh": "特种地坪材料",
+  "en": "Specialty flooring materials"
+ },
+ "intro": {
+  "zh": "特种地坪材料彩页，包含快干纳米划线漆（BATOV-1021）与纳米硅晶着色剂（BATOV-1022）。",
+  "en": "Brochure pages for specialty flooring materials: fast-drying nano line-marking paint (BATOV-1021) and nano silicon crystal colorant (BATOV-1022)."
+ },
+ "notes": [],
+ "products": [
+  {
+   "code": "BATOV-1021",
+   "slug": "batov-1021",
+   "name": {
+    "zh": "快干纳米划线漆",
+    "en": "Fast-drying nano line-marking paint"
+   },
+   "summary": {
+    "zh": "快干纳米划线漆是一种高性能涂料，具有非常强的粘结性，能紧密粘附在混凝土密封固化地坪、各类环氧地坪、聚氨酯超耐磨地坪、水泥混凝土等基面上，不会轻易脱落或被擦掉，长期保持清晰度和耐用性。具有高附着力、高耐磨性、高清晰度、干燥速度快、耐候性、环保等特点。施工前需准备、涂料配制，采用滚涂或喷涂方式施工，干燥时间短，维护保养方便。",
+    "en": "Fast-drying nano line-marking paint is a high-performance coating with very strong bonding. It adheres firmly to concrete sealer-hardened floors, all kinds of epoxy floors, polyurethane super-abrasion-resistant floors and cement concrete, so it does not easily peel or wear off and keeps markings clear and durable. Features include high adhesion, high abrasion resistance, high clarity, fast drying, weather resistance and eco-friendliness. After preparation and mixing it is applied by roller or spray; drying time is short and maintenance is easy."
+   },
+   "uses": {
+    "zh": "广泛应用于道路、机场、停车场、码头、工厂等地面、墙面以及金属材料等各种标线划线工作。加入了纳米硅粉的硅酸酯树脂有非常强的附着力和防滑性，不仅可在标线上形成清晰、醒目的图案，还能起到防滑、保护表面等作用。",
+    "en": "Widely used for line marking on roads, airports, car parks, docks, factory floors and walls, and metal surfaces. The silicate resin with added nano silica powder gives very strong adhesion and slip resistance, forming clear, eye-catching markings while also providing slip resistance and surface protection."
+   },
+   "features": {
+    "zh": [
+     "漆膜坚固，耐磨性强；可以经受反复碾压，不易掉漆",
+     "盖底性强，可以做到一遍盖底",
+     "极强的附着力，可以达到45兆帕，对固化地坪、水泥混凝土、石材、石棉板、木材、金属等建筑材料有很强附着力",
+     "超强的耐污性：纳米材料分子料极细，涂层表面密度非常高，污物很难渗入",
+     "耐胎痕，不会留下胎痕印"
+    ],
+    "en": [
+     "Hard, abrasion-resistant film; withstands repeated rolling traffic and does not easily flake",
+     "Strong hiding power; one coat can cover",
+     "Very strong adhesion, up to 45 MPa, on hardened floors, cement concrete, stone, asbestos board, wood, metal and other building materials",
+     "Excellent stain resistance: the nano material is extremely fine and the coating surface very dense, so contaminants hardly penetrate",
+     "Tire-mark resistant; leaves no tire marks"
+    ]
+   },
+   "packaging": {
+    "zh": "A组份 20：B组份 5",
+    "en": "Part A 20 : Part B 5"
+   },
+   "mixRatio": "",
+   "coverage": "",
+   "filmThickness": "",
+   "specs": [],
+   "application": [
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "滚涂或喷涂",
+      "en": "Roller or spray"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "一般要求高于产品规定的最低施工温度，多数纳米划线漆产品建议在 5℃ 至 40℃ 之间施工；低温可能影响固化速度和最终附着力，高温可能导致漆膜快速干燥但内部未完全固化",
+      "en": "Must be above the product's minimum application temperature; for most nano line-marking paints 5–40 °C is recommended. Low temperature may affect cure speed and final adhesion; high temperature may dry the surface quickly while the film is not fully cured inside"
+     }
+    },
+    {
+     "k": {
+      "zh": "湿度",
+      "en": "Humidity"
+     },
+     "v": {
+      "zh": "湿度不宜过高，湿度过大时应避免施工，以免水分蒸发慢，影响漆膜质量和附着力",
+      "en": "Humidity should not be too high; avoid application in high humidity, as slow evaporation of moisture affects film quality and adhesion"
+     }
+    },
+    {
+     "k": {
+      "zh": "表面清洁",
+      "en": "Surface cleanliness"
+     },
+     "v": {
+      "zh": "施工前确保地面干燥、清洁，无灰尘、油脂、松散颗粒等污染物，必要时用高压水枪或压缩空气清除路面浮尘",
+      "en": "Before application make sure the surface is dry and clean, free of dust, grease and loose particles; if necessary remove dust with a high-pressure water jet or compressed air"
+     }
+    },
+    {
+     "k": {
+      "zh": "平整度",
+      "en": "Flatness"
+     },
+     "v": {
+      "zh": "基层应平整，坑洼、裂缝等缺陷需预先修复",
+      "en": "Substrate must be flat; repair pits, cracks and other defects beforehand"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "密封储存在 5～35℃ 的干燥、阴凉、通风良好的环境中，避免高温和火源；运输时材料码放平稳，保证车厢环境干燥、封闭，严格防潮、防冻、防晒、防雨淋；A、B 组份必须避免霜冻",
+      "en": "Store sealed at 5–35 °C in a dry, cool, well-ventilated place away from heat and fire; stack steadily in transit in a dry, closed vehicle; protect strictly from moisture, freezing, sun and rain; Parts A and B must be protected from frost"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "",
+    "en": ""
+   },
+   "techSupport": false
+  },
+  {
+   "code": "BATOV-1022",
+   "slug": "batov-1022",
+   "name": {
+    "zh": "纳米硅晶着色剂",
+    "en": "Nano silicon crystal colorant"
+   },
+   "summary": {
+    "zh": "纳米硅晶着色剂是一种新型环保材料，主要应用于涂料、塑料、油墨等领域。它以纳米硅晶为主要原料，通过先进的制备技术使其具有优异的耐候性、耐光性和耐化学性。与传统的有机染料着色剂相比，具有更高的环保性能、更好的着色效果和更广泛的应用前景。",
+    "en": "Nano silicon crystal colorant is a new eco-friendly material mainly used in coatings, plastics and inks. Made mainly from nano silicon crystals by advanced preparation technology, it has excellent weather, light and chemical resistance. Compared with traditional organic dye colorants it offers higher environmental performance, better coloring and wider application prospects."
+   },
+   "uses": {
+    "zh": "用于室内外金刚砂耐磨地坪、水磨石地坪、原浆收光地坪、超平地坪、普通水泥地坪、石材等基面，适用于工厂车间、地下车库地坪、仓库、商场超市、码头、停机坪等水泥基础地面。",
+    "en": "For indoor and outdoor emery (金刚砂) wear-resistant floors, terrazzo, power-troweled floors, super-flat floors, ordinary cement floors, stone and similar substrates; suitable for cement-based floors in factory workshops, underground car parks, warehouses, shopping malls and supermarkets, docks and aprons."
+   },
+   "features": {
+    "zh": [
+     "高强附着力、高硬度",
+     "环保低VOC",
+     "着色效果均匀持久，无迁移性",
+     "耐候抗黄变",
+     "耐弱酸、弱碱、盐和油的腐蚀",
+     "施工便捷",
+     "耐光，抗光照射"
+    ],
+    "en": [
+     "High adhesion strength, high hardness",
+     "Eco-friendly, low VOC",
+     "Uniform, lasting color with no migration",
+     "Weather resistant, non-yellowing",
+     "Resists weak acids, weak alkalis, salt and oil",
+     "Easy application",
+     "Light resistant, resists light exposure"
+    ]
+   },
+   "packaging": {
+    "zh": "",
+    "en": ""
+   },
+   "mixRatio": "5:2",
+   "coverage": "≈0.15",
+   "filmThickness": "",
+   "specs": [],
+   "application": [
+    {
+     "k": {
+      "zh": "混合比例",
+      "en": "Mix ratio"
+     },
+     "v": {
+      "zh": "5：2",
+      "en": "5:2"
+     }
+    },
+    {
+     "k": {
+      "zh": "理论成品用量",
+      "en": "Theoretical consumption"
+     },
+     "v": {
+      "zh": "0.15 左右",
+      "en": "About 0.15"
+     }
+    },
+    {
+     "k": {
+      "zh": "新浇筑混凝土",
+      "en": "New concrete"
+     },
+     "v": {
+      "zh": "必须经过 28 天养护期",
+      "en": "Must cure for 28 days"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～40℃",
+      "en": "5–40 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "基面温度",
+      "en": "Substrate temperature"
+     },
+     "v": {
+      "zh": "至少高于空气露点温度 3℃ 以上",
+      "en": "At least 3 °C above the dew point"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存配置和使用",
+      "en": "Storage, mixing and use"
+     },
+     "v": {
+      "zh": "避免混入水和任何杂质",
+      "en": "Avoid water and any impurities"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the site ventilated and dust-free, but avoid strong wind that blows in dust"
+     }
+    },
+    {
+     "k": {
+      "zh": "地面条件",
+      "en": "Floor condition"
+     },
+     "v": {
+      "zh": "施工时确保地面无返潮渗水等潮湿情况，确保地面干燥",
+      "en": "Make sure the floor has no rising damp or seepage and is dry during application"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工工艺",
+      "en": "Application process"
+     },
+     "v": {
+      "zh": "1. 基础研磨：应用 30#、60#、120# 金刚刀头开面，视现场情况选用相应金刚刀头；2. 深度研磨：应用 50 目到 150 目再到 300 目树脂磨片对地面进行细磨；3. 涂装纳米硅晶着色剂两遍（刮涂一遍、滚涂一遍）",
+      "en": "1. Base grinding: open the surface with 30#, 60# and 120# diamond segments, choosing as site conditions require; 2. Deep grinding: fine-grind with 50- to 150- then 300-mesh resin pads; 3. Apply two coats of nano silicon crystal colorant (one by squeegee, one by roller)"
+     }
+    },
+    {
+     "k": {
+      "zh": "产品参数",
+      "en": "Product parameters"
+     },
+     "v": {
+      "zh": "“详见产品检测报告及”",
+      "en": "“See the product test report and …”"
+     }
+    },
+    {
+     "k": {
+      "zh": "储存条件",
+      "en": "Storage conditions"
+     },
+     "v": {
+      "zh": "涂料密封储存在干燥、阴凉、通风良好的条件下，避免高温和火源；运输时保证车厢环境干燥、封闭，涂料码放平稳",
+      "en": "Store sealed in a dry, cool, well-ventilated place away from heat and fire; transport in a dry, closed vehicle with the containers stacked steadily"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "6 个月",
+    "en": "6 months"
+   },
+   "techSupport": false
+  }
+ ]
+}

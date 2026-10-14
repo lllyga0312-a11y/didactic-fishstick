@@ -1,0 +1,376 @@
+{
+ "id": "concrete-sealer",
+ "name": {
+  "zh": "混凝土密封固化剂涂装系统",
+  "en": "Concrete sealer and hardener system"
+ },
+ "intro": {
+  "zh": "无色透明的锂基渗透型液体硬化剂，与混凝土中的钙、镁离子反应形成致密、抗磨、防尘的实体，用于各类水泥基地坪。",
+  "en": "A colorless, transparent lithium-based penetrating liquid hardener that reacts with calcium and magnesium ions in concrete to form a dense, abrasion-resistant, dust-proof solid, for cement-based floors."
+ },
+ "notes": [
+  {
+   "title": {
+    "zh": "混凝土密封固化剂施工指导",
+    "en": "Concrete sealer application guide"
+   },
+   "body": {
+    "zh": "一、施作于新浇注的整体粉光地坪表面：\n1. 新浇注混凝土地坪必须经过至少 3 天的养护，最好 7 天以上。\n2. 低压喷涂混凝土密封固化剂（标准用量：0.1 kg/m²），随后用超细纤维拖把或软毛扫帚将材料分配均匀，勿积料。\n3. 地坪表面需保持 15–20 分钟的润湿状态。\n4. 多孔隙地坪及已呈现吸干材料区域的地坪，需追加喷涂。\n5. 一旦材料开始硬化，不可再用超细纤维拖把或软毛扫帚。\n6. 材料干燥时间：约 2–4 小时。\n\n二、施作于研磨抛光的混凝土地坪表面：\n1. 研磨抛光至 200 目（湿磨或干磨）。\n2. 施作第一道混凝土密封固化剂，用量 0.1 kg/m²，施工法同上。\n3. 研磨抛光至 400 目（湿磨或干磨）。\n4. 研磨抛光至 800 目（干磨）。\n5. 施作第二道混凝土密封固化剂，用量 0.1 kg/m²，施工法同上。\n6. 研磨抛光至 1500 目（干磨）。\n7. 研磨抛光至 3000 目（干磨）。",
+    "en": "1. On newly placed power-troweled (monolithic) concrete floors:\n1. New concrete must cure at least 3 days, preferably 7 days or more.\n2. Low-pressure spray the sealer (standard consumption 0.1 kg/m²), then spread evenly with a microfiber mop or soft-bristle broom; do not let it pool.\n3. Keep the surface wet for 15–20 minutes.\n4. Porous floors and areas that have absorbed the material dry need an additional spray.\n5. Once the material starts to harden, do not use the microfiber mop or soft broom again.\n6. Drying time: about 2–4 hours.\n\n2. On ground and polished concrete floors:\n1. Grind/polish to 200 grit (wet or dry).\n2. Apply the first coat of sealer, 0.1 kg/m², same method as above.\n3. Polish to 400 grit (wet or dry).\n4. Polish to 800 grit (dry).\n5. Apply the second coat of sealer, 0.1 kg/m², same method as above.\n6. Polish to 1500 grit (dry).\n7. Polish to 3000 grit (dry)."
+   }
+  }
+ ],
+ "products": [
+  {
+   "code": "BATOV-1010",
+   "slug": "batov-1010",
+   "name": {
+    "zh": "混凝土密封固化剂",
+    "en": "Concrete sealer and hardener (lithium-based penetrating liquid hardener)"
+   },
+   "summary": {
+    "zh": "混凝土密封固化剂（单组份BATOV-1010），又名锂基渗透液体硬化剂，是一款多功能的地坪材料，使用简单，为无色透明液体。能和混凝土中的钙、镁离子起化学反应，形成抗磨、防尘的致密实体。在聚酰胺环氧树脂使用合适的情况下，混凝土变得耐磨和抗化学渗透。深入渗透到混凝土内，使反应后的残留物形成硅酸凝胶，有效填补混凝土毛细孔，成为一个致密的实体。除了硬化和耐磨的作用外，还可防尘防起砂、轻度防腐并使混凝土表面光滑。一般需要 3–5 遍涂装工序。",
+    "en": "Concrete sealer and hardener (one-component BATOV-1010), also called lithium-based penetrating liquid hardener, is a multi-purpose, easy-to-use, colorless transparent liquid. It reacts with the calcium and magnesium ions in concrete to form a dense, abrasion-resistant, dust-proof solid. It penetrates deep into the concrete, and the reaction residue forms a silicate gel that fills the capillary pores into a dense mass. Besides hardening and abrasion resistance it gives dust-proofing, anti-dusting, light corrosion protection and a smooth surface. Generally 3–5 coats are required."
+   },
+   "uses": {
+    "zh": "用于室内外金刚砂耐磨地坪、水磨石地坪、原浆收光地坪、超平地坪、普通水泥地坪、石材等基面，适合于工厂车间、仓库、商场超市、码头、机场跑道、桥梁、公路等水泥基场所。",
+    "en": "For indoor and outdoor emery (金刚砂) wear-resistant floors, terrazzo, power-troweled floors, super-flat floors, ordinary cement floors, stone and similar substrates; suitable for cement-based sites such as factory workshops, warehouses, shopping malls and supermarkets, docks, airport runways, bridges and roads."
+   },
+   "features": {
+    "zh": [
+     "密封防尘、硬化耐磨",
+     "抗老化性能好",
+     "耐弱酸、弱碱、盐和油的腐蚀",
+     "施工方便、快捷",
+     "无VOC、过程环保、无色、无味",
+     "降低维护费用，永久的光泽"
+    ],
+    "en": [
+     "Seals against dust, hardens and resists abrasion",
+     "Good aging resistance",
+     "Resists weak acids, weak alkalis, salt and oil",
+     "Easy, fast application",
+     "VOC-free, eco-friendly process, colorless and odorless",
+     "Lower maintenance cost, lasting gloss"
+    ]
+   },
+   "packaging": {
+    "zh": "单组份 20kg/桶",
+    "en": "One-component 20 kg pail"
+   },
+   "mixRatio": "",
+   "coverage": "0.1–0.15",
+   "filmThickness": "65–120 μm",
+   "specs": [
+    {
+     "k": {
+      "zh": "颜色和外观",
+      "en": "Color and appearance"
+     },
+     "v": {
+      "zh": "颜色透明，平整光滑",
+      "en": "Transparent, smooth and even"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（h）",
+      "en": "Surface-dry time (h)"
+     },
+     "v": {
+      "zh": "≤4",
+      "en": "≤4"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（h）",
+      "en": "Through-dry time (h)"
+     },
+     "v": {
+      "zh": "≤8",
+      "en": "≤8"
+     }
+    },
+    {
+     "k": {
+      "zh": "附着力（级）",
+      "en": "Adhesion (grade)"
+     },
+     "v": {
+      "zh": "≤1",
+      "en": "≤1"
+     }
+    },
+    {
+     "k": {
+      "zh": "铅笔硬度",
+      "en": "Pencil hardness"
+     },
+     "v": {
+      "zh": "≥2H",
+      "en": "≥2H"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐磨性（750g，500转）",
+      "en": "Abrasion resistance (750 g/500 r)"
+     },
+     "v": {
+      "zh": "≤0.02",
+      "en": "≤0.02"
+     }
+    },
+    {
+     "k": {
+      "zh": "柔韧性",
+      "en": "Flexibility"
+     },
+     "v": {
+      "zh": "1mm通过",
+      "en": "Pass at 1 mm"
+     }
+    },
+    {
+     "k": {
+      "zh": "冲击强度（kg·cm）",
+      "en": "Impact strength (kg·cm)"
+     },
+     "v": {
+      "zh": "50通过",
+      "en": "Pass at 50"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐水性",
+      "en": "Water resistance"
+     },
+     "v": {
+      "zh": "168小时不起泡、不脱落，允许轻微变色",
+      "en": "168 h: no blistering, no peeling; slight discoloration allowed"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐酸性（10％硫酸）",
+      "en": "Acid resistance (10% sulfuric acid)"
+     },
+     "v": {
+      "zh": "48小时不起泡、不脱落，允许轻微变色",
+      "en": "48 h: no blistering, no peeling; slight discoloration allowed"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐碱性（20％氢氧化钠）",
+      "en": "Alkali resistance (20% sodium hydroxide)"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering, no peeling; slight discoloration allowed"
+     }
+    },
+    {
+     "k": {
+      "zh": "耐汽油性能（120#）",
+      "en": "Gasoline resistance (120#)"
+     },
+     "v": {
+      "zh": "72小时不起泡、不脱落，允许轻微变色",
+      "en": "72 h: no blistering, no peeling; slight discoloration allowed"
+     }
+    },
+    {
+     "k": {
+      "zh": "pH值",
+      "en": "pH value"
+     },
+     "v": {
+      "zh": "10.9",
+      "en": "10.9"
+     }
+    },
+    {
+     "k": {
+      "zh": "止滑性",
+      "en": "Slip resistance"
+     },
+     "v": {
+      "zh": "好",
+      "en": "Good"
+     },
+     "std": "ASTM-E-303"
+    },
+    {
+     "k": {
+      "zh": "耐候性（UV试验）",
+      "en": "Weather resistance (UV test)"
+     },
+     "v": {
+      "zh": "绝佳",
+      "en": "Excellent"
+     }
+    }
+   ],
+   "application": [
+    {
+     "k": {
+      "zh": "施工方式",
+      "en": "Application method"
+     },
+     "v": {
+      "zh": "研磨机研磨抛光施工",
+      "en": "Applied with grinder polishing"
+     }
+    },
+    {
+     "k": {
+      "zh": "混合",
+      "en": "Mixing"
+     },
+     "v": {
+      "zh": "单组份，充分搅拌均匀；不需要添加稀释剂",
+      "en": "One-component; stir thoroughly; no thinner needed"
+     }
+    },
+    {
+     "k": {
+      "zh": "清洗剂",
+      "en": "Cleaner"
+     },
+     "v": {
+      "zh": "BATOV-X001（面漆稀释剂）",
+      "en": "BATOV-X001 (topcoat thinner)"
+     }
+    },
+    {
+     "k": {
+      "zh": "可使用时间（开桶后，25℃）",
+      "en": "Pot life (after opening, 25 °C)"
+     },
+     "v": {
+      "zh": "60 分钟（说明栏：倒在地面可使用时间为 100 分钟）",
+      "en": "60 min (note: 100 min once poured on the floor)"
+     }
+    },
+    {
+     "k": {
+      "zh": "表干时间（25℃）",
+      "en": "Surface-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "4h",
+      "en": "4 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "实干时间（25℃）",
+      "en": "Through-dry time (25 °C)"
+     },
+     "v": {
+      "zh": "8h",
+      "en": "8 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "复涂间隔（25℃）",
+      "en": "Recoat interval (25 °C)"
+     },
+     "v": {
+      "zh": "最短 8h，最长 24h",
+      "en": "min 8 h, max 24 h"
+     }
+    },
+    {
+     "k": {
+      "zh": "高温限制",
+      "en": "High-temperature limit"
+     },
+     "v": {
+      "zh": "当环境温度高于35℃，一般不建议施工",
+      "en": "Application above 35 °C is generally not recommended"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境温度",
+      "en": "Application temperature"
+     },
+     "v": {
+      "zh": "5～35℃",
+      "en": "5–35 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "基面温度",
+      "en": "Substrate temperature"
+     },
+     "v": {
+      "zh": "至少高于空气露点温度 3℃ 以上",
+      "en": "At least 3 °C above the dew point"
+     }
+    },
+    {
+     "k": {
+      "zh": "施工环境空气湿度",
+      "en": "Relative humidity"
+     },
+     "v": {
+      "zh": "＜95%",
+      "en": "＜95%"
+     }
+    },
+    {
+     "k": {
+      "zh": "通风条件",
+      "en": "Ventilation"
+     },
+     "v": {
+      "zh": "应确保施工场所通风无尘，但不应有强风，以免带进灰尘影响表观效果",
+      "en": "Keep the site ventilated and dust-free, but avoid strong wind that blows in dust"
+     }
+    },
+    {
+     "k": {
+      "zh": "闪点",
+      "en": "Flash point"
+     },
+     "v": {
+      "zh": "45℃",
+      "en": "45 °C"
+     }
+    },
+    {
+     "k": {
+      "zh": "干燥时间说明",
+      "en": "Drying note"
+     },
+     "v": {
+      "zh": "干燥时间在标准条件（25℃，60%湿度）下测定，仅供参考；温度越高，可使用时间越短",
+      "en": "Drying times are measured at standard conditions (25 °C, 60% RH) and are for reference only; higher temperature shortens pot life"
+     }
+    },
+    {
+     "k": {
+      "zh": "反应原理",
+      "en": "Reaction principle"
+     },
+     "v": {
+      "zh": "活性的无色透明化学水性制剂，由无机物、化学活性物质和络合物组成；与混凝土中大量的半水化水泥、游离石灰、钙发生化学反应（持续反应时间约 60–90 天），形成一种永久性凝胶，在处理过的混凝土内部结晶成坚硬耐磨组织，得到无尘、致密的整体。使用方便、无毒、不燃，可降低混凝土表面吸附性、防尘并坚硬耐磨",
+      "en": "A reactive, colorless transparent water-based chemical made of inorganic substances, reactive agents and complexes. It reacts with the large amount of semi-hydrated cement, free lime and calcium in concrete (reaction continues about 60–90 days) to form a permanent gel that crystallizes inside the treated concrete into a hard, wear-resistant structure, giving a dust-free, dense whole. Easy to use, non-toxic and non-flammable; it lowers the surface absorbency of concrete, controls dust and hardens the surface"
+     }
+    }
+   ],
+   "shelfLife": {
+    "zh": "12 个月",
+    "en": "12 months"
+   },
+   "techSupport": false
+  }
+ ]
+}
