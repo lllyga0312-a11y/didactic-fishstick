@@ -9,7 +9,7 @@ export const company = {
   brand: 'BATOV',
   brandZh: '巴特夫',
   phone400: '400-1588-777',
-  phoneLocal: '0510-83795971',
+  phoneLocal: '0510-88885777',
   email: 'batov@foxmail.com',
   salesEmailEn: '[sales email]',
   wechat: '[微信号]',
