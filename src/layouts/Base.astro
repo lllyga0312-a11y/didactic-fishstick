@@ -1,0 +1,83 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { company, type Lang } from '../data/site';
+import { href, asset, noindex } from '../lib/paths';
+import { systems } from '../data/systems';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  /** Page path without the language prefix, e.g. '/systems/'. */
+  path: string;
+  /** Extra JSON-LD objects for this page. */
+  schema?: object[];
+  /** Set false when the other language has no matching page. */
+  alternate?: boolean;
+}
+
+const { lang, title, description, path, schema = [], alternate = true } = Astro.props;
+const site = Astro.site!;
+const abs = (l: Lang) => new URL(href(l, path), site).href;
+// Names and links the inquiry list script shows in the visitor's language.
+const catalog = Object.fromEntries(systems.map((s) => [s.slug, { name: s.name[lang], href: href(lang, `/systems/${s.slug}/`) }]));
+const fullTitle = path === '/' ? title : `${title} | ${lang === 'zh' ? company.brandZh + ' ' + company.brand : company.brand}`;
+
+const org = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: lang === 'zh' ? company.nameZh : company.nameEn.startsWith('[') ? company.brand : company.nameEn,
+  alternateName: [company.nameZh, company.brand, company.brandZh],
+  url: new URL(href(lang, '/'), site).href,
+  logo: new URL(asset('/favicon.svg'), site).href,
+  email: company.email,
+  telephone: '+86-' + company.phoneLocal.replace(/^0/, ''),
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: lang === 'zh' ? '坊城大道288号' : 'No. 288 Fangcheng Avenue',
+    addressLocality: lang === 'zh' ? '无锡市新区' : 'Wuxi New District, Wuxi',
+    addressRegion: lang === 'zh' ? '江苏省' : 'Jiangsu',
+    addressCountry: 'CN',
+  },
+};
+---
+<!doctype html>
+<html lang={lang === 'zh' ? 'zh-CN' : 'en'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={abs(lang)} />
+    {alternate && (
+      <>
+        <link rel="alternate" hreflang="zh-CN" href={abs('zh')} />
+        <link rel="alternate" hreflang="en" href={abs('en')} />
+        <link rel="alternate" hreflang="x-default" href={abs('en')} />
+      </>
+    )}
+    <link rel="icon" href={asset('/favicon.svg')} type="image/svg+xml" />
+    <meta name="theme-color" content="#0A1017" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={abs(lang)} />
+    <meta property="og:locale" content={lang === 'zh' ? 'zh_CN' : 'en_US'} />
+    <script type="application/ld+json" set:html={JSON.stringify([org, ...schema])} />
+  </head>
+  <body>
+    <a class="sr-only" href="#main">{lang === 'zh' ? '跳到正文' : 'Skip to content'}</a>
+    <Header lang={lang} path={path} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <script type="application/json" id="catalog" set:html={JSON.stringify(catalog)} />
+    <script>
+      import '../scripts/site';
+    </script>
+  </body>
+</html>

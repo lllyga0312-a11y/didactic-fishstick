@@ -1,0 +1,10 @@
+---
+import SystemDetail from '../../components/SystemDetail.astro';
+import { systems } from '../../data/systems';
+
+export function getStaticPaths() {
+  return systems.map((system) => ({ params: { slug: system.slug }, props: { system } }));
+}
+const { system } = Astro.props;
+---
+<SystemDetail lang="zh" system={system} />

@@ -1,0 +1,45 @@
+---
+import { company, t, type Lang } from '../data/site';
+import { categories } from '../data/systems';
+import { href } from '../lib/paths';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = t[lang];
+const year = new Date().getFullYear();
+const zh = lang === 'zh';
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>{zh ? company.nameZh : company.brand}</h4>
+        <p>{s.footerLine}</p>
+        <p>{zh ? company.addressZh : company.addressEn}</p>
+      </div>
+      <div>
+        <h4>{s.nav.systems}</h4>
+        <ul>
+          {categories.filter((c) => c.id !== 'other').map((c) => (
+            <li><a href={href(lang, `/systems/#${c.id}`)}>{c.name[lang]}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h4>{s.nav.contact}</h4>
+        <ul>
+          {zh && <li>{s.hotline} <a href={`tel:${company.phone400}`}>{company.phone400}</a></li>}
+          <li>{zh ? '电话' : s.hotline} <a href={`tel:+86${company.phoneLocal.replace(/^0|-/g, '')}`}>{zh ? company.phoneLocal : '+86 ' + company.phoneLocal.replace(/^0/, '')}</a></li>
+          <li><a href={`mailto:${company.email}`}>{company.email}</a></li>
+          <li><a href={href(lang, '/privacy/')}>{zh ? '隐私政策' : 'Privacy Policy'}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© {year} {zh ? company.nameZh : company.brand}. {s.rights}</span>
+      {zh && (company.icp
+        ? <a href="https://beian.miit.gov.cn/" rel="nofollow noopener" target="_blank">{company.icp}</a>
+        : <span class="ph">[备案号：待主机方案确定后填写]</span>)}
+    </div>
+  </div>
+</footer>

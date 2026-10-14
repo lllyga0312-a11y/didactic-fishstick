@@ -1,0 +1,79 @@
+---
+import { formEndpoint, type Lang } from '../data/site';
+import { href } from '../lib/paths';
+
+interface Props {
+  lang: Lang;
+  /** 'inquiry' adds the inquiry list as a hidden field and uses the light style. */
+  variant?: 'contact' | 'inquiry';
+}
+const { lang, variant = 'contact' } = Astro.props;
+const zh = lang === 'zh';
+const inquiry = variant === 'inquiry';
+
+const types = zh
+  ? ['选材建议和报价', '申请样品', '经销 / 代理合作', '其他']
+  : ['Contractor / installer', 'Distributor', 'Facility owner', 'Other'];
+
+const msg = zh
+  ? {
+      off: '预览版的在线表单还没接通，请先拨打 400-1588-777 或发邮件到 batov@foxmail.com。',
+      sending: '正在提交…',
+      ok: '已收到，我们会尽快联系您。',
+      fail: '提交没有成功，请稍后再试，或直接打电话联系我们。',
+    }
+  : {
+      off: 'The online form is not connected yet in this preview. Please email batov@foxmail.com.',
+      sending: 'Sending…',
+      ok: 'Thank you. We have received your inquiry and will reply soon.',
+      fail: 'Sorry, that did not go through. Please try again or email us.',
+    };
+---
+<form
+  class:list={['form', { 'light-form': inquiry }]}
+  data-endpoint={formEndpoint}
+  data-msg-off={msg.off}
+  data-msg-sending={msg.sending}
+  data-msg-ok={msg.ok}
+  data-msg-fail={msg.fail}
+  data-clears-inquiry={inquiry ? '' : undefined}
+>
+  <input type="hidden" name="form" value={inquiry ? 'inquiry-list' : 'contact'} />
+  <input type="hidden" name="lang" value={lang} />
+  {inquiry && <input type="hidden" name="inquiry_items" data-inq-field />}
+  <div class="row">
+    <label>{zh ? '您的称呼' : 'Name'}<input class="field" name="name" required autocomplete="name" /></label>
+    {zh
+      ? <label>联系电话<input class="field" name="phone" type="tel" required autocomplete="tel" inputmode="tel" /></label>
+      : <label>Company<input class="field" name="company" autocomplete="organization" /></label>}
+  </div>
+  {!zh && (
+    <div class="row">
+      <label>Email<input class="field" name="email" type="email" required autocomplete="email" /></label>
+      <label>Country<input class="field" name="country" autocomplete="country-name" /></label>
+    </div>
+  )}
+  {zh && inquiry && (
+    <label>项目地点（城市）<input class="field" name="city" /></label>
+  )}
+  <fieldset style="border:0;padding:0;margin:0">
+    <legend style="font-size:14px;margin-bottom:8px" class="muted">{zh ? '您需要' : 'I am a'}</legend>
+    <div class="chips">
+      {types.map((x, i) => (
+        <label class="chip"><input type="radio" name="type" value={x} checked={i === 0} /><span>{x}</span></label>
+      ))}
+    </div>
+  </fieldset>
+  <label>{zh ? '需求说明' : 'Project details'}
+    <textarea class="field" name="message" rows="4" placeholder={zh ? '例如：场地用途、面积、现在地面状况、希望什么时候施工' : 'Application, floor area, current substrate, timeline'}></textarea>
+  </label>
+  <div>
+    <button class="btn btn-primary" type="submit">{inquiry ? (zh ? '提交询价单' : 'Send inquiry list') : (zh ? '提交' : 'Send inquiry')}</button>
+  </div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+  <p class="muted" style="font-size:13px;margin:0">
+    {zh
+      ? <>我们会在 <span class="ph">[ ]</span> 小时内与您联系。</>
+      : <>We reply within <span class="ph">[ ]</span> hours. See our <a href={href(lang, '/privacy/')}>Privacy Policy</a>.</>}
+  </p>
+</form>

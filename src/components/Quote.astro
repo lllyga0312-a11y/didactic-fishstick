@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from './ContactForm.astro';
+import { type Lang } from '../data/site';
+import { scenes } from '../data/systems';
+import { href } from '../lib/paths';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+
+const needs = zh
+  ? [['heavy', '有叉车 / 重载'], ['esd', '需要防静电'], ['chem', '有酸碱 / 化学品']]
+  : [['heavy', 'Forklifts / heavy loads'], ['esd', 'Static control (ESD)'], ['chem', 'Acids / chemicals']];
+---
+<Base
+  lang={lang}
+  path="/quote/"
+  title={zh ? '在线选型和询价' : 'System Selector & Quote Request'}
+  description={zh
+    ? '选择使用场合和要求，查看推荐的地坪系统，加入询价单，由工程师按您的面积和工况报价。'
+    : 'Choose your application and requirements, see a suggested floor system and send your inquiry list for a factory quote.'}
+>
+  <section class="page-hero dark">
+    <div class="wrap">
+      <div class="crumbs"><a href={href(lang, '/')}>{zh ? '首页' : 'Home'}</a> / {zh ? '获取报价' : 'Get a quote'}</div>
+      <h1>{zh ? '先选系统，再由工程师报价' : 'Find your system, then get a quote'}</h1>
+      <p>{zh
+        ? '地坪造价取决于面积、厚度、基面和使用要求，所以网站不直接显示价格。选好场合加入询价单，工程师按您的情况算清楚。'
+        : 'Cost depends on area, thickness, substrate and service conditions, so we do not list prices online. Build your inquiry list and our engineers will quote it.'}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid g2" style="gap:36px;align-items:start">
+      <form class="card light-form form" data-estimator>
+        <h2 style="font-size:22px">{zh ? '1. 您的场地' : '1. Your floor'}</h2>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="muted" style="font-size:14px;margin-bottom:8px">{zh ? '使用场合' : 'Application'}</legend>
+          <div class="chips">
+            {scenes.map((s, i) => (
+              <label class="chip"><input type="radio" name="scene" value={s.id} required checked={i === 0} /><span>{s.name[lang]}</span></label>
+            ))}
+          </div>
+        </fieldset>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="muted" style="font-size:14px;margin-bottom:8px">{zh ? '特殊要求（可多选）' : 'Requirements (optional)'}</legend>
+          <div class="chips">
+            {needs.map(([v, l]) => (
+              <label class="chip"><input type="checkbox" name={v} /><span>{l}</span></label>
+            ))}
+          </div>
+        </fieldset>
+        <label>{zh ? '面积（㎡，可不填）' : 'Floor area (m², optional)'}
+          <input class="field" name="area" type="number" min="1" step="1" inputmode="numeric" />
+        </label>
+        <div><button class="btn btn-primary" type="submit">{zh ? '查看推荐系统' : 'Show suggested system'}</button></div>
+      </form>
+
+      <div>
+        <div class="result" data-est-result hidden>
+          <span class="eyebrow">{zh ? '推荐系统' : 'Suggested system'}</span>
+          <h3 style="font-size:22px"><a data-est-name href="#"></a></h3>
+          <p class="muted">
+            {zh ? '材料用量' : 'Material quantity'}: <span data-est-area></span> m² × <span class="ph">[ ]</span> kg/㎡
+            {zh ? '（每平方米用量待技术部提供）' : ' (coverage per m² to be confirmed)'}
+          </p>
+          <p class="muted" style="font-size:13px">{zh ? '推荐规则为示意，最终方案由工程师确认。' : 'Indicative only. Our engineers confirm the final build-up.'}</p>
+          <button class="btn btn-primary" type="button" data-est-add>{zh ? '加入询价单，工程师报价' : 'Add to inquiry list'}</button>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <h3>{zh ? '不确定选哪套？' : 'Not sure?'}</h3>
+          <p>{zh ? '直接在下面留言，写清场地用途和面积，我们帮您选。' : 'Just describe your floor in the form below and we will suggest a system.'}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="inquiry">
+    <div class="wrap grid g2" style="gap:36px;align-items:start">
+      <div>
+        <h2>{zh ? '2. 您的询价单' : '2. Your inquiry list'}</h2>
+        <ul class="inq-items" data-inq-list data-remove-label={zh ? '移除' : 'Remove'}></ul>
+        <p class="muted" data-inq-empty>{zh
+          ? '询价单还是空的。可以用上面的选型工具，或在任一系统页点“加入询价单”。'
+          : 'Your list is empty. Use the selector above, or click "Add to inquiry list" on any system page.'}</p>
+        <a class="btn btn-ghost btn-sm" href={href(lang, '/systems/')}>{zh ? '浏览全部系统' : 'Browse all systems'}</a>
+      </div>
+      <div class="card">
+        <h2 style="font-size:22px">{zh ? '3. 留下联系方式' : '3. Your details'}</h2>
+        <ContactForm lang={lang} variant="inquiry" />
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { href } from '../lib/paths';
+---
+<Base lang="en" path="/404/" alternate={false} title="Page not found · 页面不存在" description="Page not found.">
+  <section class="page-hero dark" style="min-height:50vh">
+    <div class="wrap">
+      <h1>页面不存在 · Page not found</h1>
+      <p>这个页面可能已经搬家了。The page may have moved.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href={href('zh', '/')}>回到中文首页</a>
+        <a class="btn btn-ghost" href={href('en', '/')}>English home</a>
+      </div>
+    </div>
+  </section>
+</Base>

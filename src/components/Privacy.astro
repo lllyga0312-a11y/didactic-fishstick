@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import { company, type Lang } from '../data/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+---
+<Base
+  lang={lang}
+  path="/privacy/"
+  title={zh ? '隐私政策' : 'Privacy Policy'}
+  description={zh ? '巴特夫官网如何收集和使用您在表单中提交的信息。' : 'How the BATOV website collects and uses the information you send us.'}
+>
+  <section class="page-hero dark">
+    <div class="wrap"><h1>{zh ? '隐私政策' : 'Privacy Policy'}</h1></div>
+  </section>
+  <section class="section">
+    <div class="wrap prose">
+      {zh ? (
+        <>
+          <p class="notice">本政策为初稿，上线前请公司确认。</p>
+          <h2>我们收集什么</h2>
+          <p>只收集您在表单里主动填写的内容：称呼、电话、需求说明，以及询价单里的系统和面积。</p>
+          <h2>用来做什么</h2>
+          <p>只用于回复您的咨询、报价和寄送样品，不出售或转交给与此无关的第三方。</p>
+          <h2>询价单保存在哪里</h2>
+          <p>询价单保存在您自己的浏览器里，提交前我们看不到。清除浏览器数据会清空询价单。</p>
+          <h2>表单服务</h2>
+          <p>表单通过 <span class="ph">[表单服务商名称]</span> 转发给我们的同事。</p>
+          <h2>统计与 Cookie</h2>
+          <p>本站目前不使用广告或跟踪 Cookie。<span class="ph">[如以后加入访问统计，在这里说明]</span></p>
+          <h2>联系我们</h2>
+          <p>如需查询或删除您提交的信息，请发邮件到 <a href={`mailto:${company.email}`}>{company.email}</a>。</p>
+        </>
+      ) : (
+        <>
+          <p class="notice">Draft policy, to be confirmed by the company before launch.</p>
+          <h2>What we collect</h2>
+          <p>Only what you type into our forms: your name, company, email, country, project details, and the systems and areas in your inquiry list.</p>
+          <h2>How we use it</h2>
+          <p>To answer your inquiry, prepare quotes and send samples. We do not sell your information or share it with unrelated third parties.</p>
+          <h2>Your inquiry list</h2>
+          <p>The inquiry list is stored in your own browser and is not sent to us until you submit it. Clearing your browser data empties it.</p>
+          <h2>Form service</h2>
+          <p>Form submissions are forwarded to our team by <span class="ph">[form service provider]</span>.</p>
+          <h2>Cookies and analytics</h2>
+          <p>This site does not use advertising or tracking cookies. <span class="ph">[Describe analytics here if added later]</span></p>
+          <h2>Contact</h2>
+          <p>To access or delete information you sent us, email <a href={`mailto:${company.email}`}>{company.email}</a>.</p>
+        </>
+      )}
+    </div>
+  </section>
+</Base>

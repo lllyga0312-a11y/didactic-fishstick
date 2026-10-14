@@ -1,0 +1,40 @@
+---
+import { company, t, type Lang } from '../data/site';
+import { href } from '../lib/paths';
+
+interface Props { lang: Lang; path: string }
+const { lang, path } = Astro.props;
+const s = t[lang];
+const other: Lang = lang === 'zh' ? 'en' : 'zh';
+
+const links = [
+  { label: s.nav.systems, to: '/systems/' },
+  { label: s.nav.cases, to: '/#cases' },
+  { label: s.nav.docs, to: '/#downloads' },
+  { label: s.nav.about, to: lang === 'en' ? '/#distributors' : '/#about' },
+  { label: s.nav.contact, to: '/#contact' },
+];
+---
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href={href(lang, '/')}>
+      <span class="logo-mark" aria-hidden="true">B</span>
+      <span>{lang === 'zh' ? `${company.brandZh} ${company.brand}` : company.brand}<small>{s.tagline}</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label={lang === 'zh' ? '主导航' : 'Main'}>
+      {links.map((l) => (
+        <a href={href(lang, l.to)} aria-current={path === l.to ? 'page' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+    <div class="header-actions">
+      <a class="inq-link" href={href(lang, '/quote/#inquiry')}>
+        {s.inquiry} <span class="badge" data-inq-count>0</span>
+      </a>
+      <a class="lang-switch" href={href(other, path)} hreflang={other === 'zh' ? 'zh-CN' : 'en'} aria-label={s.switchAria}>{s.switchLabel}</a>
+      <a class="btn btn-primary btn-sm" href={href(lang, '/quote/')}>{s.quote}</a>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" data-menu>
+        {lang === 'zh' ? '菜单' : 'Menu'}
+      </button>
+    </div>
+  </div>
+</header>

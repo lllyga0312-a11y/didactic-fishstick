@@ -1,0 +1,373 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from './ContactForm.astro';
+import { company, type Lang } from '../data/site';
+import { categories, scenes, systems } from '../data/systems';
+import { href } from '../lib/paths';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+const P = (s: string) => `<span class="ph">${s}</span>`;
+
+const c = zh
+  ? {
+      title: '巴特夫 BATOV · 环氧地坪漆、聚氨酯地坪、防腐地坪材料厂家 | 无锡巴特夫化工',
+      desc: '无锡巴特夫化工科技有限公司，环氧、聚氨酯、防腐地坪材料研发、生产、销售一体。按使用工况配整套地坪系统，提供技术说明书下载和工程师报价。',
+      kicker: `江苏无锡 · 地坪材料源头工厂 · 深耕 ${company.years.replace('+', '')} 余年`,
+      h1: ['控制整体施工成本，', '也守住每一层质量'],
+      lead: '环氧、聚氨酯、防腐地坪材料，研发、生产、销售一体。我们不拼最低价，按您的使用工况配一整套地坪系统，把材料和施工的总账算清楚。',
+      cta1: '在线选系统、估用量',
+      cta2: '查看地坪系统',
+      points: ['自有工厂 · 厂家直供', '按工况配整套系统', '技术说明书免费下载'],
+      layersTitle: ['一套地坪系统 = 每一层都配好', '环氧自流平系统'],
+      layers: [['自流平面涂', '耐磨 · 易清洁 · 无缝'], ['砂浆中涂', '找平 · 抗压 · 增厚'], ['渗透底涂', '封闭 · 增强附着力'], ['混凝土基面', '打磨 · 除尘 · 修补']],
+      layersNote: '典型结构示意，具体层数与厚度按使用工况设计。',
+      stats: [[company.years, '年地坪材料研发生产'], ['[ ]', '吨年产能（待填）'], ['[ ]', '万平方米累计供货面积（待填）'], ['[ ]', '项检测报告 / 认证（待填）']],
+      whoTitle: '您是哪一类客户？',
+      who: [
+        ['施工公司 / 工程商', '稳定的材料质量，配套的施工工艺'],
+        ['工厂 / 业主', '按工况选系统，把整体成本和工期算清楚'],
+        ['经销商 / 代理', '厂家货源、全套技术资料支持'],
+        ['设计院 / 设计师', '系统结构、技术参数、规格说明下载'],
+      ],
+      sysEyebrow: '产品系统',
+      sysTitle: '找到适合您场地的地坪系统',
+      sysLead: '每套系统从底涂到面涂整体配套，按材料找或按场合找都可以。',
+      byMat: '按材料找', byScene: '按场合找', view: '查看系统 →', rec: '推荐：',
+      sceneNote: '推荐对应关系为示意，待技术同事确认。',
+      bandTitle: '先估一下：您的场地需要哪套系统、多少材料？',
+      bandText: '选场合、填面积，马上看到推荐系统，一键加入询价单，由工程师给您报价。',
+      bandBtn: '开始在线选型',
+      whyEyebrow: '为什么选择我们',
+      whyTitle: '我们算的是总账，不是单价',
+      whyLead: '地坪的成本不只是一桶漆。选错材料带来的返工、停产和后期维护，往往花得更多。',
+      why: [
+        ['按工况配系统', '根据荷载、化学品、温湿度配一整套系统，不过度设计，也不偷工减料。'],
+        ['自有工厂直供', '无锡自有工厂研发生产，没有中间环节，批次质量可追溯。'],
+        ['施工技术支持', `${P('[待确认是否提供]')} 提供施工工艺指导，降低返工风险。`],
+        ['参数公开透明', `每个产品公开技术参数和说明书，${P('[检测报告 / 认证名称]')}。`],
+      ],
+      factoryTitle: '走进我们的工厂',
+      factoryLead: '研发、生产、检测都在无锡自己的厂里完成。',
+      factory: [['[厂房外景实拍]', '厂区'], ['[生产线实拍]', '生产线'], ['[质检实验室实拍]', '质检实验室 [待确认]']],
+      casesTitle: '按行业看，我们做过的项目',
+      cases: [
+        ['江苏联浩科技 车间环氧地坪改造', '工业厂房'],
+        ['[项目名称]', '[ ]'],
+        ['[项目名称]', '[ ]'],
+      ],
+      caseLabels: ['行业', '系统', '面积', '[案例照片 · 施工前后对比，只用真实照片]'],
+      faqTitle: '常见问题',
+      faq: [
+        ['环氧地坪施工后多久可以使用？', '以具体产品的技术说明书为准。以环氧自流平面涂为例，表干 ≤6 小时、实干 ≤48 小时（数据待核对），完全固化后再走重车。'],
+        ['怎么选环氧还是聚氨酯？', '一般来说，常温干燥、追求平整美观的车间多用环氧；有冷热冲击、经常冲洗的食品厂和冷库更适合聚氨酯砂浆。把场地用途告诉我们，工程师会按工况推荐。'],
+        ['可以先寄样品吗？', `可以申请样品，具体规格和费用 ${P('[待公司确认]')}。在下方表单选择“申请样品”即可。`],
+        ['网站上为什么没有价格？', '地坪的用量和造价取决于面积、厚度、基面状况和使用要求，同样面积差别可能很大。加入询价单后由工程师按您的情况报价，避免报低了后面再加。'],
+      ],
+      certTitle: '资质与检测',
+      certs: ['[证书 1]', '[证书 2]', '[检测报告]'],
+      certNote: '上线前换成证书原件扫描件。',
+      dlEyebrow: '技术资料', dlTitle: '说明书、色卡、施工指南，随时下载',
+      dls: ['产品技术说明书', '安全数据表', '标准色卡', '施工指南'],
+      dlNote: '文件待上传',
+      contactEyebrow: '联系我们',
+      contactTitle: '告诉我们您的场地，我们帮您算一笔账',
+      contactLead: '留言会推送给负责的同事。也可以直接打电话或加微信。',
+      contactRows: [
+        ['全国热线', `<a href="tel:${company.phone400}">${company.phone400}</a> · <a href="tel:+86${company.phoneLocal.replace(/^0|-/g, '')}">${company.phoneLocal}</a>`],
+        ['微信咨询', P('[微信号 / 二维码]')],
+        ['邮箱', `<a href="mailto:${company.email}">${company.email}</a>`],
+        ['工厂地址', company.addressZh],
+      ],
+    }
+  : {
+      title: 'BATOV · Epoxy & PU Floor Coatings Manufacturer in China',
+      desc: 'BATOV formulates and manufactures epoxy, polyurethane and chemical-resistant floor coating systems in Wuxi, China. Complete systems from primer to topcoat, data sheets and factory-direct quotes.',
+      kicker: `Factory-direct · ${company.years} years of resin flooring`,
+      h1: ['Epoxy & PU floor coatings', 'that lower your total installed cost'],
+      lead: 'We formulate and manufacture complete floor systems in Wuxi, China, from primer to topcoat. You get matched layers, published specs and direct factory pricing, without middlemen.',
+      cta1: 'Request a quote',
+      cta2: 'Request a sample',
+      points: ['Own factory', 'Data sheet for every product', '[OEM available · to confirm]'],
+      layersTitle: ['One system, every layer matched', 'Epoxy self-leveling'],
+      layers: [['Topcoat', 'Wear · cleanability · seamless'], ['Mortar body coat', 'Leveling · compressive strength'], ['Penetrating primer', 'Sealing · adhesion'], ['Concrete substrate', 'Ground · cleaned · repaired']],
+      layersNote: 'Typical build-up. Layers and thickness are designed for each site.',
+      stats: [[company.years, 'years in floor coatings'], ['[ ]', 'tons annual capacity (to fill)'], ['[ ]', 'countries exported to (to fill)'], ['[ ]', 'certifications & test reports (to fill)']],
+      whoTitle: 'Start your project',
+      who: [
+        ['Contractors', 'Consistent batches and clear application guides'],
+        ['Distributors', 'Factory supply, full technical documents, OEM'],
+        ['Facility owners', 'The right system for your loads, budget and downtime'],
+        ['Specifiers', 'Build-ups, data sheets and specification text'],
+      ],
+      sysEyebrow: 'Floor systems',
+      sysTitle: 'Find the right system for your floor',
+      sysLead: 'Browse by chemistry or by application. Every system comes with its full build-up and data sheets.',
+      byMat: 'By chemistry', byScene: 'By application', view: 'View systems →', rec: 'Suggested: ',
+      sceneNote: 'Suggestions are indicative; our engineers confirm the final build-up.',
+      bandTitle: 'Not sure which system you need?',
+      bandText: 'Pick your application and floor area, get a suggested system and add it to your inquiry list. Our engineers send the quote.',
+      bandBtn: 'Open the system selector',
+      whyEyebrow: 'Why buy from the factory',
+      whyTitle: 'Lower total cost, not just a lower price per kg',
+      whyLead: 'Rework, downtime and early repairs cost more than the coating itself. We help you specify the right system the first time.',
+      why: [
+        ['Direct factory pricing', 'We formulate and produce in our own plant in Wuxi. No trading margins.'],
+        ['Matched systems', 'Primer, body coat and topcoat designed to work together, specified to your loads and chemicals.'],
+        ['Published data', `Technical data sheets for every product. ${P('[Certifications: to fill]')}`],
+        ['Application support', `${P('[To confirm]')} Remote guidance for your installers on mixing and application.`],
+      ],
+      factoryTitle: 'Inside our factory',
+      factoryLead: 'R&D, production and quality control, all in our own plant in Wuxi.',
+      factory: [['[Plant exterior photo]', 'Plant'], ['[Production line photo]', 'Production line'], ['[QC lab photo]', 'QC lab [to confirm]']],
+      casesTitle: 'Real floors, real numbers',
+      cases: [['[Project name]', '[ ]'], ['[Project name]', '[ ]'], ['[Project name]', '[ ]']],
+      caseLabels: ['Sector', 'System', 'Area', '[Project photo: real photos only]'],
+      faqTitle: 'FAQ',
+      faq: [
+        ['Do you export, and which documents do you provide?', `${P('[To confirm: export markets, Incoterms, documents such as TDS, SDS, COA]')}`],
+        ['Can I get a sample before ordering?', `Yes, request one with the form below. ${P('[Sample size and shipping terms to confirm]')}`],
+        ['Do you offer OEM / private label?', `${P('[To confirm]')} Tell us your market, volumes and packaging needs.`],
+        ['Why are there no prices on the website?', 'Quantity and cost depend on area, thickness, substrate and service conditions. Our engineers quote each project so you get a realistic number up front.'],
+      ],
+      certTitle: 'Certified quality',
+      certs: ['[Cert 1]', '[Cert 2]', '[Test report]'],
+      certNote: 'Replace with scans of the original certificates before launch.',
+      dlEyebrow: 'Downloads', dlTitle: 'Data sheets, color chart and application guides',
+      dls: ['Technical data sheets', 'Safety data sheets', 'Color chart', 'Application guides'],
+      dlNote: 'Files to upload',
+      contactEyebrow: 'Contact',
+      contactTitle: 'Tell us about your project',
+      contactLead: 'We reply with a recommended system, quantities and a factory quote.',
+      contactRows: [
+        ['WhatsApp', company.whatsapp ? `<a href="https://wa.me/${company.whatsapp}">+${company.whatsapp}</a>` : P('[number]')],
+        ['Email', company.salesEmailEn.startsWith('[') ? `<a href="mailto:${company.email}">${company.email}</a> ${P(company.salesEmailEn)}` : `<a href="mailto:${company.salesEmailEn}">${company.salesEmailEn}</a>`],
+        ['Factory', company.addressEn],
+      ],
+    };
+
+const dist = [
+  ['Packaging', '[ ] kg kits'],
+  ['Minimum order', '[ ]'],
+  ['Lead time', '[ ] days'],
+  ['Shipping port', '[ ]'],
+];
+
+const ph = (s: string) => (s.includes('[') ? `<span class="ph">${s}</span>` : s);
+const sysBy = (scene: string) => systems.filter((s) => s.scenes.includes(scene as any)).map((s) => s.name[lang]);
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: c.faq
+    .filter(([, a]) => !a.includes('['))
+    .map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+};
+---
+<Base lang={lang} title={c.title} description={c.desc} path="/" schema={[faqSchema]}>
+  <section class="hero dark">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">{c.kicker}</span>
+        <h1>{c.h1[0]}<br /><em>{c.h1[1]}</em></h1>
+        <p class="lead">{c.lead}</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href={href(lang, '/quote/')}>{c.cta1}</a>
+          <a class="btn btn-ghost" href={zh ? href(lang, '/systems/') : href(lang, '/#contact')}>{c.cta2}</a>
+        </div>
+        <ul class="hero-points">
+          {c.points.map((p) => <li set:html={ph(p)} />)}
+        </ul>
+      </div>
+      <div class="layers" aria-label={c.layersTitle[0]}>
+        <div class="layers-title"><span>{c.layersTitle[0]}</span><span>{c.layersTitle[1]}</span></div>
+        {c.layers.map(([n, d], i) => (
+          <div class={`layer l${i + 1}`}><span>{n}</span><span>{d}</span></div>
+        ))}
+        <p class="muted" style="font-size:12px;margin:12px 0 0">{c.layersNote}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats dark">
+    <div class="wrap">
+      {c.stats.map(([n, l]) => (
+        <div class="stat"><b set:html={ph(n)} /><span>{l}</span></div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2>{c.whoTitle}</h2></div>
+      <div class="grid g4">
+        {c.who.map(([n, d], i) => (
+          <a class="card" href={href(lang, i === 1 && !zh ? '/#distributors' : i === 3 ? '/#downloads' : '/quote/')}>
+            <h3>{n}</h3><p>{d}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="systems">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">{c.sysEyebrow}</span>
+        <h2>{c.sysTitle}</h2>
+        <p>{c.sysLead}</p>
+      </div>
+      <div data-tabs>
+        <div class="tabs" role="tablist">
+          <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="tab-mat">{c.byMat}</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="tab-scene">{c.byScene}</button>
+        </div>
+        <div class="tab-panel grid g4" id="tab-mat" role="tabpanel">
+          {categories.map((cat, i) => (
+            <a class="card" href={href(lang, `/systems/#${cat.id}`)}>
+              <div class="photo" style="margin-bottom:16px">{zh ? `[${cat.name.zh}实拍照片]` : `[${cat.name.en} photo]`}</div>
+              <span class="muted" style="font-size:13px">0{i + 1}</span>
+              <h3>{cat.name[lang]}</h3>
+              <p set:html={ph(cat.desc[lang])} />
+              <span class="more">{c.view}</span>
+            </a>
+          ))}
+        </div>
+        <div class="tab-panel" id="tab-scene" role="tabpanel" hidden>
+          <div class="grid g3">
+            {scenes.map((s) => (
+              <a class="card" href={href(lang, `/systems/#scene-${s.id}`)}>
+                <h3>{s.name[lang]} →</h3>
+                <p>{s.need[lang]}</p>
+                <p style="margin-top:10px;color:var(--accent);font-size:14px">{c.rec}{sysBy(s.id).join(zh ? ' / ' : ' / ')}</p>
+              </a>
+            ))}
+          </div>
+          <p class="muted" style="font-size:13px;margin-top:12px">{c.sceneNote}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div><h2>{c.bandTitle}</h2><p>{c.bandText}</p></div>
+        <a class="btn" href={href(lang, '/quote/')}>{c.bandBtn}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">{c.whyEyebrow}</span>
+        <h2>{c.whyTitle}</h2>
+        <p>{c.whyLead}</p>
+      </div>
+      <div class="grid g4">
+        {c.why.map(([n, d], i) => (
+          <div class="card"><div class="icon">0{i + 1}</div><h3>{n}</h3><p set:html={d} /></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {!zh && (
+    <section class="section dark" id="distributors">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Distributors &amp; OEM</span>
+          <h2>Sell BATOV in your market, or under your own brand</h2>
+          <p>Packaging, minimum order and export documents are set per partner. <span class="ph">[Details to confirm]</span></p>
+        </div>
+        <div class="grid g4">
+          {dist.map(([k, v]) => (
+            <div class="card"><p>{k}</p><h3 set:html={ph(v)} style="margin:6px 0 0" /></div>
+          ))}
+        </div>
+        <p style="margin-top:24px"><a class="btn btn-primary" href={href(lang, '/#contact')}>Become a distributor</a></p>
+      </div>
+    </section>
+  )}
+
+  <section class="section" id={zh ? 'about' : 'factory'}>
+    <div class="wrap">
+      <div class="section-head"><h2>{c.factoryTitle}</h2><p>{c.factoryLead}</p></div>
+      <div class="grid g3">
+        {c.factory.map(([p, l]) => (
+          <figure style="margin:0"><div class="photo">{p}</div><figcaption class="muted" style="font-size:14px;margin-top:8px" set:html={ph(l)} /></figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="cases">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">{zh ? '工程案例' : 'Projects'}</span><h2>{c.casesTitle}</h2></div>
+      <div class="grid g3">
+        {c.cases.map(([n, sector]) => (
+          <div class="card">
+            <div class="photo" style="margin-bottom:16px">{c.caseLabels[3]}</div>
+            <h3 set:html={ph(n)} />
+            <p>
+              {c.caseLabels[0]}{zh ? '：' : ': '}<span set:html={ph(sector)} /><br />
+              {c.caseLabels[1]}{zh ? '：' : ': '}<span class="ph">[ ]</span><br />
+              {c.caseLabels[2]}{zh ? '：' : ': '}<span class="ph">[ ]</span> m²
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap grid g2" style="gap:40px;align-items:start">
+      <div class="faq">
+        <h2>{c.faqTitle}</h2>
+        {c.faq.map(([q, a]) => (
+          <details><summary>{q}</summary><p set:html={a} /></details>
+        ))}
+      </div>
+      <div>
+        <h2>{c.certTitle}</h2>
+        <div class="grid g3">
+          {c.certs.map((x) => <div class="photo" style="aspect-ratio:3/4">{x}</div>)}
+        </div>
+        <p class="muted" style="font-size:13px;margin-top:10px">{c.certNote}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="downloads">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">{c.dlEyebrow}</span><h2>{c.dlTitle}</h2></div>
+      <div class="grid g4">
+        {c.dls.map((d) => (
+          <div class="card"><div class="icon">PDF</div><h3>{d}</h3><p><span class="ph">{c.dlNote}</span></p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark contact" id="contact">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">{c.contactEyebrow}</span>
+        <h2>{c.contactTitle}</h2>
+        <p class="muted">{c.contactLead}</p>
+        <ul class="contact-list">
+          {c.contactRows.map(([k, v]) => (<li><b>{k}</b><span set:html={v} /></li>))}
+        </ul>
+      </div>
+      <ContactForm lang={lang} />
+    </div>
+  </section>
+
+  {!zh && (
+    <a class="btn btn-primary float-btn" href={company.whatsapp ? `https://wa.me/${company.whatsapp}` : href(lang, '/#contact')}>
+      WhatsApp{!company.whatsapp && ' [number pending]'}
+    </a>
+  )}
+</Base>
