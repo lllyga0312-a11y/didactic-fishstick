@@ -21,7 +21,7 @@ export const company = {
 };
 
 // Form submissions go to this endpoint (e.g. a form service that forwards to
-// WeCom / email). Empty means the preview shows a "not connected yet" notice.
+// Feishu / email). Empty means the preview shows a "not connected yet" notice.
 export const formEndpoint = '';
 
 export const t = {

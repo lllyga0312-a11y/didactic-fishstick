@@ -28,10 +28,10 @@ npm run build    # 生成 dist/
 ## 网站留言怎么送到公司
 
 表单提交到 `worker/` 里的 Cloudflare Worker（`batov-inquiry`）。它挡掉垃圾留言，
-再把每条留言推到企业微信群机器人和邮箱，自己不保存任何内容。
+再把每条留言推到飞书群机器人和邮箱，自己不保存任何内容。
 
 - 部署：在 GitHub 的 Actions 页面手动运行 "Deploy inquiry forwarder"。
-  需要仓库密钥 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`、`WECOM_WEBHOOK`。
+  需要仓库密钥 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`、`FEISHU_WEBHOOK`。
 - 部署后把 Worker 地址填进 `src/data/site.ts` 的 `formEndpoint`。
 - 邮件：batov.cn 转到 Cloudflare 并开通 Email Routing 后，在 `worker/wrangler.toml`
   填 `MAIL_FROM`、`MAIL_TO`，取消 `send_email` 的注释，再部署一次。

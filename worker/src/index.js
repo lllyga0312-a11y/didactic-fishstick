@@ -1,9 +1,10 @@
 // Receives website form posts, filters spam, and forwards each inquiry
-// to a WeCom (企业微信) group robot and by email. Nothing is stored here.
+// to a Feishu (飞书) group bot and by email. Nothing is stored here.
 //
 // Settings (wrangler.toml [vars] and secrets):
 //   ALLOWED_ORIGINS  comma-separated site origins allowed to post
-//   WECOM_WEBHOOK    secret: the group robot's webhook URL
+//   FEISHU_WEBHOOK   secret: the group bot's webhook URL
+//   FEISHU_SECRET    secret, optional: set when the bot uses signature check
 //   MAIL_FROM        sender on a domain with Cloudflare Email Routing, e.g. website@batov.cn
 //   MAIL_TO          comma-separated recipients (each verified in Email Routing)
 //   MAILER           send_email binding; email is skipped until it exists
@@ -54,7 +55,7 @@ export default {
     if (isSpam(form, data)) return reply(200, { ok: true });
     if (!data.name || !(data.phone || data.email)) return reply(400, { ok: false });
 
-    const results = await Promise.allSettled([sendWecom(env, data), sendEmail(env, data)]);
+    const results = await Promise.allSettled([sendFeishu(env, data), sendEmail(env, data)]);
     const sent = results.filter((r) => r.status === 'fulfilled' && r.value).length;
     results.filter((r) => r.status === 'rejected').forEach((r) => console.error(r.reason));
     return sent > 0 ? reply(200, { ok: true }) : reply(502, { ok: false });
@@ -75,20 +76,34 @@ export function summary(data) {
   return { title, lines };
 }
 
-async function sendWecom(env, data) {
-  if (!env.WECOM_WEBHOOK) return false;
+async function sendFeishu(env, data) {
+  if (!env.FEISHU_WEBHOOK) return false;
   const { title, lines } = summary(data);
-  // WeCom markdown content is capped at 4096 bytes.
-  let content = `**${title}**\n` + lines.map((l) => `> ${l.replace(/\n+/g, ' ')}`).join('\n');
-  while (new TextEncoder().encode(content).length > 4000) content = content.slice(0, -100);
-  const res = await fetch(env.WECOM_WEBHOOK, {
+  const text = lines.join('\n').slice(0, 6000);
+  const body = {
+    msg_type: 'post',
+    content: { post: { zh_cn: { title, content: text.split('\n').map((l) => [{ tag: 'text', text: l }]) } } },
+  };
+  // Optional "signature check" security setting on the bot.
+  if (env.FEISHU_SECRET) {
+    body.timestamp = String(Math.floor(Date.now() / 1000));
+    body.sign = await feishuSign(body.timestamp, env.FEISHU_SECRET);
+  }
+  const res = await fetch(env.FEISHU_WEBHOOK, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ msgtype: 'markdown', markdown: { content } }),
+    body: JSON.stringify(body),
   });
-  const body = await res.json().catch(() => ({}));
-  if (!res.ok || body.errcode !== 0) throw new Error(`WeCom: ${res.status} ${JSON.stringify(body)}`);
+  const out = await res.json().catch(() => ({}));
+  if (!res.ok || (out.code ?? out.StatusCode) !== 0) throw new Error(`Feishu: ${res.status} ${JSON.stringify(out)}`);
   return true;
+}
+
+// Feishu signs with HMAC-SHA256 keyed by "timestamp\nsecret" over an empty message.
+export async function feishuSign(timestamp, secret) {
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(`${timestamp}\n${secret}`), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const sig = new Uint8Array(await crypto.subtle.sign('HMAC', key, new Uint8Array()));
+  return btoa(String.fromCharCode(...sig));
 }
 
 async function sendEmail(env, data) {

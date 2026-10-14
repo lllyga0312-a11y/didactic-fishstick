@@ -1,6 +1,6 @@
 # Deploys the inquiry forwarder in worker/ to Cloudflare. Run it by hand from
 # the Actions tab once these repository secrets exist:
-#   CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, WECOM_WEBHOOK
+#   CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, FEISHU_WEBHOOK
 name: Deploy inquiry forwarder
 
 on:
@@ -17,6 +17,6 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: worker
           secrets: |
-            WECOM_WEBHOOK
+            FEISHU_WEBHOOK
         env:
-          WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
