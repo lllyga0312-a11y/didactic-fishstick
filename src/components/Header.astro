@@ -1,6 +1,6 @@
 ---
 import { company, t, type Lang } from '../data/site';
-import { href } from '../lib/paths';
+import { href, asset } from '../lib/paths';
 
 interface Props { lang: Lang; path: string }
 const { lang, path } = Astro.props;
@@ -19,8 +19,8 @@ const links = [
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href={href(lang, '/')}>
-      <span class="logo-mark" aria-hidden="true">B</span>
-      <span>{lang === 'zh' ? `${company.brandZh} ${company.brand}` : company.brand}<small>{s.tagline}</small></span>
+      <img src={asset('/images/brand/logo-header.webp')} alt={`${company.brandZh} ${company.brand}`} width="176" height="42" />
+      <small>{s.tagline.split(' · ').map((t) => <span>{t}</span>)}</small>
     </a>
     <nav class="nav" id="nav" aria-label={lang === 'zh' ? '主导航' : 'Main'}>
       {links.map((l) => (

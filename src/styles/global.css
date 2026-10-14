@@ -65,9 +65,14 @@ button, input, select, textarea { font: inherit; }
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(10, 16, 23, .96); border-bottom: 1px solid var(--d-line); color: var(--d-text); }
 .site-header .wrap { display: flex; align-items: center; gap: 24px; height: 64px; }
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; letter-spacing: .04em; }
-.logo-mark { width: 30px; height: 30px; border-radius: 6px; background: linear-gradient(135deg, var(--accent-bright), #0B7A87); display: grid; place-items: center; color: #062026; font-size: 15px; font-weight: 800; }
-.logo small { display: block; font-weight: 400; font-size: 11px; color: var(--d-muted); letter-spacing: 0; }
+.logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.logo img { display: block; height: 42px; width: auto; }
+.logo small { font-size: 12px; line-height: 1.35; color: var(--d-muted); padding-left: 14px; border-left: 1px solid var(--d-line); }
+.logo small span { display: block; }
+@media (max-width: 1180px) { .logo small { display: none; } }
+@media (max-width: 1400px) { html[lang="en"] .logo small { display: none; } }
+.nav a, .header-actions a { white-space: nowrap; }
+.foot-logo { display: block; width: 220px; height: auto; margin-bottom: 16px; }
 .nav { display: flex; gap: 22px; margin-left: 12px; }
 .nav a { text-decoration: none; color: var(--d-muted); font-size: 15px; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--d-text); }

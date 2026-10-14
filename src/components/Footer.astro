@@ -1,7 +1,7 @@
 ---
 import { company, t, type Lang } from '../data/site';
 import { groups } from '../data/catalog';
-import { href } from '../lib/paths';
+import { href, asset } from '../lib/paths';
 import { channels } from '../data/media';
 
 interface Props { lang: Lang }
@@ -14,6 +14,7 @@ const zh = lang === 'zh';
   <div class="wrap">
     <div class="cols">
       <div>
+        <img class="foot-logo" src={asset('/images/brand/logo-footer.webp')} alt={`${company.brandZh} ${company.brand}`} width="220" height="68" loading="lazy" decoding="async" />
         <h2 class="foot-h">{zh ? company.nameZh : company.brand}</h2>
         <p>{s.footerLine}</p>
         <p>{zh ? company.addressZh : company.addressEn}</p>
