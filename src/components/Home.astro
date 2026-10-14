@@ -335,6 +335,7 @@ const faqSchema = {
         {c.faq.map(([q, a]) => (
           <details><summary>{q}</summary><p set:html={a} /></details>
         ))}
+        <p style="margin-top:16px"><a href={href(lang, '/faq/')}>{zh ? '更多施工问题：基面处理、温湿度、养护时间 →' : 'More answers on substrate, curing times and coverage →'}</a></p>
       </div>
       {certificates.length > 0 && (
         <div>

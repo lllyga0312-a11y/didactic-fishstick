@@ -29,6 +29,8 @@ export const GET: APIRoute = ({ site }) => {
     `- [Home (English)](${u(href('en', '/'))})`,
     `- [首页（中文）](${u(href('zh', '/'))})`,
     `- [System selector & quote](${u(href('en', '/quote/'))})`,
+    `- [Floor coating FAQ (English)](${u(href('en', '/faq/'))})`,
+    `- [地坪施工常见问题（中文）](${u(href('zh', '/faq/'))})`,
     '',
   ];
   return new Response(lines.join('\n'), { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });

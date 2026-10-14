@@ -279,3 +279,12 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .hero .wrap { z-index: 1; }
 .hero::before { z-index: 1; }
 .gallery a { display: block; }
+
+/* FAQ page */
+.faq-topics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.faq-topics a { border: 1px solid rgba(255, 255, 255, .25); border-radius: 999px; padding: 6px 14px; font-size: 14px; text-decoration: none; }
+.faq-group + .faq-group { padding-top: 0; }
+.faq details ol.faq-steps { margin: 10px 0 0; padding-left: 22px; color: var(--l-muted); }
+.faq details ol.faq-steps li { margin-bottom: 6px; }
+.faq details p.faq-links { font-size: 14px; color: var(--l-text); }
+.faq-links .more { margin-left: 12px; }

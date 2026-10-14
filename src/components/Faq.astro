@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import { type Lang } from '../data/site';
+import { productBySlug } from '../data/catalog';
+import { faqGroups, faqItems } from '../data/faq';
+import { href } from '../lib/paths';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((f) => ({
+    '@type': 'Question',
+    name: f.q[lang],
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: [...f.a[lang], ...(f.steps?.[lang] ?? [])].join(' '),
+    },
+  })),
+};
+---
+<Base
+  lang={lang}
+  path="/faq/"
+  title={zh ? '地坪漆施工常见问题：基面、温湿度、养护时间、用量' : 'Floor Coating FAQ: Substrate, Curing Times, Coverage & Safety'}
+  description={zh
+    ? '巴特夫技术部整理的地坪施工问答：新混凝土养护多久、旧地面和油污地面怎么处理、水性环氧怎么施工、密封固化剂用量、乙烯基重防腐做法。'
+    : 'Answers from BATOV application guides: concrete curing before coating, preparing old and oily floors, waterborne epoxy steps, densifier coverage and vinyl ester chemical-resistant build-ups.'}
+  schema={[faqSchema]}
+>
+  <section class="page-hero dark">
+    <div class="wrap">
+      <div class="crumbs"><a href={href(lang, '/')}>{zh ? '首页' : 'Home'}</a>{' / '}{zh ? '常见问题' : 'FAQ'}</div>
+      <h1>{zh ? '地坪施工常见问题' : 'Floor coating FAQ'}</h1>
+      <p>{zh
+        ? '答案来自巴特夫的施工指导和产品说明书。每块场地情况不同，最终做法请让技术人员按现场确认。'
+        : 'Answers taken from BATOV application guides and data sheets. Every site is different, so ask our engineers to confirm the build-up for yours.'}</p>
+      <nav class="faq-topics" aria-label={zh ? '问题分类' : 'Topics'}>
+        {faqGroups.map((g) => <a href={`#${g.id}`}>{g.title[lang]}</a>)}
+      </nav>
+    </div>
+  </section>
+
+  {faqGroups.map((g) => (
+    <section class="section faq-group" id={g.id}>
+      <div class="wrap faq" style="max-width:860px">
+        <h2>{g.title[lang]}</h2>
+        {g.items.map((f) => (
+          <details id={f.id}>
+            <summary>{f.q[lang]}</summary>
+            {f.a[lang].map((p) => <p>{p}</p>)}
+            {f.steps && <ol class="faq-steps">{f.steps[lang].map((s) => <li>{s}</li>)}</ol>}
+            {(f.products?.length || f.link) && (
+              <p class="faq-links">
+                {f.products?.length ? <>{zh ? '相关产品：' : 'Related products: '}</> : null}
+                {f.products?.map((slug, i) => {
+                  const p = productBySlug(slug);
+                  return p ? <>{i > 0 && (zh ? '、' : ', ')}<a href={href(lang, `/products/${slug}/`)}>{p.code ? `${p.code} ` : ''}{p.name[lang]}</a></> : null;
+                })}
+                {f.link && <a class="more" href={href(lang, f.link.to)}>{f.link.label[lang]} →</a>}
+              </p>
+            )}
+          </details>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap" style="max-width:860px">
+      <p class="muted">{zh ? '没找到您的问题？' : 'Didn’t find your question?'} <a href={href(lang, '/#contact')}>{zh ? '给我们留言' : 'Send us a message'}</a></p>
+    </div>
+  </section>
+</Base>
