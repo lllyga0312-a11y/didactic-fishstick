@@ -2,6 +2,7 @@
 import { company, t, type Lang } from '../data/site';
 import { groups } from '../data/catalog';
 import { href } from '../lib/paths';
+import { channels } from '../data/media';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -31,6 +32,8 @@ const zh = lang === 'zh';
           {zh && <li>{s.hotline} <a href={`tel:${company.phone400}`}>{company.phone400}</a></li>}
           <li>{zh ? '电话' : s.hotline} <a href={`tel:+86${company.phoneLocal.replace(/^0|-/g, '')}`}>{zh ? company.phoneLocal : '+86 ' + company.phoneLocal.replace(/^0/, '')}</a></li>
           <li><a href={`mailto:${company.email}`}>{company.email}</a></li>
+          {!zh && channels.youtube && <li><a href={channels.youtube} rel="noopener" target="_blank">YouTube</a></li>}
+          {zh && channels.bilibili && <li><a href={channels.bilibili} rel="noopener" target="_blank">B 站视频</a></li>}
           <li><a href={href(lang, '/faq/')}>{s.nav.faq}</a></li>
           <li><a href={href(lang, '/privacy/')}>{zh ? '隐私政策' : 'Privacy Policy'}</a></li>
         </ul>

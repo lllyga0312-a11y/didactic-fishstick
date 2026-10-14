@@ -4,7 +4,8 @@ import ContactForm from './ContactForm.astro';
 import { company, type Lang } from '../data/site';
 import { groups, seriesById, seriesPhotos, projectSites } from '../data/catalog';
 import { scenes, buildups } from '../data/scenes';
-import { factoryPhotos, certificates, downloads } from '../data/media';
+import { factoryPhotos, certificates, downloads, videos } from '../data/media';
+import Videos from './Videos.astro';
 import { series, products } from '../data/catalog';
 import { href, asset } from '../lib/paths';
 
@@ -160,6 +161,7 @@ const dist = [
 const ph = (s: string) => (s.includes('[') ? `<span class="ph">${s}</span>` : s);
 const cover = (g: (typeof groups)[number]) => g.series.map((id) => seriesPhotos(id)[0]).find(Boolean);
 
+const langVideos = videos.filter((v) => v.lang === lang);
 const heroImg = projectSites[0]?.photos[0];
 const heroBg = heroImg ? `--hero-img:url(${asset(heroImg.src)})` : undefined;
 
@@ -327,6 +329,15 @@ const faqSchema = {
       <p class="muted" style="font-size:13px;margin-top:12px">{zh ? '巴特夫材料施工现场实拍。' : 'On-site photos of floors coated with BATOV materials.'}</p>
     </div>
   </section>
+
+  {langVideos.length > 0 && (
+    <section class="section" style="padding-top:0" id="videos">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">{zh ? '视频' : 'Videos'}</span><h2>{zh ? '施工和产品视频' : 'Application and product videos'}</h2></div>
+        <Videos lang={lang} videos={langVideos} />
+      </div>
+    </section>
+  )}
 
   <section class="section" style="padding-top:0">
     <div class:list={['wrap', { 'grid g2': certificates.length > 0 }]} style="gap:40px;align-items:start">

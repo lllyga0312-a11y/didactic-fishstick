@@ -1,0 +1,42 @@
+---
+// Click-to-play video cards: only a thumbnail loads until someone presses play,
+// so the page stays fast on phones.
+import { type Lang } from '../data/site';
+import { type Video } from '../data/media';
+import { asset } from '../lib/paths';
+
+interface Props { lang: Lang; videos: Video[] }
+const { lang, videos } = Astro.props;
+
+const embed = (v: Video) =>
+  v.platform === 'youtube'
+    ? `https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0`
+    : `https://player.bilibili.com/player.html?bvid=${v.id}&autoplay=1&high_quality=1`;
+const thumb = (v: Video) =>
+  v.poster ? asset(v.poster) : v.platform === 'youtube' ? `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg` : '';
+const play = lang === 'zh' ? '播放视频：' : 'Play video: ';
+
+const schema = videos
+  .filter((v) => v.uploadDate && thumb(v))
+  .map((v) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: v.title,
+    description: v.description || v.title,
+    uploadDate: v.uploadDate,
+    thumbnailUrl: new URL(thumb(v), Astro.site).href,
+    embedUrl: embed(v).split('?')[0] + (v.platform === 'bilibili' ? `?bvid=${v.id}` : ''),
+  }));
+---
+<div class="grid g3 videos">
+  {videos.map((v) => (
+    <figure class="video">
+      <button type="button" class="video-play" data-video-src={embed(v)} data-video-title={v.title} aria-label={play + v.title}>
+        {thumb(v) && <img src={thumb(v)} alt="" width="480" height="270" loading="lazy" decoding="async" />}
+        <span class="video-icon" aria-hidden="true"></span>
+      </button>
+      <figcaption>{v.title}</figcaption>
+    </figure>
+  ))}
+</div>
+{schema.length > 0 && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}

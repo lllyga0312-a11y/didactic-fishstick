@@ -143,6 +143,18 @@ if (est) {
 }
 
 // Forms post to the endpoint in data-endpoint. Empty endpoint = not connected yet.
+// Videos: swap the thumbnail button for the player only when pressed.
+document.querySelectorAll<HTMLButtonElement>('[data-video-src]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const frame = document.createElement('iframe');
+    frame.src = btn.dataset.videoSrc!;
+    frame.title = btn.dataset.videoTitle || '';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.allowFullscreen = true;
+    btn.replaceWith(frame);
+  });
+});
+
 // Hidden "t" records when the page loaded so the receiver can drop instant bot posts.
 document.querySelectorAll<HTMLFormElement>('form[data-endpoint]').forEach((form) => {
   const status = form.querySelector<HTMLElement>('.form-status')!;

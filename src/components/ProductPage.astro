@@ -3,6 +3,8 @@ import Base from '../layouts/Base.astro';
 import { company, type Lang } from '../data/site';
 import { seriesById, seriesPhotos, type Product } from '../data/catalog';
 import { href, asset } from '../lib/paths';
+import { videos } from '../data/media';
+import Videos from './Videos.astro';
 
 interface Props { lang: Lang; product: Product }
 const { lang, product: p } = Astro.props;
@@ -33,6 +35,7 @@ const product = {
   image: photos[0] ? new URL(asset(photos[0].src), Astro.site).href : undefined,
   additionalProperty: p.specs.map((x) => ({ '@type': 'PropertyValue', name: x.k[lang], value: x.v[lang] })),
 };
+const productVideos = videos.filter((v) => v.lang === lang && v.products?.includes(p.slug));
 ---
 <Base
   lang={lang}
@@ -106,6 +109,12 @@ const product = {
                 </figure>
               ))}
             </div>
+          </>
+        )}
+        {productVideos.length > 0 && (
+          <>
+            <h2 style="margin-top:40px">{zh ? '视频' : 'Videos'}</h2>
+            <Videos lang={lang} videos={productVideos} />
           </>
         )}
       </div>
