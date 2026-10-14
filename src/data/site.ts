@@ -14,7 +14,7 @@ export const company = {
   salesEmailEn: '[sales email]',
   wechat: '[微信号]',
   whatsapp: '', // e.g. '8613800000000' — empty until the company provides it
-  addressZh: '江苏省无锡市新吴区坊城大道288号',
+  addressZh: '江苏省无锡市新吴区纺城大道288号',
   addressEn: 'No. 288 Fangcheng Avenue, Xinwu District, Wuxi, Jiangsu, China',
   years: '20+',
   icp: '', // 备案号: decided once hosting is final
