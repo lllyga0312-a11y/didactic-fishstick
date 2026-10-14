@@ -40,6 +40,8 @@ const msg = zh
 >
   <input type="hidden" name="form" value={inquiry ? 'inquiry-list' : 'contact'} />
   <input type="hidden" name="lang" value={lang} />
+  <input type="hidden" name="t" data-form-start />
+  <div class="hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off" /></label></div>
   {inquiry && <input type="hidden" name="inquiry_items" data-inq-field />}
   <div class="row">
     <label>{zh ? '您的称呼' : 'Name'}<input class="field" name="name" required autocomplete="name" /></label>

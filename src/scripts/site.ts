@@ -143,8 +143,12 @@ if (est) {
 }
 
 // Forms post to the endpoint in data-endpoint. Empty endpoint = not connected yet.
+// Hidden "t" records when the page loaded so the receiver can drop instant bot posts.
 document.querySelectorAll<HTMLFormElement>('form[data-endpoint]').forEach((form) => {
   const status = form.querySelector<HTMLElement>('.form-status')!;
+  const started = form.querySelector<HTMLInputElement>('[data-form-start]');
+  const stamp = () => { if (started) started.value = String(Date.now()); };
+  stamp();
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const endpoint = form.dataset.endpoint;
@@ -157,6 +161,7 @@ document.querySelectorAll<HTMLFormElement>('form[data-endpoint]').forEach((form)
       const res = await fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
       if (!res.ok) throw new Error(String(res.status));
       form.reset();
+      stamp();
       if (form.hasAttribute('data-clears-inquiry')) save([]);
       status.textContent = form.dataset.msgOk || 'OK';
     } catch {

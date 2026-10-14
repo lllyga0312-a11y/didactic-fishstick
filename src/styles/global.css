@@ -185,7 +185,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .chip input:checked + span { border-color: var(--accent-bright); color: var(--d-text); background: rgba(46, 197, 211, .12); }
 .chip input:focus-visible + span { outline: 2px solid var(--accent-bright); }
 .light-form .chip span { border-color: var(--l-line); color: var(--l-muted); background: #fff; }
-.light-form .chip input:checked + span { border-color: var(--accent); color: var(--accent); background: #E6F3F4; }
+.light-form .chip input:checked + span { border-color: var(--accent); color: #086470; background: #E6F3F4; }
 .form-status { font-size: 14px; min-height: 1.4em; }
 
 /* Contact */
@@ -288,3 +288,4 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .faq details ol.faq-steps li { margin-bottom: 6px; }
 .faq details p.faq-links { font-size: 14px; color: var(--l-text); }
 .faq-links .more { margin-left: 12px; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

@@ -1,0 +1,16 @@
+# Cloudflare Worker that forwards website inquiries. Deploy from this folder:
+#   npx wrangler deploy
+#   npx wrangler secret put WECOM_WEBHOOK
+name = "batov-inquiry"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+ALLOWED_ORIGINS = "https://batov.cn,https://www.batov.cn,https://lllyga0312-a11y.github.io"
+MAIL_FROM = ""
+MAIL_TO = ""
+
+# Uncomment once batov.cn uses Cloudflare Email Routing and each MAIL_TO
+# address is verified there.
+# [[send_email]]
+# name = "MAILER"
