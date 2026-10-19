@@ -29,6 +29,9 @@
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body { margin: 0; font-family: var(--font); font-size: 16px; line-height: 1.65; color: var(--l-text); background: var(--l-bg); }
 img { max-width: 100%; height: auto; display: block; }
+/* Anchored sections land below the sticky header, and the target is briefly highlighted. */
+[id] { scroll-margin-top: 84px; }
+.card:target { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(8, 100, 112, .18); }
 a { color: inherit; }
 h1, h2, h3, h4 { line-height: 1.25; margin: 0 0 .5em; }
 p { margin: 0 0 1em; }
@@ -270,9 +273,11 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .facts dt { color: var(--l-muted); }
 .facts dd { margin: 0; font-weight: 600; }
 .mini-stack { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 6px; font-size: 14px; }
-.mini-stack li { background: #F0F5F6; border-radius: 6px; padding: 8px 10px; }
-.mini-stack li span { display: block; font-size: 12px; color: var(--l-muted); }
-.mini-stack a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.mini-stack li { background: #F0F5F6; border-radius: 6px; }
+.mini-stack li span { display: block; font-size: 12px; font-weight: 400; color: var(--l-muted); }
+.mini-stack a { display: block; position: relative; padding: 8px 28px 8px 10px; border: 1px solid transparent; border-radius: 6px; color: var(--accent); text-decoration: none; font-weight: 600; }
+.mini-stack a::after { content: '›'; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 20px; }
+.mini-stack a:hover { border-color: var(--accent); background: #fff; }
 .list-table th { width: auto; }
 .list-table td a { text-decoration: none; color: var(--l-text); }
 .list-table td a:hover { color: var(--accent); }

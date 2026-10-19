@@ -77,7 +77,7 @@ const listSchema = {
             <p>{sc.need[lang]}</p>
             <ol class="mini-stack">
               {buildups[sc.id].map((l) => (
-                <li><span>{l.layer[lang]}</span> <a href={href(lang, `/products/${l.product.slug}/`)}>{l.product.code ? `${l.product.code} ` : ''}{l.product.name[lang]}</a></li>
+                <li><a href={href(lang, `/products/${l.product.slug}/`)}><span>{l.layer[lang]}</span>{l.product.code ? `${l.product.code} ` : ''}{l.product.name[lang]}</a></li>
               ))}
             </ol>
           </div>
