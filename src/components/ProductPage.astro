@@ -11,7 +11,13 @@ const { lang, product: p } = Astro.props;
 const zh = lang === 'zh';
 const s = seriesById(p.series)!;
 const others = s.products.filter((x) => x.slug !== p.slug);
-const photos = seriesPhotos(p.series).slice(0, 3);
+// Photos tagged with this product come first; the rest of the series photos
+// are rotated per product so neighbouring product pages don't repeat the same three.
+const seriesAll = seriesPhotos(p.series);
+const own = seriesAll.filter((ph) => ph.products?.includes(p.slug));
+const shared = seriesAll.filter((ph) => !ph.products?.length);
+const shift = shared.length ? s.products.findIndex((x) => x.slug === p.slug) % shared.length : 0;
+const photos = [...own, ...shared.slice(shift), ...shared.slice(0, shift)].slice(0, 3);
 const title = p.code ? `${p.name[lang]} ${p.code}` : p.name[lang];
 
 const facts = [
@@ -101,11 +107,12 @@ const productVideos = videos.filter((v) => v.lang === lang && v.products?.includ
 
         {photos.length > 0 && (
           <>
-            <h2 style="margin-top:40px">{zh ? '施工实拍' : 'On-site photos'}</h2>
+            <h2 style="margin-top:40px">{own.length ? (zh ? '实拍照片' : 'Real photos') : (zh ? '施工实拍' : 'On-site photos')}</h2>
             <div class="grid g3">
               {photos.map((ph) => (
                 <figure class="shot">
                   <img src={asset(ph.sm)} alt={ph.alt[lang]} width="600" height={Math.round(600 * ph.h / ph.w)} loading="lazy" decoding="async" />
+                  {ph.products?.length ? <figcaption>{ph.alt[lang]}</figcaption> : null}
                 </figure>
               ))}
             </div>

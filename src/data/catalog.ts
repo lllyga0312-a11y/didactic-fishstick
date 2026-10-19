@@ -33,7 +33,7 @@ export interface Series {
   notes: { title: L; body: L }[];
   products: Product[];
 }
-export interface Photo { src: string; sm: string; w: number; h: number; source: string; alt: L }
+export interface Photo { src: string; sm: string; w: number; h: number; source: string; alt: L; products?: string[] }
 
 const files = import.meta.glob<{ default: Omit<Series, 'products'> & { products: Omit<Product, 'series'>[] } }>('./series/*.json', { eager: true });
 

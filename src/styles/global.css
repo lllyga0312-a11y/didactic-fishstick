@@ -66,7 +66,8 @@ button, input, select, textarea { font: inherit; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(10, 16, 23, .96); border-bottom: 1px solid var(--d-line); color: var(--d-text); }
 .site-header .wrap { display: flex; align-items: center; gap: 24px; height: 64px; }
 .logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
-.logo img { display: block; height: 42px; width: auto; }
+.logo { flex-shrink: 0; }
+.logo img { display: block; height: 42px; width: auto; max-width: none; }
 .logo small { font-size: 12px; line-height: 1.35; color: var(--d-muted); padding-left: 14px; border-left: 1px solid var(--d-line); }
 .logo small span { display: block; }
 @media (max-width: 1180px) { .logo small { display: none; } }
@@ -248,7 +249,12 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
 @media (max-width: 520px) {
   .site-header .wrap { gap: 12px; }
   .logo small { display: none; }
+  .logo img { height: 32px; }
   .header-actions { gap: 8px; }
+}
+@media (max-width: 400px) {
+  .logo img { height: 28px; }
+  .inq-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 }
 
 /* Catalog */

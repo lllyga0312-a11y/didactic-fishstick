@@ -22,6 +22,17 @@
      "zh": "混凝土地面上已滚涂的深色环氧底漆",
      "en": "Dark epoxy primer rolled onto a concrete floor"
     }
+   },
+   {
+    "src": "/images/series/epoxy-primer-3.jpg",
+    "sm": "/images/series/epoxy-primer-3-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/环氧底涂/无溶剂环氧底漆2.jpg",
+    "alt": {
+     "zh": "工人在混凝土地面上滚涂环氧底漆",
+     "en": "Applying epoxy primer to a concrete floor by roller"
+    }
    }
   ],
   "epoxy-midcoat": [
@@ -68,6 +79,31 @@
      "zh": "施工现场搅拌桶中正在搅拌的环氧材料",
      "en": "Epoxy material being mixed in buckets on site"
     }
+   },
+   {
+    "src": "/images/series/epoxy-midcoat-6.jpg",
+    "sm": "/images/series/epoxy-midcoat-6-sm.jpg",
+    "w": 750,
+    "h": 750,
+    "source": "网站图片/处理后图片/中涂图片/123.jpg",
+    "alt": {
+     "zh": "现场搅拌双组分环氧中涂",
+     "en": "Mixing a two-component epoxy body coat on site"
+    }
+   },
+   {
+    "src": "/images/series/epoxy-midcoat-5.jpg",
+    "sm": "/images/series/epoxy-midcoat-5-sm.jpg",
+    "w": 720,
+    "h": 896,
+    "source": "网站图片/无溶剂环氧中涂/270383165109746560.jpg",
+    "alt": {
+     "zh": "BATOV-floor2001 无溶剂有色中涂（中灰）包装桶，A+B=30kg/套",
+     "en": "BATOV-floor2001 solvent-free coloured body coat (mid grey) pail, A+B = 30 kg per set"
+    },
+    "products": [
+     "batov-2001"
+    ]
    }
   ],
   "epoxy-topcoat": [
@@ -232,9 +268,31 @@
      "zh": "海边红色彩色防滑道路",
      "en": "Red coloured anti-slip road along a coastline"
     }
+   },
+   {
+    "src": "/images/series/waterborne-5.jpg",
+    "sm": "/images/series/waterborne-5-sm.jpg",
+    "w": 900,
+    "h": 1200,
+    "source": "网站图片/彩色防滑透水路面/彩色防滑透水路面.jpg",
+    "alt": {
+     "zh": "红色彩色防滑路面施工中",
+     "en": "Red anti-slip coloured pavement being applied"
+    }
    }
   ],
   "polyurethane": [
+   {
+    "src": "/images/series/polyurethane-5.jpg",
+    "sm": "/images/series/polyurethane-5-sm.jpg",
+    "w": 1200,
+    "h": 900,
+    "source": "网站图片/无锡聚氨酯地坪中涂2.jpg",
+    "alt": {
+     "zh": "无锡项目：灰色聚氨酯地坪，绿色通道与黄色标线",
+     "en": "Wuxi project: grey polyurethane floor with green walkway and yellow lines"
+    }
+   },
    {
     "src": "/images/series/polyurethane-1.jpg",
     "sm": "/images/series/polyurethane-1-sm.jpg",
@@ -277,6 +335,17 @@
     "alt": {
      "zh": "钢结构平台下的哑光地坪",
      "en": "Matte floor coating beneath steel platforms"
+    }
+   },
+   {
+    "src": "/images/series/polyurethane-6.jpg",
+    "sm": "/images/series/polyurethane-6-sm.jpg",
+    "w": 750,
+    "h": 750,
+    "source": "网站图片/处理后图片/哑光地坪/微信图片_20170410091436.jpg",
+    "alt": {
+     "zh": "车间里的绿色哑光聚氨酯地坪",
+     "en": "Green matt polyurethane floor in a plant room"
     }
    }
   ],
@@ -451,6 +520,57 @@
      "alt": {
       "zh": "施工人员在绿色环氧地坪上滚涂",
       "en": "Applicator rolling a green epoxy floor"
+     }
+    }
+   ]
+  },
+  {
+   "site": "site-e",
+   "desc": {
+    "zh": "蓝色环氧地坪，室内走廊",
+    "en": "Blue epoxy floor in an indoor corridor"
+   },
+   "photos": [
+    {
+     "src": "/images/projects/site-e-1.jpg",
+     "sm": "/images/projects/site-e-1-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC02697.jpg",
+     "alt": {
+      "zh": "走廊里的蓝色环氧地坪，表面光亮",
+      "en": "Glossy blue epoxy floor along a corridor"
+     }
+    }
+   ]
+  },
+  {
+   "site": "site-f",
+   "desc": {
+    "zh": "绿色环氧地坪，带大窗的多层办公 / 厂房楼层",
+    "en": "Green epoxy floor on an upper storey with large windows"
+   },
+   "photos": [
+    {
+     "src": "/images/projects/site-f-1.jpg",
+     "sm": "/images/projects/site-f-1-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC02753.jpg",
+     "alt": {
+      "zh": "整层的绿色环氧地坪，倒映窗户",
+      "en": "Green epoxy across a whole storey, reflecting the windows"
+     }
+    },
+    {
+     "src": "/images/projects/site-f-2.jpg",
+     "sm": "/images/projects/site-f-2-sm.jpg",
+     "w": 750,
+     "h": 750,
+     "source": "网站图片/处理后图片/DSC02748.jpg",
+     "alt": {
+      "zh": "靠窗区域的绿色环氧地坪与踢脚线",
+      "en": "Green epoxy floor and skirting by the windows"
      }
     }
    ]
